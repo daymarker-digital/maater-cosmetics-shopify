@@ -1,0 +1,19 @@
+@mixin link( $style: default ) {
+
+  transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    height var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+}

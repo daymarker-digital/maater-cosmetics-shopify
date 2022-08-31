@@ -1,0 +1,9 @@
+.product__description {
+    font-family: "Akkurat Mono LL", serif;
+}
+
+.product__title h1 {
+  font-family: "PP Neue Montreal Bold", sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}

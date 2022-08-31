@@ -1,0 +1,86 @@
+.footer {
+
+  font-family: 'Akkurat Mono', serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  a, p {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .link {
+    color: rgba(var(--theme-colour-black), 1);
+  }
+
+  &__address,
+  &__contact-info,
+  &__legal {
+    width: 100%;
+  }
+
+  &__contact-info,
+  &__legal {
+    margin-top: 20px;
+  }
+
+  &__address {
+    text-align: left;
+    a, p {
+      text-align: left;
+    }
+  }
+
+  &__main {
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+
+	@include media-breakpoint-up(sm) {} // min width sm
+
+	@include media-breakpoint-up(md) {
+
+  	&__address,
+    &__contact-info,
+    &__legal {
+      width: auto;
+    }
+
+    &__contact-info,
+    &__legal {
+      margin-top: 0px;
+    }
+
+    &__contact-info {
+      text-align: center;
+    }
+
+    &__legal {
+      text-align: right;
+    }
+
+  	&__main {
+      justify-content: space-between;
+    }
+
+	} // min width md
+
+	@include media-breakpoint-up(lg) {} // min width lg
+
+	@include media-breakpoint-up(xl) {} // min width xl
+
+	@include media-breakpoint-up(xxl) {} // min width xxl
+
+}

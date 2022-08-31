@@ -1,0 +1,5 @@
+.shopify-section {
+  & + .shopify-section {
+    margin-top: 24px;
+  }
+}

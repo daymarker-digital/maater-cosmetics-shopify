@@ -1,0 +1,28 @@
+.grid {
+
+  display: grid;
+  width: 100%;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+
+  &--two-column {}
+
+  &--three-column {}
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &--three-column {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}

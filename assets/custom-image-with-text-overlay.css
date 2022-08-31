@@ -1,0 +1,15 @@
+.image-with-text-overlay__heading {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  margin-top: 32px;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 1024px) {
+
+  .image-with-text-overlay__heading {
+    font-size: 28px;
+  }
+  
+}

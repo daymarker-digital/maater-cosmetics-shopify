@@ -1,0 +1,57 @@
+@use "../mixins/button";
+@use "../mixins/link";
+
+.link {
+
+  transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+
+  &--blue,
+  &--yellow {
+    @extend .link;
+  }
+
+  &--button-primary {
+    @include button(primary);
+    .link__title {
+      margin-bottom: -3px;
+    }
+  }
+
+  &--blue {
+    background: rgba(var(--theme-colour-blue), 1);
+    color: rgba(var(--theme-colour-white), 1);
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-black), 1);
+      color: rgba(var(--theme-colour-white), 1);
+    }
+  }
+
+  &--yellow {
+    background: rgba(var(--theme-colour-yellow), 1);
+    color: rgba(var(--theme-colour-black), 1);
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-black), 1);
+      color: rgba(var(--theme-colour-white), 1);
+    }
+  }
+
+}
