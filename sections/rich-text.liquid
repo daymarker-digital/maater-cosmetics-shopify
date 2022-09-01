@@ -1,3 +1,6 @@
+{%- assign section_name = 'rich-text' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -50,8 +53,28 @@
 {
   "name": "t:sections.rich-text.name",
   "tag": "section",
-  "class": "section",
+  "class": "section rich-text",
   "settings": [
+    {
+      "type": "select",
+      "id": "background",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black"
+        },
+        {
+          "value": "orange",
+          "label": "Orange"
+        },
+        {
+          "value": "white",
+          "label": "White"
+        }
+      ],
+      "default": "black",
+      "label": "Background"
+    },
     {
       "type": "select",
       "id": "text_alignment",
@@ -145,6 +168,22 @@
           "default": "Talk about your brand",
           "label": "t:sections.all.heading.label"
         },
+        {
+          "type": "select",
+          "id": "style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary",
+          "label": "Style"
+        }
         {
           "type": "select",
           "id": "heading_size",
