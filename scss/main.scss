@@ -102,6 +102,7 @@
   // ---------------------------------------- Colours
   --theme-colour-black: #{ hexToRGB( map-get( $theme-colours, 'black' ) ) };
   --theme-colour-blue: #{ hexToRGB( map-get( $theme-colours, 'blue' ) ) };
+  --theme-colour-orange: #{ hexToRGB( map-get( $theme-colours, 'orange' ) ) };
   --theme-colour-white: #{ hexToRGB( map-get( $theme-colours, 'white' ) ) };
   --theme-colour-yellow: #{ hexToRGB( map-get( $theme-colours, 'yellow' ) ) };
 
@@ -129,7 +130,8 @@
   --theme-font-family--serif--primary: serif;
 
   // ---------------------------------------- Transitions
-  --theme-transition-duration: 280ms;
+  --theme-transition-duration: 300ms;
+  --theme-transition-duration--long: 500ms;
   --theme-transition-opacity: 0.3333;
 
 }

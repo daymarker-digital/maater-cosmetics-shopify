@@ -24,7 +24,7 @@
   }
 
   &:after {
-    transition: transform var(--theme-transition-duration);
+    transition: transform var(--theme-transition-duration--long);
     content: "";
     z-index: -1;
     position: absolute;
