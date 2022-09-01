@@ -5,18 +5,63 @@
   background: rgba(var(--theme-colour-black), 1);
   color: rgba(var(--theme-colour-white), 1);
 
+  .heading--1 {
+    display: block;
+  }
+
   .media {
     img {
       border: 2px solid rgba(var(--theme-colour-white), 1);
     }
   }
 
-  @include breakpoint(md) {} // min width md
+  &__content {
+    :last-child:is(.button) {
+      margin-top: 2.5rem;
+      margin-bottom: 0;
+    }
+  }
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(md) {
 
-  @include breakpoint(xl) {} // min width xl
+    &__content {
+      padding-inline-start: 3rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
-  @include breakpoint(xxl) {} // min width xxl
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    .heading--1 {
+      font-size: 72px;
+    }
+
+    &__content {
+      padding-inline-start: 4rem;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    .heading--1 {
+      font-size: 82px;
+    }
+
+    &__content {
+      padding-inline-start: 5rem;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    .heading--1 {
+      font-size: 88px;
+    }
+
+  } // min width xxl
 
 }

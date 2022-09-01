@@ -72,7 +72,7 @@
                   </a>
                 {%- else -%}
                   <a class="button button--primary"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                    {{ block.settings.button_label | escape }}
+                    <span class="button__title">{{ block.settings.button_label | escape }}</span>
                   </a>
                 {%- endif -%}
               {%- endif -%}

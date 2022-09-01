@@ -2,6 +2,7 @@
 
 @mixin body-copy($style:1) {
 
+  color: inherit;
   font-style: normal;
 
   // ---------------------------------------- Primary

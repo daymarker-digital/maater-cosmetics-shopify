@@ -1,6 +1,9 @@
 @use "./mixins/general" as *;
 
 .image-banner {
+
+  color: rgba(var(--theme-colour-white), 1);
+
   .banner {
 
     &__box,

@@ -709,6 +709,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-image-with-text.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-image-with-text.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-list-collection.scss" : {
       "aP" : 1,
       "bl" : 0,
