@@ -188,7 +188,7 @@
         "image": "shopify:\/\/shop_images\/MAATER--Artboard_11-100.jpg",
         "image_position": "center center",
         "layout": "text_first",
-        "text_box_position": "middle",
+        "text_box_position": "bottom",
         "text_alignment": "left",
         "image_ratio": "adapt",
         "full_width": false,
