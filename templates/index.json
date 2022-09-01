@@ -14,7 +14,7 @@
         "mobile_text_alignment": "center",
         "mobile_image_ratio": "auto",
         "stack_images_on_mobile": true,
-        "show_text_below": true,
+        "show_text_below": false,
         "colors_text": "#ffffff",
         "colors_overlay": "#000000",
         "colors_overlay_opacity": 0,
