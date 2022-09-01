@@ -6,4 +6,19 @@
     color: inherit;
   }
 
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    .page-width--inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
 }

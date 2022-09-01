@@ -768,6 +768,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-rich-text.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-rich-text.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-styles.scss" : {
       "aP" : 1,
       "bl" : 0,

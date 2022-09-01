@@ -31,14 +31,22 @@
 
   @if $style == 2 {
 
-    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-family: 'PP Neue Montreal Bold', sans-serif;
     font-size: 35px;
     line-height: 1.1;
     font-weight: 400;
     letter-spacing: -.02em;
 
     @include breakpoint(md) {
-      font-size: 82px;
+      font-size: 34px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 40px;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 50px;
     }
 
   }

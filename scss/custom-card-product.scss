@@ -60,7 +60,7 @@
     justify-content: center;
     align-items: baseline;
     letter-spacing: 0;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     padding: 15px 0 0 0;
   }
@@ -74,7 +74,7 @@
   @include breakpoint(md) {
 
     &__information {
-      font-size: 34px;
+      font-size: 30px;
     }
 
   } // min width md
@@ -83,7 +83,7 @@
 
     &__information {
       justify-content: flex-start;
-      font-size: 32px;
+      font-size: 30px;
     }
 
   } // min width lg
@@ -91,7 +91,7 @@
   @include breakpoint(xl) {
 
     &__information {
-      font-size: 35px;
+      font-size: 32px;
     }
 
   } // min width xl
