@@ -8,15 +8,49 @@
       width: 100%;
     }
 
+    &__box {
+      padding: 4rem 3rem;
+      :last-child:is(.button) {
+        margin-top: 2rem;
+      }
+    }
+
     &__text {}
 
     @include breakpoint(750px) {
+
+      &__box {
+        :last-child:is(.button) {
+          margin-top: 2.5rem;
+        }
+      }
       &__text {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
       }
+
     }
+
+    @include breakpoint(lg) {
+
+      &__box {
+        :last-child:is(.button) {
+          margin-top: 3rem;
+        }
+      }
+
+    } // min width lg
+
+    @include breakpoint(xl) {
+
+      &__box {
+        :last-child:is(.button) {
+          margin-top: 3.5rem;
+        }
+      }
+
+    } // min width xl
 
   }
 }

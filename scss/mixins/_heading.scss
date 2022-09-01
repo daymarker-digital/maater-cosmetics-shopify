@@ -10,12 +10,20 @@
   @if $style == 1 {
 
     font-family: 'Nickel Gothic Variable', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 0.95;
     font-weight: 400;
 
     @include breakpoint(750px) {
+      font-size: 62px;
+    }
+
+    @include breakpoint(lg) {
       font-size: 82px;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 92px;
     }
 
   }
