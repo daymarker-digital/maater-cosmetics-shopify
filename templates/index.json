@@ -17,7 +17,7 @@
         "show_text_below": true,
         "colors_text": "#ffffff",
         "colors_overlay": "#000000",
-        "colors_overlay_opacity": 28,
+        "colors_overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -29,7 +29,7 @@
           "type": "heading",
           "settings": {
             "heading": "Cosmic Aesthetics",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "1662047424d1577fac-1": {
