@@ -198,6 +198,54 @@
         "padding_top": 92,
         "padding_bottom": 92
       }
+    },
+    "1662072675f3922bcf": {
+      "type": "image-grid",
+      "blocks": {
+        "1662072675023baeb9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow the LIght",
+            "style": "primary"
+          }
+        },
+        "0c9a6aea-d9c0-486a-a156-ba5f16d0237d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAATER--image-grid-04-100.jpg"
+          }
+        },
+        "3329d4af-bbfa-4d30-9845-fd3a321f2c13": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAATER--image-grid-02-100.jpg"
+          }
+        },
+        "c1782c6e-f390-4656-891d-b63fb7edfb1c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAATER--image-grid-01-100.jpg"
+          }
+        },
+        "843054ba-5367-4aa2-9172-910e3745be69": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAATER--image-grid-03-100.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1662072675023baeb9-0",
+        "0c9a6aea-d9c0-486a-a156-ba5f16d0237d",
+        "3329d4af-bbfa-4d30-9845-fd3a321f2c13",
+        "c1782c6e-f390-4656-891d-b63fb7edfb1c",
+        "843054ba-5367-4aa2-9172-910e3745be69"
+      ],
+      "settings": {
+        "background": "orange",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -206,6 +254,7 @@
     "1661884980d03289a7",
     "166188580238f56d5d",
     "1660333092e53eabfe",
-    "1662069008751553a2"
+    "1662069008751553a2",
+    "1662072675f3922bcf"
   ]
 }
