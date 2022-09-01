@@ -637,6 +637,18 @@
       "oAP" : "\/assets\/custom-collection.scss.liquid",
       "oF" : 0
     },
+    "\/assets\/custom-featured-collection.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-featured-collection.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-footer.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2309,6 +2321,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/custom-featured-collection.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-featured-collection.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/custom-image-banner.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -3323,6 +3350,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/custom-fonts.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/custom-price.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/custom-price.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/custom-product-card.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/custom-product-card.liquid",
       "oF" : 0
     },
     "\/snippets\/desktop-menu.liquid" : {

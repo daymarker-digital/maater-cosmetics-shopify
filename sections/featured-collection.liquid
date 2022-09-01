@@ -1,3 +1,6 @@
+{%- assign section_name = 'featured-collection' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
+
 {%- style -%}
   #shopify-section-{{ section.id }} {
     --image-position: {{ section.settings.image_position }};
@@ -23,11 +26,15 @@
   <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
+
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
 
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'custom-featured-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-featured-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="page-width section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
   {%- liquid
@@ -63,18 +70,7 @@
         <li id="Slide-{{ section.id }}-{{ forloop.index }}"
           class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}"
         >
-          {% render 'product-card',
-            card_product: product,
-            media_size: section.settings.image_ratio,
-            show_secondary_image: section.settings.show_secondary_image,
-            show_quick_buy: section.settings.show_quick_buy,
-            show_vendor: section.settings.show_vendor,
-            show_rating: section.settings.show_rating,
-            enable_quick_view: section.settings.enable_quick_view,
-            enable_color_swatches: section.settings.enable_color_swatches,
-            enable_countdown: section.settings.enable_countdown,
-            enable_image_fill: section.settings.enable_image_fill
-          %}
+          {% render 'custom-product-card', product: product %}
         </li>
       {%- else -%}
         {%- for i in (1..4) -%}
@@ -118,7 +114,7 @@
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
-  "class": "section",
+  "class": "section featured-collection",
   "settings": [
     {
       "type": "text",
