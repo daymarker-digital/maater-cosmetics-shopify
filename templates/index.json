@@ -140,6 +140,13 @@
     "1660333092e53eabfe": {
       "type": "rich-text",
       "blocks": {
+        "d25363ed-b54e-462b-8156-165fc8855477": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free shipping to earth on orders over $75",
+            "heading_size": "h1"
+          }
+        },
         "16603330920c88651f-0": {
           "type": "heading",
           "settings": {
@@ -157,6 +164,7 @@
         }
       },
       "block_order": [
+        "d25363ed-b54e-462b-8156-165fc8855477",
         "16603330920c88651f-0",
         "16603330920c88651f-1"
       ],
