@@ -38,7 +38,7 @@
 <noscript>{{ 'custom-image-banner.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div
-  class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}{{ section_name }}"
+  class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
   >
   <div id="Banner-{{ section.id }}" class="banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.show_text_box %} banner--container{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}">
     {%- if section.settings.image != blank -%}
@@ -102,9 +102,9 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'heading' -%}
-                <h2 class="banner__heading heading--1{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+                <h2 class="banner__heading heading--1 uppercase {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
               {%- when 'text' -%}
-                <div class="banner__text body-copy--1{% if block.settings.secondary_color %} banner__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                <div class="banner__text body-copy--1 {% if block.settings.secondary_color %} banner__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {%- when 'button' -%}
                 {%- if block.settings.button_label != blank -%}
                   {%- if block.settings.button_style_secondary -%}
@@ -135,7 +135,7 @@
 {
   "name": "t:sections.image-banner.name",
   "tag": "section",
-  "class": "section",
+  "class": "section image-banner",
   "settings": [
     {
       "type": "image_picker",

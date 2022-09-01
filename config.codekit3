@@ -661,6 +661,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-image-banner.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-image-banner.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-image-with-text-overlay.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2277,6 +2289,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_title.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/components\/_typography.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_typography.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
