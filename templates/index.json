@@ -22,6 +22,108 @@
         "padding_bottom": 0
       }
     },
+    "1662047424162adeb7": {
+      "type": "image-banner",
+      "blocks": {
+        "1662047424d1577fac-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cosmic Aesthetics",
+            "heading_size": "h1"
+          }
+        },
+        "1662047424d1577fac-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "1662047424d1577fac-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1662047424d1577fac-0",
+        "1662047424d1577fac-1",
+        "1662047424d1577fac-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MAATERArtboard_9.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "adapt",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#111111",
+        "colors_overlay_opacity": 24,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1662047375af101344": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "blocks": {
+        "1662047375fa6e5c55-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "h1"
+          }
+        },
+        "1662047375fa6e5c55-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "1662047375fa6e5c55-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1662047375fa6e5c55-0",
+        "1662047375fa6e5c55-1",
+        "1662047375fa6e5c55-2"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "flex-start",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "colors_text": "#212326",
+        "colors_overlay": "#f3f3f3",
+        "colors_overlay_opacity": 92,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1661884980d03289a7": {
       "type": "featured-collection",
       "settings": {
@@ -432,10 +534,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16620473584e4f8613": {
+      "type": "image-with-text-overlay--legacy",
+      "blocks": {
+        "166204735876528046-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "h1"
+          }
+        },
+        "166204735876528046-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "166204735876528046-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "166204735876528046-0",
+        "166204735876528046-1",
+        "166204735876528046-2"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "flex-start",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "colors_text": "#212326",
+        "colors_overlay": "#f3f3f3",
+        "colors_overlay_opacity": 92,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "1661881401445420bc",
+    "1662047424162adeb7",
+    "1662047375af101344",
     "1661884980d03289a7",
     "166188580238f56d5d",
     "165886091745e85637",
@@ -446,6 +599,7 @@
     "1660333092e53eabfe",
     "1660252992984dc641",
     "16618857540a97ed29",
-    "1661885785627bc4ae"
+    "1661885785627bc4ae",
+    "16620473584e4f8613"
   ]
 }
