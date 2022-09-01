@@ -2405,6 +2405,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/custom-image-grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-image-grid.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/custom-image-with-text.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2978,6 +2993,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/image-comparison.liquid",
+      "oF" : 0
+    },
+    "\/sections\/image-grid.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/image-grid.liquid",
       "oF" : 0
     },
     "\/sections\/image-with-text-overlay--legacy.liquid" : {

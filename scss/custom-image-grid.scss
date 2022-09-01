@@ -1,0 +1,13 @@
+@use "./mixins/general" as *;
+
+.image-grid {
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
