@@ -3,8 +3,14 @@
 
 {%- style -%}
 
-  #shopify-section-{{ section.id }}-padding {
+  #shopify-section-{{ section.id }} {
     background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
+    {% case section.settings.background %}
+      {% when 'orange', 'white' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% else %}
+        color: rgba(var(--theme-colour-white), 1);
+    {% endcase %}
   }
 
   .section-{{ section.id }}-padding {
