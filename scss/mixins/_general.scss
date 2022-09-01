@@ -23,7 +23,7 @@
   }
 
   @else {
-    @media (min-width: $size ) { @content; }
+    @media ( min-width: $size ) { @content; }
   }
 
 }
