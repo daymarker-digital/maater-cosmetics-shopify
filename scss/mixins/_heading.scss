@@ -33,8 +33,9 @@
 
     font-family: 'Nickel Gothic Variable', sans-serif;
     font-size: 35px;
-    line-height: 0.95;
+    line-height: 1.1;
     font-weight: 400;
+    letter-spacing: -.02em;
 
     @include breakpoint(md) {
       font-size: 82px;

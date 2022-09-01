@@ -1,18 +1,1 @@
-.rich-text__heading {
-  font-size: 35px;
-  margin-bottom: 5px;
-  line-height: 0.95;
-}
-
-.rich-text__text {
-  font-family: "Akkurat Mono LL", serif;
-  text-transform: none;
-}
-
-@media (min-width: 1024px) {
-
-  .rich-text__heading {
-    font-size: 82px;
-  }
-
-}
+.rich-text__heading{color:inherit}

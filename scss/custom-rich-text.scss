@@ -1,0 +1,9 @@
+@use "./mixins/general" as *;
+
+.rich-text {
+
+  &__heading {
+    color: inherit;
+  }
+
+}
