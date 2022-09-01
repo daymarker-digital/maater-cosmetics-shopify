@@ -144,6 +144,7 @@
           "type": "heading",
           "settings": {
             "heading": "Free shipping to earth on orders over $75",
+            "style": "primary",
             "heading_size": "h1"
           }
         }
@@ -152,6 +153,7 @@
         "d25363ed-b54e-462b-8156-165fc8855477"
       ],
       "settings": {
+        "background": "orange",
         "text_alignment": "center",
         "narrow": true,
         "show_divider": false,
@@ -289,6 +291,7 @@
           "disabled": true,
           "settings": {
             "heading": "Maater is the newest cosmetics brand in the universe.",
+            "style": "primary",
             "heading_size": "h1"
           }
         },
@@ -306,6 +309,7 @@
         "1660330786703c497d-1"
       ],
       "settings": {
+        "background": "black",
         "text_alignment": "center",
         "narrow": true,
         "show_divider": false,
