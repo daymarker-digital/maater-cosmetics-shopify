@@ -198,6 +198,26 @@
         "padding_top": 92,
         "padding_bottom": 92
       }
+    },
+    "1662072675f3922bcf": {
+      "type": "image-grid",
+      "blocks": {
+        "1662072675023baeb9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow the LIght",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1662072675023baeb9-0"
+      ],
+      "settings": {
+        "background": "orange",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -206,6 +226,7 @@
     "1661884980d03289a7",
     "166188580238f56d5d",
     "1660333092e53eabfe",
-    "1662069008751553a2"
+    "1662069008751553a2",
+    "1662072675f3922bcf"
   ]
 }
