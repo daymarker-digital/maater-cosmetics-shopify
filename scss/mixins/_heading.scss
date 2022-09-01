@@ -1,0 +1,26 @@
+@use "general" as *;
+
+@mixin heading($style:primary) {
+
+  font-family: var(--theme-sans-serif--sofia-pro);
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  @if $style == primary {
+
+    font-weight: 600;
+
+    @include breakpoint(sm) {} // min width sm
+
+    @include breakpoint(md) {} // min width md
+
+    @include breakpoint(lg) {} // min width lg
+
+    @include breakpoint(xl) {} // min width xl
+
+    @include breakpoint(xxl) {} // min width xxl
+
+  }
+
+}

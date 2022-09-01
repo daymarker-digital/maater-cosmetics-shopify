@@ -1,0 +1,37 @@
+@use "general" as *;
+
+@mixin ui($style:'') {
+
+  transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  line-height: 1;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  opacity: 1;
+  background: transparent;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    outline: none;
+  }
+
+  @if $style == button {
+    border-width: var(--theme-border-width);
+    border-style: solid;
+    border-color: transparent;
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

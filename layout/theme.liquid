@@ -35,13 +35,13 @@
     <script src="{{ 'vendor-v4.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer="defer"></script>
-    
+
     {{ content_for_header }}
 
     {%- liquid
       render 'css-variables'
       echo 'base.css' | asset_url | stylesheet_tag: preload: true
-      
+
       if text_direction == 'rtl'
         echo 'rtl.css' | asset_url | stylesheet_tag
       endif
@@ -53,7 +53,7 @@
     {%- unless settings.type_header_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
-    
+
     {%- if settings.predictive_search_enabled -%}
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
@@ -77,20 +77,23 @@
       {%  when 'product' %}
         <link rel="stylesheet" href="{{ 'custom-product.css' | asset_url }}" media="print" onload="this.media='all'">
         <noscript>{{ 'custom-product.css' | asset_url | stylesheet_tag }}</noscript>
-    {% endcase %}    
+    {% endcase %}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQJ1DK3JPR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-LQJ1DK3JPR');
-  </script>
-      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQJ1DK3JPR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LQJ1DK3JPR');
+    </script>
+
+    <link rel="stylesheet" href="{{ 'main.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'main.css' | asset_url | stylesheet_tag }}</noscript>
+
   </head>
 
   <body class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %} UPDATED"
@@ -174,7 +177,7 @@
         class LazyImage extends HTMLElement {
           constructor() {
             super();
-        
+
             this.image = this.querySelector('img');
             if (this.image) {
               this.handleLazy();
@@ -193,7 +196,7 @@
           handleLazy () {
             if (!this.image.complete) {
               this.parentNode.classList.add('loading');
-      
+
               this.image.addEventListener('load', () => {
                 this.parentNode.classList.remove('loading');
               }, false);
@@ -257,8 +260,8 @@
           updateCartItemsCount();
         });
       });
-      
+
     </script>
-    
+
   </body>
 </html>
