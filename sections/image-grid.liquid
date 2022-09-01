@@ -45,7 +45,7 @@
 <noscript>{{ 'custom-image-grid.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div
-  class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
+  class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
   >
 
   {% for block in section.blocks %}
