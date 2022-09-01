@@ -4,7 +4,7 @@
 @mixin button($style:primary) {
 
   @include ui(button);
-
+  transition: color var(--theme-transition-duration--long);
   font-family: 'Nickel Gothic Variable', sans-serif;
   font-size: 24px;
   letter-spacing: 0;
@@ -54,12 +54,12 @@
     border-color: rgba(var(--theme-colour-white), 1);
 
     &:after {
-      background-color: rgba(var(--theme-colour-black), 1);
+      background-color: rgba(var(--theme-colour-white), 1);
     }
 
     &:focus,
     &:hover {
-
+      color: rgba(var(--theme-colour-black), 1);
     }
 
   }
