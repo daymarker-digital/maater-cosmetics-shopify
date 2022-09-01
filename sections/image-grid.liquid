@@ -1,5 +1,17 @@
-{%- assign section_name = 'image-grid' -%}
-{%- assign section_id = section_name | append: '--' | append: section.id -%}
+{%- liquid
+
+    assign section_name = 'image-grid'
+    assign section_id = section_name | append: '--' | append: section.id
+    assign snippet_classes = snippet_name
+
+    if classes != blank
+      assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
+    endif
+
+    assign heading = section.blocks | where: "type", "heading" | default: ''
+    assign images = section.blocks | where: "type", "image" | default: false
+
+-%}
 
 {%- style -%}
 
@@ -35,6 +47,47 @@
 <div
   class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
   >
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+
+        {%- assign heading = block.settings.heading | default: '' -%}
+        {%- assign style = block.settings.style | default: 'primary' -%}
+
+        {% if heading != blank %}
+          <h2 class="{{ section_name }}__heading heading--{{ style }}">{{ heading }}</h2>
+        {% endif %}
+
+    {% endcase %}
+  {% endfor %}
+
+  {% if images %}
+    {% for item in images %}
+
+      {%- assign image = item.settings.image | default: false -%}
+
+      {% if image %}
+        <div class="{{ section_name }}__item">
+          <img
+            srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
+              {%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
+              {%- if image.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
+              {%- if image.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
+              {%- if image.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%},
+              {{ image | image_url }} {{ image.width }}w"
+            src="{{ image | image_url: width: 550 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+            alt="{{ image.alt | escape | split: '#' | first }}"
+            loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
+          />
+        </div>
+      {% endif %}
+
+    {% endfor %}
+  {% endif %}
 
 </div>
 
