@@ -1,1 +1,1 @@
-.featured-collection{background:red}
+.featured-collection{background:rgba(var(--theme-colour-black), 1);color:rgba(var(--theme-colour-white), 1)}

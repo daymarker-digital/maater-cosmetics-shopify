@@ -1,0 +1,98 @@
+@use "./mixins/general" as *;
+
+.card-product {
+
+  .price {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+  }
+
+  &__product-price,
+  &__product-title {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    line-height: 1;
+  }
+
+  &__images {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    &:hover {
+      .card-product__image-02 {
+        opacity: 1;
+        transform: scale(1.075);
+      }
+    }
+  }
+
+  &__image {
+    &-01 {}
+    &-02 {
+      transition:
+        opacity var(--theme-transition-duration),
+        transform var(--theme-transition-duration--long);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  &__information {
+    font-family: "PP Neue Montreal Bold", sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    letter-spacing: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &__product-title {
+    & + .card-product__product-price {
+      margin-left: 15px;
+    }
+  }
+
+  @include breakpoint(md) {
+
+    &__information {
+      font-size: 34px;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__information {
+      justify-content: flex-start;
+      font-size: 32px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__information {
+      font-size: 35px;
+    }
+
+  } // min width xl
+
+}

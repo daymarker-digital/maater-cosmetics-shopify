@@ -1,7 +1,29 @@
 {% if product and product != blank %}
 
+  {%- liquid
 
+    assign snippet_name = 'price'
+    assign snippet_classes = snippet_name
 
+    if classes != blank
+      assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
+    endif
 
+    if use_variant
+      assign target = product.selected_or_first_available_variant
+    else
+      assign target = product
+    endif
+
+    assign compare_at_price = target.compare_at_price
+    assign price = target.price | default: 1999
+    assign available = target.available | default: false
+
+  -%}
+
+  <div class="{{ snippet_classes }}">
+    <span class="{{ snippet_name }}__symbol">$</span>
+    <span class="{{ snippet_name }}__amount">{{- price | divided_by: 100 -}}</span>
+  </div>
 
 {% endif %}

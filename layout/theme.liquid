@@ -66,6 +66,8 @@
     {%- endif -%}
 
     <link rel="stylesheet" href="{{ 'custom-styles.scss.css' | asset_url }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ 'custom-card-product.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'custom-card-product.css' | asset_url | stylesheet_tag }}</noscript>
 
     {% case template.name %}
       {%  when 'collection' %}

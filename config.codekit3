@@ -614,6 +614,18 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/custom-card-product.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-card-product.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-collection.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2246,6 +2258,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_price.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_price.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/components\/_section.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2316,6 +2343,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_typography.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/custom-card-product.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-card-product.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

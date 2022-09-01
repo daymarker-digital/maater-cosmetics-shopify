@@ -1,118 +1,69 @@
-{% comment %}
-  Renders a product card
+{%- if product and product != blank -%}
 
-  Accepts:
-  - product: {Object} Product Liquid object (optional)
-  - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
-  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
-  - show_quick_buy: {Boolean} Show the quick add to cart button. Default: false (optional)
-  - show_vendor: {Boolean} Show the product vendor. Default: false
-  - show_rating: {Boolean} Show the product rating. Default: false
-  - enable_quick_view: {Boolean} Enable the quick view feature. Default: true
-  - enable_color_swatches: {Boolean} Enable the product color swatches. Default: false
-  - enable_countdown: {Boolean} Enable the product countdown. Default: true
-  - enable_image_fill: {Boolean} Enable the image fill. Default: true
-  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  {%- liquid
 
-  Usage:
-  {% render 'product-card', show_vendor: section.settings.show_vendor %}
-{% endcomment %}
+    assign snippet_name = 'card-product'
+    assign snippet_classes = snippet_name
 
-{%- liquid
-  assign show_countdown = false
-  if product.metafields.theme.countdown.value != blank
-    assign now_time = 'now' | date: '%s' | times: 1
-    assign countdown_time = product.metafields.theme.countdown.value | date: '%s' | times: 1
-    if countdown_time > now_time
-      assign show_countdown = true
+    if classes != blank
+      assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
     endif
-  endif
--%}
 
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+    assign image_1 = product.images[0] | default: false
+    assign image_2 = product.images[1] | default: false
+    assign title = product.title
+    assign url = product.url
 
-<div class="card-wrapper">
-  <a href="{{ product.url | within: collection | default: '#' }}" class="full-unstyled-link">
-    <span class="visually-hidden">{{ product.title | escape }}</span>
-  </a>
-  <use-animate data-animate="zoom-fade-small" class="card card--product{% if product.featured_media == nil %} card--text{% endif %}" tabindex="-1">
-    {%- if product.featured_media -%}
-      {%- liquid
-        assign featured_media_aspect_ratio = product.featured_media.aspect_ratio
+  -%}
 
-        if product.featured_media.aspect_ratio == nil
-          assign featured_media_aspect_ratio = 1
-        endif
-      -%}
+<div class="{{ snippet_classes }}">
 
-      <a href="{{ product.url | within: collection }}" class="card__media media-wrapper" tabindex="-1">
-        <lazy-image class="image-animate media media--{{ media_size }} media--hover-effect{% unless enable_image_fill %} media--image-contain{% endunless %}"
-          {%- if media_size == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif -%}
-        >
-          {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+  <div class="{{ snippet_name }}__images">
+    <a href="{{ url }}" title="{{ title }}" target="_self">
+      {% if image_1 %}
+        <div class="{{ snippet_name }}__image-01">
           <img
-            srcset="{%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w{%- endif -%}
-              {%- if product.featured_media.width >= 375 -%},{{ product.featured_media | image_url: width: 375 }} 375w{%- endif -%}
-              {%- if product.featured_media.width >= 550 -%},{{ product.featured_media | image_url: width: 550 }} 550w{%- endif -%}
-              {%- if product.featured_media.width >= 750 -%},{{ product.featured_media | image_url: width: 750 }} 750w{%- endif -%}
-              {%- if product.featured_media.width >= 1100 -%},{{ product.featured_media | image_url: width: 1100 }} 1100w{%- endif -%},
-              {{ product.featured_media | image_url }} {{ product.featured_media.width }}w"
-            src="{{ product.featured_media | image_url: width: 550 }}"
+            srcset="{%- if image_1.width >= 165 -%}{{ image_1 | image_url: width: 165 }} 165w{%- endif -%}
+              {%- if image_1.width >= 375 -%},{{ image_1 | image_url: width: 375 }} 375w{%- endif -%}
+              {%- if image_1.width >= 550 -%},{{ image_1 | image_url: width: 550 }} 550w{%- endif -%}
+              {%- if image_1.width >= 750 -%},{{ image_1 | image_url: width: 750 }} 750w{%- endif -%}
+              {%- if image_1.width >= 1100 -%},{{ image_1 | image_url: width: 1100 }} 1100w{%- endif -%},
+              {{ image_1 | image_url }} {{ image_1.width }}w"
+            src="{{ image_1 | image_url: width: 550 }}"
             sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-            alt="{{ product.featured_media.alt | escape | split: '#' | first }}"
+            alt="{{ image_1.alt | escape | split: '#' | first }}"
             loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
-            class="motion-reduce"
-            width="{{ product.featured_media.width }}"
-            height="{{ product.featured_media.height }}"
+            width="{{ image_1.width }}"
+            height="{{ image_1.height }}"
           />
-          {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-
-          {%- if product.media[1] != nil and show_secondary_image -%}
-            <img
-              srcset="{%- if product.media[1].width >= 165 -%}{{ product.media[1] | image_url: width: 165 }} 165w{%- endif -%}
-                {%- if product.media[1].width >= 375 -%},{{ product.media[1] | image_url: width: 375 }} 375w{%- endif -%}
-                {%- if product.media[1].width >= 550 -%},{{ product.media[1] | image_url: width: 550 }} 550w{%- endif -%}
-                {%- if product.media[1].width >= 750 -%},{{ product.media[1] | image_url: width: 750 }} 750w{%- endif -%}
-                {%- if product.media[1].width >= 1100 -%},{{ product.media[1] | image_url: width: 1100 }} 1100w{%- endif -%},
-                {{ product.media[1] | image_url }} {{ product.media[1].width }}w"
-              src="{{ product.media[1] | image_url: width: 550 }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-              alt="{{ product.media[1].alt | escape | split: '#' | first }}"
-              loading="lazy"
-              class="motion-reduce"
-              width="{{ product.media[1].width }}"
-              height="{{ product.media[1].height }}"
-            />
-          {%- endif -%}
-        </lazy-image>
-      </a>
-    {%- else -%}
-      <div class="card__inner">
-        <a href="{{ product.url | within: collection }}" class="media media--{{ media_size }}" tabindex="-1">
-          <div class="card__content">
-            <h2 class="card-information__text h3">{{ product.title | escape }}</h2>
-          </div>
-        </a>
-      </div>
-    {%- endif -%}
-  </use-animate>
-
-  <div class="card-information">
-    <strong class="card-information__product-title">{{ product.title | escape }}</strong>
-    {% render 'custom-price', product: product %}
+        </div>
+      {% endif %}
+      {% if image_2 %}
+        <div class="{{ snippet_name }}__image-02">
+          <img
+            srcset="{%- if image_2.width >= 165 -%}{{ image_2 | image_url: width: 165 }} 165w{%- endif -%}
+              {%- if image_2.width >= 375 -%},{{ image_2 | image_url: width: 375 }} 375w{%- endif -%}
+              {%- if image_2.width >= 550 -%},{{ image_2 | image_url: width: 550 }} 550w{%- endif -%}
+              {%- if image_2.width >= 750 -%},{{ image_2 | image_url: width: 750 }} 750w{%- endif -%}
+              {%- if image_2.width >= 1100 -%},{{ image_2 | image_url: width: 1100 }} 1100w{%- endif -%},
+              {{ image_2 | image_url }} {{ image_2.width }}w"
+            src="{{ image_2 | image_url: width: 550 }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+            alt="{{ image_2.alt | escape | split: '#' | first }}"
+            loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
+            width="{{ image_2.width }}"
+            height="{{ image_2.height }}"
+          />
+        </div>
+      {% endif %}
+    </a>
   </div>
 
-  {%- if settings.quick_view_enabled and enable_quick_view -%}
-    <quick-view-drawer>
-      <details>
-        <summary class="quick-view__summary" tabindex="-1">
-          <span class="visually-hidden">{{ 'products.product.quick_view' | t }}</span>
-          {% render 'icon', icon: 'search-alt' %}
-        </summary>
-        <quick-view class="quick-view" data-product-handle="{{ product.handle | escape }}">
-          <div role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: product.title | escape }}" aria-modal="true" class="quick-view__content" tabindex="-1"></div>
-        </quick-view>
-      </details>
-    </quick-view-drawer>
-  {%- endif -%}
+  <div class="{{ snippet_name }}__information">
+    <strong class="{{ snippet_name }}__product-title">{{ product.title | escape }}</strong>
+    {% render 'custom-price', classes: 'card-product__product-price', product: product %}
+  </div>
+
 </div>
+
+{%- endif -%}
