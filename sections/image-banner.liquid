@@ -34,8 +34,12 @@
 {%- endstyle -%}
 
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'custom-image-banner.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-image-banner.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
+<div
+  class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}{{ section_name }}"
+  >
   <div id="Banner-{{ section.id }}" class="banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.show_text_box %} banner--container{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}">
     {%- if section.settings.image != blank -%}
       <div class="banner__media{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
