@@ -6,7 +6,9 @@
   #shopify-section-{{ section.id }} {
     background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
     {% case section.settings.background %}
-      {% when 'orange', 'white' %}
+      {% when 'orange' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% when 'white' %}
         color: rgba(var(--theme-colour-black), 1);
       {% else %}
         color: rgba(var(--theme-colour-white), 1);
@@ -188,24 +190,6 @@
 					],
 					"default": "primary",
 					"label": "Style"
-				}, {
-					"type": "select",
-					"id": "heading_size",
-					"options": [{
-							"value": "h2",
-							"label": "t:sections.all.heading_size.options__1.label"
-						},
-						{
-							"value": "h1",
-							"label": "t:sections.all.heading_size.options__2.label"
-						},
-						{
-							"value": "h0",
-							"label": "t:sections.all.heading_size.options__3.label"
-						}
-					],
-					"default": "h1",
-					"label": "t:sections.all.heading_size.label"
 				}
 			]
 		},
