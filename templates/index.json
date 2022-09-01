@@ -146,35 +146,18 @@
             "heading": "Free shipping to earth on orders over $75",
             "heading_size": "h1"
           }
-        },
-        "16603330920c88651f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "You’ve heard about glazed face, but what about SpaceFace.",
-            "heading_size": "h2"
-          }
-        },
-        "16603330920c88651f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Created using bio-active ingredients, the SpaceFace compounds capture and reflect light to accentuate the sculptural features of the human face. Powered by the cosmos, designed by plants. <\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
         }
       },
       "block_order": [
-        "d25363ed-b54e-462b-8156-165fc8855477",
-        "16603330920c88651f-0",
-        "16603330920c88651f-1"
+        "d25363ed-b54e-462b-8156-165fc8855477"
       ],
       "settings": {
         "text_alignment": "center",
         "narrow": true,
-        "show_divider": true,
+        "show_divider": false,
         "mobile_text_alignment": "center",
-        "padding_top": 100,
-        "padding_bottom": 44
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "165886309808ecb155": {
