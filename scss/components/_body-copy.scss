@@ -1,6 +1,7 @@
-.body-copy {
+@use "../mixins/general" as *;
+@use "../mixins/body-copy" as *;
 
-  font-family: var(--theme-font-family--sans-serif--primary);
+.body-copy {
 
   ol, p, ul {
     margin-bottom: 18px;
@@ -29,6 +30,10 @@
         outline: none;
       }
     }
+  }
+
+  &--1 {
+    @include body-copy(1);
   }
 
   & > *:last-child {

@@ -1,21 +1,51 @@
 @use "general" as *;
 
-@mixin heading($style:primary) {
+@mixin heading($style:1) {
 
-  font-family: var(--theme-sans-serif--sofia-pro);
   display: block;
+  font-style: normal;
   margin: 0;
   padding: 0;
 
-  @if $style == primary {
+  @if $style == 1 {
 
-    font-weight: 600;
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 35px;
+    line-height: 0.95;
+    font-weight: 400;
 
     @include breakpoint(sm) {} // min width sm
 
     @include breakpoint(md) {} // min width md
 
-    @include breakpoint(lg) {} // min width lg
+    @include breakpoint(lg) {
+
+      font-size: 82px;
+
+    } // min width lg
+
+    @include breakpoint(xl) {} // min width xl
+
+    @include breakpoint(xxl) {} // min width xxl
+
+  }
+
+  @if $style == 2 {
+
+    font-family: 'Nickel Gothic Variable', sans-serif;
+    font-size: 35px;
+    line-height: 0.95;
+    font-weight: 400;
+
+    @include breakpoint(sm) {} // min width sm
+
+    @include breakpoint(md) {} // min width md
+
+    @include breakpoint(lg) {
+
+      font-size: 82px;
+
+    } // min width lg
 
     @include breakpoint(xl) {} // min width xl
 

@@ -1,26 +1,26 @@
 @use "general" as *;
 
-@mixin body-copy($style:primary) {
+@mixin body-copy($style:1) {
 
-  font-family: var(--theme-sans-serif--sofia-pro);
   font-style: normal;
-  font-weight: 300;
-  line-height: 1.25;
-
-  li, p {
-    font-style: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-  }
 
   // ---------------------------------------- Primary
-  @if $style == primary {
+  @if $style == 1 {
+
+    font-family: "Akkurat Mono LL", serif;
+    text-transform: none;
+    font-size: 1.35rem;
+    line-height: 1.3333;
 
     @include breakpoint(sm) {} // min width sm
 
     @include breakpoint(md) {} // min width md
 
-    @include breakpoint(lg) {} // min width lg
+    @include breakpoint(lg) {
+
+      font-size: 1.6rem;
+
+    } // min width lg
 
     @include breakpoint(xl) {} // min width xl
 

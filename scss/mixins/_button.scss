@@ -47,7 +47,7 @@
     }
   }
 
-  // ---------------------------------------- Outlined Rounded
+  // ---------------------------------------- Primary
   @if $style == primary {
 
     color: rgba(var(--theme-colour-white), 1);
@@ -64,6 +64,7 @@
 
   }
 
+  // ---------------------------------------- Secondary
   @if $style == secondary {
 
     color: rgba(var(--theme-colour-black), 1);
