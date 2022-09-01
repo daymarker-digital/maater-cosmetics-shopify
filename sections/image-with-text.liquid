@@ -1,3 +1,6 @@
+{%- assign section_name = 'image-with-text' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
+
 {%- style -%}
   {%- if section.settings.image != blank -%}
     #shopify-section-{{ section.id }} {
@@ -20,6 +23,9 @@
 {%- endstyle -%}
 
 {{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'custom-image-with-text.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-image-with-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="image-with-text page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="image-with-text__grid{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
@@ -81,7 +87,7 @@
 {
   "name": "t:sections.image-with-text.name",
   "tag": "section",
-  "class": "section",
+  "class": "section image-with-text",
   "settings": [
     {
       "type": "image_picker",
