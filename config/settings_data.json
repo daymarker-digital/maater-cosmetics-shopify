@@ -1,6 +1,11 @@
 {
   "current": {
     "colors_background": "#111111",
+    "colors_text": "#FFFFFF",
+    "colors_heading": "#FFFFFF",
+    "colors_price": "#FFFFFF",
+    "colors_sale_price": "#fe5000",
+    "colors_border": "#FFFFFF",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
