@@ -242,9 +242,9 @@
         "0c9a6aea-d9c0-486a-a156-ba5f16d0237d"
       ],
       "settings": {
-        "background": "orange",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "background": "black",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
