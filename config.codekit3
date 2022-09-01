@@ -902,6 +902,18 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/main.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/main.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/media-gallery.js" : {
       "bF" : 0,
       "ft" : 64,

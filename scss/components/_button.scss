@@ -4,11 +4,6 @@
 
 .button {
 
-  &__icon,
-  &__title {
-
-  }
-
   &--primary {
     @include button(primary);
   }

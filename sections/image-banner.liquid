@@ -109,7 +109,7 @@
                       {% render 'icon', icon: 'arrow' %}
                     </a>
                   {%- else -%}
-                    <a class="button button--primary"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                    <a class="button button--secondary"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                       <span class="button__title">{{ block.settings.button_label | escape }}</span>
                     </a>
                   {%- endif -%}
