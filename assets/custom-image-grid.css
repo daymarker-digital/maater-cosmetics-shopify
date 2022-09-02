@@ -1,1 +1,1 @@
-
+.image-grid__heading{text-align:center}.image-grid__heading+.image-grid__main{margin-top:32px}.image-grid__item{display:block;width:100%;height:auto}.image-grid__item img{display:block;width:100%;height:auto}.image-grid__main{display:grid;width:100%;grid-template-columns:1fr 1fr;gap:0}@media(min-width: 990px){.image-grid__heading+.image-grid__main{margin-top:42px}.image-grid__main{grid-template-columns:1fr 1fr 1fr 1fr}}@media(min-width: 1400px){.image-grid__heading+.image-grid__main{margin-top:52px}}
