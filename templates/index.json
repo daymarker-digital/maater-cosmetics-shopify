@@ -225,6 +225,26 @@
         "padding_bottom": 92
       }
     },
+    "166266160293c0ea34": {
+      "type": "product-grid",
+      "blocks": {
+        "16626616023d006007-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "16626616023d006007-0"
+      ],
+      "settings": {
+        "background": "orange",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1662072675f3922bcf": {
       "type": "image-grid",
       "blocks": {
@@ -282,6 +302,7 @@
     "1662661549f438ee1d",
     "1660333092e53eabfe",
     "1662069008751553a2",
+    "166266160293c0ea34",
     "1662072675f3922bcf"
   ]
 }
