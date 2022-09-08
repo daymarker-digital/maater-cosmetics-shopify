@@ -1,0 +1,180 @@
+{%- liquid
+
+    assign section_name = 'product-grid'
+    assign section_id = section_name | append: '--' | append: section.id
+    assign snippet_classes = snippet_name
+
+    if classes != blank
+      assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
+    endif
+
+    assign heading = section.blocks | where: "type", "heading" | default: ''
+    assign products = section.blocks | where: "type", "product" | default: false
+
+-%}
+
+{%- style -%}
+
+  #shopify-section-{{ section.id }} {
+    background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
+    {% case section.settings.background %}
+      {% when 'orange' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% when 'white' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% else %}
+        color: rgba(var(--theme-colour-white), 1);
+    {% endcase %}
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+{%- endstyle -%}
+
+<link rel="stylesheet" href="{{ 'custom-product-grid.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div
+  class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
+  >
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+
+        {%- assign heading = block.settings.heading | default: '' -%}
+        {%- assign style = block.settings.style | default: 'primary' -%}
+
+        {% if heading != blank %}
+          <h2 class="{{ section_name }}__heading uppercase heading--{{ style }}">{{ heading }}</h2>
+        {% endif %}
+
+    {% endcase %}
+  {% endfor %}
+
+  {% if products %}
+    <div class="{{ section_name }}__main" data-image-count="{{ images.size }}">
+      {% for item in products %}
+				{% render 'custom-product-card', product: item.settings.product %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+</div>
+
+{% schema %}
+{
+	"name": "Product Grid",
+	"tag": "section",
+	"class": "section product-grid",
+	"settings": [
+		{
+			"type": "select",
+			"id": "background",
+			"options": [
+				{
+					"value": "black",
+					"label": "Black"
+				},
+				{
+					"value": "orange",
+					"label": "Orange"
+				},
+				{
+					"value": "white",
+					"label": "White"
+				}
+			],
+			"default": "black",
+			"label": "Background"
+		},
+		{
+			"content": "Section Padding",
+			"type": "header"
+		},
+		{
+			"label": "Top Padding",
+			"type": "range",
+			"id": "padding_top",
+			"min": 0,
+			"max": 100,
+			"step": 4,
+			"unit": "t:sections.all.padding.padding_top.unit",
+			"default": 36
+		},
+		{
+			"label": "Bottom Padding",
+			"type": "range",
+			"id": "padding_bottom",
+			"min": 0,
+			"max": 100,
+			"step": 4,
+			"unit": "t:sections.all.padding.padding_bottom.unit",
+			"default": 36
+		}
+	],
+	"blocks": [
+		{
+			"name": "Heading",
+			"type": "heading",
+			"limit": 1,
+			"settings": [
+				{
+					"label": "Heading",
+					"type": "text",
+					"default": "Talk about your brand",
+					"id": "heading"
+				},
+				{
+					"label": "Style",
+					"type": "select",
+					"options": [
+						{
+							"value": "primary",
+							"label": "Primary"
+						},
+						{
+							"value": "secondary",
+							"label": "Secondary"
+						}
+					],
+					"default": "primary",
+					"id": "style"
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"type": "product",
+			"limit": 6,
+			"settings": [
+				{
+					"label": "Product",
+					"type": "product",
+					"id": "product"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Product Grid",
+			"blocks": [
+				{
+					"type": "heading"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
