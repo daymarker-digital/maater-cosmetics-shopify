@@ -35,12 +35,12 @@
 <link rel="stylesheet" href="{{ 'custom-image-with-text.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'custom-image-with-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="image-with-text page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
-  <div class="image-with-text__grid{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
+<div class="{{ section_name }} page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  <div class="{{ section_name }}__grid{% if section.settings.layout == 'text_first' %} {{ section_name }}__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
     <div class="grid__item">
       <use-animate data-animate="zoom-fade" class="media-wrapper">
-        <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if image != blank %}media{% else %}media--placeholder{% endif %}">
-          {%- if image != blank -%}
+        <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if image and image != blank %}media{% else %}media--placeholder{% endif %}">
+          {%- if image and image != blank -%}
             <img
               srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
                 {%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
@@ -64,13 +64,35 @@
       </use-animate>
     </div>
     <div class="grid__item">
-      <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+      <div class="{{ section_name }}__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+
+        {% if figure and figure != blank %}
+          <div class="{{ section_name }}__figure">
+            <img
+              srcset="{%- if figure.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
+                {%- if figure.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
+                {%- if figure.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
+                {%- if figure.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
+                {%- if figure.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%}
+                {%- if figure.width >= 1500 -%},{{ image | image_url: width: 1500 }} 1500w{%- endif -%},
+                {{ image | image_url }} {{ figure.width }}w"
+              src="{{ image | image_url: width: 1500 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+              alt="{{ figure.alt | escape }}"
+              loading="lazy"
+              width="{{ figure.width }}"
+              height="{{ figure.height }}"
+              class="image-fit"
+            />
+          </div>
+        {% endif %}
+
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading heading--1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+              <h2 class="{{ section_name }}__heading heading--1 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
             {%- when 'text' -%}
-              <div class="image-with-text__text body-copy--1 {% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="{{ section_name }}__text body-copy--1 {% if block.settings.secondary_color %} {{ section_name }}__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
                 {%- if block.settings.button_style_secondary -%}
