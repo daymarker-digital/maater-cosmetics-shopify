@@ -22,12 +22,31 @@
     }
   }
 
+  &__figure {
+    width: 100px;
+    height: auto;
+    img, svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    & + .button,
+    & + .image-with-text__heading,
+    & + .image-with-text__text {
+      margin-top: 24px;
+    }
+  }
+
   @include breakpoint(md) {
 
     &__content {
       padding-inline-start: 3rem;
       padding-top: 0;
       padding-bottom: 0;
+    }
+
+    &__figure {
+      width: 70px;
     }
 
   } // min width md
@@ -42,6 +61,10 @@
       padding-inline-start: 4rem;
     }
 
+    &__figure {
+      width: 95px;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {
@@ -52,6 +75,10 @@
 
     &__content {
       padding-inline-start: 5rem;
+    }
+
+    &__figure {
+      width: 105px;
     }
 
   } // min width xl

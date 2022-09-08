@@ -69,14 +69,14 @@
         {% if figure and figure != blank %}
           <div class="{{ section_name }}__figure">
             <img
-              srcset="{%- if figure.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
-                {%- if figure.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
-                {%- if figure.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
-                {%- if figure.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
-                {%- if figure.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%}
-                {%- if figure.width >= 1500 -%},{{ image | image_url: width: 1500 }} 1500w{%- endif -%},
-                {{ image | image_url }} {{ figure.width }}w"
-              src="{{ image | image_url: width: 1500 }}"
+              srcset="{%- if figure.width >= 165 -%}{{ figure | image_url: width: 165 }} 165w{%- endif -%}
+                {%- if figure.width >= 375 -%},{{ figure | image_url: width: 375 }} 375w{%- endif -%}
+                {%- if figure.width >= 550 -%},{{ figure | image_url: width: 550 }} 550w{%- endif -%}
+                {%- if figure.width >= 750 -%},{{ figure | image_url: width: 750 }} 750w{%- endif -%}
+                {%- if figure.width >= 1100 -%},{{ figure | image_url: width: 1100 }} 1100w{%- endif -%}
+                {%- if figure.width >= 1500 -%},{{ figure | image_url: width: 1500 }} 1500w{%- endif -%},
+                {{ figure | image_url }} {{ figure.width }}w"
+              src="{{ figure | image_url: width: 1500 }}"
               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
               alt="{{ figure.alt | escape }}"
               loading="lazy"
