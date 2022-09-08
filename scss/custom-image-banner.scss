@@ -4,6 +4,10 @@
 
   color: rgba(var(--theme-colour-white), 1);
 
+  .media-wrapper {
+    background-color: transparent;
+  }
+
   .banner {
 
     &__box,
@@ -13,7 +17,7 @@
 
     &__box {
       padding: 4rem 3rem;
-      :last-child:is(.button) {
+      &:last-child:is(.button) {
         margin-top: 2rem;
       }
     }

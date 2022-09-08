@@ -1,5 +1,9 @@
-{%- assign section_name = 'image-banner' -%}
-{%- assign section_id = section_name | append: '--' | append: section.id -%}
+{%- liquid
+
+    assign section_name = 'image-banner'
+    assign section_id = section_name | append: '--' | append: section.id
+
+-%}
 
 {%- style -%}
   #shopify-section-{{ section.id }} {
