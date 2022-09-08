@@ -10,14 +10,15 @@
 
     assign heading = section.blocks | where: "type", "heading" | default: ''
     assign products = section.blocks | where: "type", "product" | default: false
+		assign section_background = section.settings.background | default: 'not-set'
 
 -%}
 
 {%- style -%}
 
   #shopify-section-{{ section.id }} {
-    background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
-    {% case section.settings.background %}
+    background: rgba(var(--theme-colour-{{ section_background }}), 1);
+    {% case section_background %}
       {% when 'orange' %}
         color: rgba(var(--theme-colour-black), 1);
       {% when 'white' %}
@@ -45,7 +46,8 @@
 <noscript>{{ 'custom-product-grid.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div
-  class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}"
+  class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %} page-width"
+	data-section-background="{{ section_background }}"
   >
 
   {% for block in section.blocks %}
@@ -63,7 +65,7 @@
   {% endfor %}
 
   {% if products %}
-    <div class="{{ section_name }}__main" data-image-count="{{ images.size }}">
+    <div class="{{ section_name }}__main" data-image-count="{{ products.size }}">
       {% for item in products %}
 				{% render 'custom-product-card', product: item.settings.product %}
       {% endfor %}

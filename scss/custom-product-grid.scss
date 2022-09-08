@@ -1,0 +1,70 @@
+@use "./mixins/general" as *;
+
+.product-grid {
+
+  &__heading {
+    text-align: center;
+    & + .image-grid__main {
+      margin-top: 32px;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    height: auto;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  @include breakpoint(md) {
+
+    &__main {
+      gap: 3rem;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__heading {
+      & + .image-grid__main {
+        margin-top: 42px;
+      }
+    }
+
+    &__main {
+      gap: 4rem;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__main {
+      gap: 5rem;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__heading {
+      & + .image-grid__main {
+        margin-top: 52px;
+      }
+    }
+
+  } // min width xxl
+
+}

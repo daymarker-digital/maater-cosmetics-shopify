@@ -1,0 +1,8 @@
+[data-section-background="black"] {
+  color: rgba(var(--theme-colour-white), 1);
+}
+
+[data-section-background="orange"],
+[data-section-background="white"] {
+  color: rgba(var(--theme-colour-black), 1);
+}

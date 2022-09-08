@@ -768,6 +768,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-product-grid.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-product-grid.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-product.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2027,6 +2039,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_background.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_background.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/components\/_body-copy.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2442,6 +2469,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/custom-image-with-text.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/custom-product-grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-product-grid.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
