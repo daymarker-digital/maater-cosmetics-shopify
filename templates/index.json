@@ -228,16 +228,22 @@
     "166266160293c0ea34": {
       "type": "product-grid",
       "blocks": {
-        "16626616023d006007-0": {
-          "type": "heading",
+        "c32e80f3-c2f5-468f-ba31-25a0dff637a2": {
+          "type": "product",
           "settings": {
-            "heading": "Talk about your brand",
-            "style": "primary"
+            "product": "space-face-oil-alpha"
+          }
+        },
+        "86deb332-b306-44ad-b970-fa03962cde77": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-kappa-test"
           }
         }
       },
       "block_order": [
-        "16626616023d006007-0"
+        "c32e80f3-c2f5-468f-ba31-25a0dff637a2",
+        "86deb332-b306-44ad-b970-fa03962cde77"
       ],
       "settings": {
         "background": "orange",
