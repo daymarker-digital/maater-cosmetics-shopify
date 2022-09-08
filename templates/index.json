@@ -140,16 +140,22 @@
     "1662661549f438ee1d": {
       "type": "product-grid",
       "blocks": {
-        "16626615494ad7b86d-0": {
-          "type": "heading",
+        "e8ab1225-c0be-4945-9353-6d7f9a4a48a4": {
+          "type": "product",
           "settings": {
-            "heading": "Talk about your brand",
-            "style": "primary"
+            "product": "celestial-bodies-oil-beta"
+          }
+        },
+        "f88cb9ff-9644-45ad-b98d-e13ccde94982": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-gamma"
           }
         }
       },
       "block_order": [
-        "16626615494ad7b86d-0"
+        "e8ab1225-c0be-4945-9353-6d7f9a4a48a4",
+        "f88cb9ff-9644-45ad-b98d-e13ccde94982"
       ],
       "settings": {
         "background": "orange",
