@@ -1,10 +1,18 @@
-{%- assign section_name = 'image-with-text' -%}
-{%- assign section_id = section_name | append: '--' | append: section.id -%}
+{%- liquid
+
+    assign section_name = 'image-with-text'
+    assign section_id = section_name | append: '--' | append: section.id
+
+    assign figure = section.settings.figure | default: false
+    assign image = section.settings.image | default: false
+		assign section_background = section.settings.background | default: 'not-set'
+
+-%}
 
 {%- style -%}
-  {%- if section.settings.image != blank -%}
+  {%- if image and image != blank -%}
     #shopify-section-{{ section.id }} {
-      --image-ratio-percent: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+      --image-ratio-percent: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;
       --image-position: {{ section.settings.image_position }};
     }
   {%- endif -%}
@@ -31,22 +39,22 @@
   <div class="image-with-text__grid{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
     <div class="grid__item">
       <use-animate data-animate="zoom-fade" class="media-wrapper">
-        <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}">
-          {%- if section.settings.image != blank -%}
+        <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if image != blank %}media{% else %}media--placeholder{% endif %}">
+          {%- if image != blank -%}
             <img
-              srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w{%- endif -%}
-                {%- if section.settings.image.width >= 375 -%},{{ section.settings.image | image_url: width: 375 }} 375w{%- endif -%}
-                {%- if section.settings.image.width >= 550 -%},{{ section.settings.image | image_url: width: 550 }} 550w{%- endif -%}
-                {%- if section.settings.image.width >= 750 -%},{{ section.settings.image | image_url: width: 750 }} 750w{%- endif -%}
-                {%- if section.settings.image.width >= 1100 -%},{{ section.settings.image | image_url: width: 1100 }} 1100w{%- endif -%}
-                {%- if section.settings.image.width >= 1500 -%},{{ section.settings.image | image_url: width: 1500 }} 1500w{%- endif -%},
-                {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
-              src="{{ section.settings.image | image_url: width: 1500 }}"
+              srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
+                {%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
+                {%- if image.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
+                {%- if image.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
+                {%- if image.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%}
+                {%- if image.width >= 1500 -%},{{ image | image_url: width: 1500 }} 1500w{%- endif -%},
+                {{ image | image_url }} {{ image.width }}w"
+              src="{{ image | image_url: width: 1500 }}"
               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-              alt="{{ section.settings.image.alt | escape }}"
+              alt="{{ image.alt | escape }}"
               loading="lazy"
-              width="{{ section.settings.image.width }}"
-              height="{{ section.settings.image.height }}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
               class="image-fit"
             />
           {%- else -%}

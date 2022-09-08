@@ -2,11 +2,6 @@
 
     assign section_name = 'image-grid'
     assign section_id = section_name | append: '--' | append: section.id
-    assign snippet_classes = snippet_name
-
-    if classes != blank
-      assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
-    endif
 
     assign heading = section.blocks | where: "type", "heading" | default: ''
     assign images = section.blocks | where: "type", "image" | default: false
