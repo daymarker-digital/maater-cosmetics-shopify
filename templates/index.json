@@ -50,7 +50,7 @@
         "image_position": "center center",
         "text_box_position": "middle-center",
         "text_alignment": "center",
-        "image_ratio": "adapt",
+        "image_ratio": "450px",
         "show_text_box": false,
         "full_width": true,
         "show_divider": false,
