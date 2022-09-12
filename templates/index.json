@@ -12,7 +12,7 @@
         "full_width": true,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "mobile_image_ratio": "100vh",
+        "mobile_image_ratio": "500px",
         "stack_images_on_mobile": true,
         "show_text_below": false,
         "colors_text": "#ffffff",
