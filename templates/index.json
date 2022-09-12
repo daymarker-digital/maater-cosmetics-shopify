@@ -221,6 +221,14 @@
             "heading_size": "h1"
           }
         },
+        "21fab546-1484-4d96-9702-44ad6f2855fb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The future of cosmic aesthetics is Space Face. The compounds in Maater’s Face Oil capture and reflect light to accentuate the sculptural features of the human face.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
         "1662069008ad70ca15-2": {
           "type": "button",
           "settings": {
@@ -232,6 +240,7 @@
       },
       "block_order": [
         "1662069008ad70ca15-0",
+        "21fab546-1484-4d96-9702-44ad6f2855fb",
         "1662069008ad70ca15-2"
       ],
       "settings": {
@@ -272,8 +281,8 @@
       ],
       "settings": {
         "background": "black",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 64
       }
     },
     "1662072675f3922bcf": {
