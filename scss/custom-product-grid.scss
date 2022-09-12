@@ -4,7 +4,7 @@
 
   &__heading {
     text-align: center;
-    & + .image-grid__main {
+    & + .product-grid__main {
       margin-top: 32px;
     }
   }
@@ -38,7 +38,7 @@
   @include breakpoint(lg) {
 
     &__heading {
-      & + .image-grid__main {
+      & + .product-grid__main {
         margin-top: 42px;
       }
     }
@@ -60,7 +60,7 @@
   @include breakpoint(xxl) {
 
     &__heading {
-      & + .image-grid__main {
+      & + .product-grid__main {
         margin-top: 52px;
       }
     }
