@@ -238,10 +238,24 @@
             "heading": "You may also like",
             "style": "primary"
           }
+        },
+        "1a69db3d-1d3f-464a-980e-f6c6f4e11518": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-alpha"
+          }
+        },
+        "38f0c64a-36ff-4989-ad3f-2671a385a362": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-gamma"
+          }
         }
       },
       "block_order": [
-        "166302605557015891-0"
+        "166302605557015891-0",
+        "1a69db3d-1d3f-464a-980e-f6c6f4e11518",
+        "38f0c64a-36ff-4989-ad3f-2671a385a362"
       ],
       "settings": {
         "background": "black",
