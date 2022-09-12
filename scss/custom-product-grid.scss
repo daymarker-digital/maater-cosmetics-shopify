@@ -24,7 +24,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    gap: 2rem;
   }
 
   @include breakpoint(md) {

@@ -23,6 +23,7 @@
   }
 
   &__figure {
+    display: none;
     width: 100px;
     height: auto;
     img, svg {
@@ -62,6 +63,7 @@
     }
 
     &__figure {
+      display: block;
       width: 95px;
     }
 
