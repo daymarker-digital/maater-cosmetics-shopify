@@ -24,7 +24,7 @@
 
     &__text {}
 
-    @include breakpoint(750px) {
+    @include breakpoint(md) {
 
       &__box {
         :last-child:is(.button) {

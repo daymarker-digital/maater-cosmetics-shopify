@@ -1,0 +1,39 @@
+@use "./mixins/general" as *;
+
+.footer {
+
+  padding: 32px 0;
+
+  &__content {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.4;
+    .link {
+      color: rgba(255,255,255, 1);
+      transition: border 300ms;
+      background: none;
+      border-bottom: 1px solid rgba(255,255,255, 1);
+      &:focus,
+      &:hover {
+        border-bottom: 1px solid rgba(255,255,255, 0);
+      }
+    }
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {
+
+    &__content {
+      font-size: 12px;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
