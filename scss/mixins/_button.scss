@@ -4,6 +4,7 @@
 @mixin button($style:primary) {
 
   @include ui(button);
+
   transition: color var(--theme-transition-duration--long);
   font-family: 'Nickel Gothic Variable', sans-serif;
   font-size: 24px;

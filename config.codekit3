@@ -2504,6 +2504,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/custom-product-main.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-product-main.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/custom-rich-text.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -3254,6 +3269,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/main-password-header.liquid",
+      "oF" : 0
+    },
+    "\/sections\/main-product--legacy.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/main-product--legacy.liquid",
       "oF" : 0
     },
     "\/sections\/main-product-modal.liquid" : {

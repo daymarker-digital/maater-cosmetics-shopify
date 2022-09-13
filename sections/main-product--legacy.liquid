@@ -9,9 +9,6 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-review.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<link rel="stylesheet" href="{{ 'custom-product-main.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'custom-product-main.css' | asset_url | stylesheet_tag }}</noscript>
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -544,6 +541,26 @@
                 {% render 'custom-price', product: product %}
               </h1>
             </div>
+          {%- when 'price' -%}
+            <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+            </div>
+            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption rte">
+                {%- if shop.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <div {{ block.shopify_attributes }}>
+              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"/>
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
           {%- when 'description' -%}
             <div class="product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
           {%- when 'custom_liquid' -%}
@@ -849,7 +866,7 @@
                   <button
                     type="submit"
                     name="add"
-                    class="product-form__submit product-form__button-add-to-cart button{% if block.settings.show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
+                    class="product-form__submit button{% if block.settings.show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
                     {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                     {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                   >
