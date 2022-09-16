@@ -1,19 +1,24 @@
+@use "../mixins/general" as *;
+
 .grid {
 
-  display: grid;
-  width: 100%;
-  gap: 12px;
-  grid-template-columns: 1fr 1fr;
-
-  &--two-column {}
-
-  &--three-column {}
+  &--2-col {
+    .grid__item {
+      width: 100%;
+    }
+  }
 
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {} // min width md
 
   @include breakpoint(lg) {
+
+    &--2-col {
+      .grid__item {
+        width: 50%;
+      }
+    }
 
     &--three-column {
       grid-template-columns: 1fr 1fr 1fr;

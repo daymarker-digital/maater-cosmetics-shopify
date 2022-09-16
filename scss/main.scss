@@ -136,11 +136,12 @@
 
 }
 
-@import './components/background.scss';
-@import './components/body-copy.scss';
-@import './components/button.scss';
-@import './components/heading.scss';
-@import './components/price.scss';
-@import './components/typography.scss';
+@import 'components/background';
+@import 'components/body-copy';
+@import 'components/button';
+@import 'components/grid';
+@import 'components/heading';
+@import 'components/price';
+@import 'components/typography';
 
 @import 'theme/header';

@@ -3,6 +3,10 @@
 
 .product {
 
+  .product__button-add-to-cart {
+    width: 100%;
+  }
+
   .shopify-payment-button__button--unbranded {
     @include button(primary);
     width: 100%;
@@ -13,7 +17,6 @@
   }
 
   &__title {
-
     .price {
       font-size: inherit;
     }

@@ -45,8 +45,8 @@
   </div>
 
   <div class="cart__warnings">
-    <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
-    <a href="{{ routes.all_products_collection_url }}" class="button button--tertiary">{{ 'general.continue_shopping' | t }}</a>
+    <h2 class="cart__empty-text heading heading--1 uppercase">{{ 'sections.cart.empty' | t }}</h2>
+    <a href="{{ routes.all_products_collection_url }}" class="button button--secondary">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">

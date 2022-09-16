@@ -66,7 +66,7 @@
       "oAP" : "\/assets\/announcement-bar.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/base.css" : {
       "aP" : 1,
@@ -89,7 +89,7 @@
       "oAP" : "\/assets\/blog.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/cart-drawer.js" : {
       "bF" : 0,
@@ -100,7 +100,7 @@
       "oAP" : "\/assets\/cart-drawer.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/cart-recommendations.js" : {
       "bF" : 0,
@@ -111,7 +111,7 @@
       "oAP" : "\/assets\/cart-recommendations.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/cart.js" : {
       "bF" : 0,
@@ -122,7 +122,7 @@
       "oAP" : "\/assets\/cart.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/component-accordion.css" : {
       "aP" : 1,
@@ -589,7 +589,7 @@
       "oAP" : "\/assets\/cookie-banner.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/cross.png" : {
       "ft" : 32768,
@@ -613,6 +613,29 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/assets\/custom-add-to-card.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-add-to-card.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/assets\/custom-card-collection.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-card-collection.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/assets\/custom-card-product.css" : {
       "aP" : 1,
@@ -888,7 +911,7 @@
       "oAP" : "\/assets\/customer.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/details-modal.js" : {
       "bF" : 0,
@@ -899,7 +922,7 @@
       "oAP" : "\/assets\/details-modal.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/disclosure.css" : {
       "aP" : 1,
@@ -922,7 +945,7 @@
       "oAP" : "\/assets\/facets.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/favicon.ico" : {
       "cB" : 0,
@@ -954,7 +977,7 @@
       "oAP" : "\/assets\/footer-accordion.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/gift-card.js" : {
       "bF" : 0,
@@ -965,7 +988,7 @@
       "oAP" : "\/assets\/gift-card.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/gift-wrapping.js" : {
       "bF" : 0,
@@ -976,7 +999,7 @@
       "oAP" : "\/assets\/gift-wrapping.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/global.js" : {
       "bF" : 0,
@@ -987,7 +1010,7 @@
       "oAP" : "\/assets\/global.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/MAATER--branding.logo.svg" : {
       "ft" : 2097152,
@@ -1020,7 +1043,7 @@
       "oAP" : "\/assets\/media-gallery.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/NickelGothicV2-Regular.woff" : {
       "cB" : 0,
@@ -1063,7 +1086,7 @@
       "oAP" : "\/assets\/password-modal.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/pickup-availability.js" : {
       "bF" : 0,
@@ -1074,7 +1097,7 @@
       "oAP" : "\/assets\/pickup-availability.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/popup.js" : {
       "bF" : 0,
@@ -1085,7 +1108,7 @@
       "oAP" : "\/assets\/popup.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/PPNeueMontreal-Bold.woff" : {
       "cB" : 0,
@@ -1112,7 +1135,7 @@
       "oAP" : "\/assets\/predictive-search.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/product-model.js" : {
       "bF" : 0,
@@ -1123,7 +1146,7 @@
       "oAP" : "\/assets\/product-model.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/product-thumbnails.js" : {
       "bF" : 0,
@@ -1134,7 +1157,7 @@
       "oAP" : "\/assets\/product-thumbnails.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/quick-view.js" : {
       "bF" : 0,
@@ -1145,7 +1168,7 @@
       "oAP" : "\/assets\/quick-view.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/rtl.css" : {
       "aP" : 1,
@@ -1168,7 +1191,7 @@
       "oAP" : "\/assets\/search-modal.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/assets\/section-announcement-bar.css" : {
       "aP" : 1,
@@ -1743,7 +1766,7 @@
       "oAP" : "\/assets\/vendor-v4.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 0
+      "tS" : 1
     },
     "\/build\/sections\/image-banner.liquid" : {
       "cB" : 0,
@@ -1768,6 +1791,17 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/js\/custom-add-to-card.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-add-to-card.js",
+      "oF" : 2,
+      "sC" : 3,
+      "tS" : 1
     },
     "\/layout\/password.liquid" : {
       "cB" : 0,
@@ -2431,6 +2465,14 @@
       "oS" : 3,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/scss\/components\/untitled file" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scss\/components\/untitled file",
+      "oF" : 0
     },
     "\/scss\/custom-card-collection.scss" : {
       "aP" : 1,
@@ -3123,6 +3165,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/guarantees.liquid",
+      "oF" : 0
+    },
+    "\/sections\/header--legacy-vp.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/header--legacy-vp.liquid",
       "oF" : 0
     },
     "\/sections\/header--legacy.liquid" : {
@@ -5406,15 +5456,15 @@
     "languageDefaultsJS" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
-      "autoOutputPathRelativePath" : "\/min",
+      "autoOutputPathRelativePath" : ".\/assets\/",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
-      "autoOutputPathStyle" : 0,
+      "autoOutputPathStyle" : 1,
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
       "syntaxCheckerStyle" : 3,
-      "transpilerStyle" : 0
+      "transpilerStyle" : 1
     },
     "languageDefaultsJSON" : {
       "autoOutputAction" : 0,

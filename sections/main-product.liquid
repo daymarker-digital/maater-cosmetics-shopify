@@ -849,7 +849,7 @@
                   <button
                     type="submit"
                     name="add"
-                    class="product-form__submit product-form__button-add-to-cart button{% if block.settings.show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
+                    class="product__button-add-to-cart button button--secondary"
                     {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                     {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                   >
@@ -1214,7 +1214,7 @@
                 <button
                   type="submit"
                   name="add"
-                  class="product-form__submit button button--small"
+                  class="product-form__submit button button--small js-add-item-to-cart"
                   {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                   {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                 >
