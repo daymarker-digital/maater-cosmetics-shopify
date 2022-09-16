@@ -1,0 +1,46 @@
+{%- if card_collection and card_collection != blank -%}
+
+    {%- liquid
+
+      assign snippet_name = 'card-collection'
+      assign snippet_classes = snippet_name
+
+      if classes != blank
+        assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes
+      endif
+
+      assign description = card_collection.description | default: false
+      assign image = card_collection.featured_image | default: false
+      assign title = card_collection.title
+      assign url = card_collection.url
+
+    -%}
+
+    <article class="{{ snippet_classes }}">
+
+      <div class="{{ snippet_name }}__image">
+        <a class="{{ snippet_name }}__image-link link" href="{{ url }}" title="{{ title }}">
+          <img
+              srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
+                {%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
+                {%- if image.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
+                {%- if image.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
+                {%- if image.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%},
+                {{ image | image_url }} {{ image.width }}w"
+              src="{{ image | image_url: width: 550 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+              alt="{{ image.alt | escape | split: '#' | first }}"
+              loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+            />
+        </a>
+      </div>
+
+      <div class="{{ snippet_name }}__content">
+        <strong class="heading heading--2">{{ title }}</strong>
+      </div>
+
+    </article>
+
+{%- endif -%}

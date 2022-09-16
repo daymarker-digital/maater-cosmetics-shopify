@@ -626,6 +626,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-cart-items.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-cart-items.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-collection.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -3254,6 +3266,14 @@
       "oAP" : "\/sections\/main-collection-product-grid.liquid",
       "oF" : 0
     },
+    "\/sections\/main-list-collections--legacy.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/main-list-collections--legacy.liquid",
+      "oF" : 0
+    },
     "\/sections\/main-list-collections.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3588,6 +3608,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/css-variables.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/custom-card-collection.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/custom-card-collection.liquid",
       "oF" : 0
     },
     "\/snippets\/custom-fonts.liquid" : {

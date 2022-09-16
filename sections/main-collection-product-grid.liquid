@@ -105,7 +105,7 @@
               if section.settings.columns_mobile == '1'
                 assign grid_class = grid_class | append: ' grid--1-col-mobile'
               endif
-            
+
               if products_per_row == 3
                 assign grid_class = grid_class | append: ' grid--3-col-tablet grid--3-col-desktop'
               elsif products_per_row == 4
@@ -121,6 +121,8 @@
                   endif
                 -%}
                 <li class="grid__item">
+                  {% render 'custom-product-card', product: product %}
+                  {% comment %}
                   {% render 'product-card',
                     card_product: product,
                     media_size: section.settings.image_ratio,
@@ -134,6 +136,7 @@
                     enable_image_fill: section.settings.enable_image_fill,
                     lazy_load: lazy_load
                   %}
+                  {% endcomment %}
                 </li>
               {%- endfor -%}
             </ul>
