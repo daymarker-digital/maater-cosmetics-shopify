@@ -164,12 +164,19 @@
           "16870115-7ee2-497f-88a5-01a60ae31877": {
             "type": "menu",
             "settings": {
-              "menu": ""
+              "menu": "main-menu"
+            }
+          },
+          "f5870ca2-dccb-49b0-8676-3d8dedc1181b": {
+            "type": "menu",
+            "settings": {
+              "menu": "policies-menu"
             }
           }
         },
         "block_order": [
-          "16870115-7ee2-497f-88a5-01a60ae31877"
+          "16870115-7ee2-497f-88a5-01a60ae31877",
+          "f5870ca2-dccb-49b0-8676-3d8dedc1181b"
         ],
         "settings": {
         }
