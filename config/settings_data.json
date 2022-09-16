@@ -157,6 +157,36 @@
           "colors_background": "#ffffff",
           "colors_shadow": "#a8e8e2"
         }
+      },
+      "menu-drawer": {
+        "type": "menu-drawer",
+        "blocks": {
+          "16870115-7ee2-497f-88a5-01a60ae31877": {
+            "type": "menu",
+            "settings": {
+              "menu": "main-menu"
+            }
+          },
+          "f5870ca2-dccb-49b0-8676-3d8dedc1181b": {
+            "type": "menu",
+            "settings": {
+              "menu": "policies-menu"
+            }
+          },
+          "8237a311-49e3-40d9-a16e-b1d6b5d47b45": {
+            "type": "menu",
+            "settings": {
+              "menu": "social-menu"
+            }
+          }
+        },
+        "block_order": [
+          "16870115-7ee2-497f-88a5-01a60ae31877",
+          "f5870ca2-dccb-49b0-8676-3d8dedc1181b",
+          "8237a311-49e3-40d9-a16e-b1d6b5d47b45"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
