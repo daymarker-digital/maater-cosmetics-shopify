@@ -9,7 +9,7 @@
 
 {%- style -%}
 
-  #shopify-section-{{ section.id }} {
+  #shopify-section-{{ section.id }} .menu-drawer__main {
     background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
     {% case section.settings.background %}
       {% when 'orange' %}
@@ -24,10 +24,59 @@
 {%- endstyle -%}
 
 <div class="{{ section_name }}__main">
-  <div class="{{ section_name }}__content body-copy uppercase">
-    <a class="{{ section_name }}__link link" href="https://www.instagram.com/maatercosmetics" target="_blank" title="Follow us on Instagram">Follow The Light</a> • &copy; {{ "now" | date: "%Y" }} Very Polite Agency Inc.<br/>
+  <div class="{{ section_name }}__content">
+
+    {% if menus %}
+      {% for item in menus %}
+
+        {% assign style = item.settings.style | default: 'primary' %}
+        {% assign menu = item.settings.menu | defaul: false %}
+
+        {% if menu %}
+          <nav class="{{ section_name }}__navigation navigation navigation--{{ style }}" role="menu">
+            {% for link in linklists[menu].links -%}
+
+              {%- liquid
+
+                  assign title = link.title
+                  assign url = link.url
+                  assign target = '_self'
+
+                  if url contains 'http'
+                    assign target = '_blank'
+                  endif
+
+                -%}
+
+              <div class="navigation__item">
+                <a class="navigation__link link" href="{{ url }}" target="{{ target }}" title="{{ title }}">{{ title }}</a>
+              </div>
+
+            {%- endfor %}
+          </nav>
+        {% endif %}
+
+      {% endfor %}
+    {% endif %}
+
+    <p>Sed ac rutrum turpis, id posuere justo. Nullam finibus egestas neque eget luctus. Etiam vel dapibus erat. Sed hendrerit dui sed eros ultrices gravida a a turpis. Phasellus lectus nisl, molestie sit amet ullamcorper at, faucibus et mauris. Pellentesque consequat tempor turpis eu posuere. Nam faucibus est vitae odio blandit, sed maximus sem suscipit. Suspendisse pharetra maximus eros, at semper ante blandit eu. Nam aliquam sollicitudin purus, sed imperdiet diam. Sed lacinia tristique eros a malesuada. Nullam convallis eu risus blandit tristique. Nam eget odio convallis erat imperdiet bibendum non nec massa. Pellentesque ut accumsan leo, a euismod tellus.</p>
+
+<p>Pellentesque condimentum ultrices est eget hendrerit. Integer molestie magna massa, sit amet dapibus erat condimentum non. Cras egestas odio ac diam laoreet condimentum. Donec consectetur interdum enim at convallis. Praesent ornare volutpat dapibus. Nunc ornare, nibh at viverra malesuada, mi erat scelerisque dui, ut posuere elit purus id enim. Aliquam mollis libero at arcu mattis finibus. Praesent viverra sollicitudin nunc quis feugiat. Sed a justo pulvinar, sollicitudin mauris in, lobortis nibh. Praesent porttitor at ligula vitae laoreet. Nunc placerat lectus a aliquet ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas malesuada lectus ut magna varius, vitae venenatis nisi imperdiet. Nam ut egestas mi, ut pretium arcu.</p>
+
+<p>hasellus nulla nulla, fringilla rhoncus imperdiet ac, luctus id diam. Donec vel sapien feugiat, placerat tellus vel, pulvinar mi. Cras sed pulvinar velit. Vivamus eget finibus erat. Nulla eu consequat enim. Proin eget erat aliquet, pretium magna ac, scelerisque arcu. Integer ornare lorem ligula, sollicitudin dignissim ipsum iaculis vel. Sed facilisis nulla leo. Duis efficitur egestas eros in vehicula.</p>
+
+<p>Nulla facilisi. Quisque cursus venenatis dolor, id porta justo cursus et. Donec urna felis, congue vel bibendum non, ultricies ut massa. Suspendisse semper augue velit, nec blandit enim iaculis a. Nulla vel egestas ligula. Morbi mi neque, luctus et nisi accumsan, tempus scelerisque libero. Nunc quis suscipit eros. In velit leo, tempus nec neque id, tempor tempor sapien. Pellentesque pharetra magna in facilisis imperdiet. Proin scelerisque rutrum neque eu dapibus.</p>
+
+<p>Vivamus consectetur velit vestibulum, dictum quam et, convallis enim. Vestibulum molestie arcu dolor, eu rutrum dui laoreet sit amet. Nullam luctus auctor augue, eu tempus ex efficitur vel. Phasellus sit amet mattis tortor. Aenean augue tortor, porttitor sed maximus vel, maximus id diam. Aliquam pharetra dolor risus, non tincidunt tortor dignissim at. Proin mollis volutpat metus, ac fringilla elit faucibus quis. Maecenas hendrerit aliquam ipsum, quis vehicula quam rutrum nec.</p>
+
+<p>Maecenas aliquet ipsum a porttitor tincidunt. Proin sagittis lectus gravida diam hendrerit accumsan. Quisque pharetra dapibus nulla, a tempor felis malesuada non. Morbi dapibus nibh a leo consequat, vitae vulputate lorem gravida. Morbi aliquam nunc quis leo varius dictum. Donec feugiat fermentum lorem, non vehicula massa fermentum vel. Vestibulum a mauris erat. Morbi pretium lobortis elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+<p>Pellentesque interdum, dui eu facilisis sollicitudin, diam ipsum lobortis augue, malesuada fermentum nunc tellus eu nibh. Aliquam erat volutpat. In ullamcorper nisl id commodo laoreet. Suspendisse a nisl vitae enim aliquet dapibus. Donec mollis, arcu in semper pellentesque, metus mauris mattis lorem, vel commodo odio est a diam. Quisque volutpat ligula non felis elementum, eget suscipit dolor pretium. Phasellus aliquet ac nisl a pretium. Vivamus et aliquam velit, non malesuada quam. Vivamus congue molestie nisl eu vestibulum. Maecenas ut sodales ligula.</p>
+
+  <p><a class="{{ section_name }}__link link" href="https://www.instagram.com/maatercosmetics" target="_blank" title="Follow us on Instagram">Follow The Light</a> • &copy; {{ "now" | date: "%Y" }} Very Polite Agency Inc.<br/>
     Made on Earth by Maater Cosmetics Vancouver, British Columbia, Canada, V6B 3H6<br/>
-    [earth 17h 45m  40.0409s −29° 00± 28.118± 101101100101101001000010110001]
+    [earth 17h 45m  40.0409s −29° 00± 28.118± 101101100101101001000010110001]</p>
+
   </div>
 </div>
 
@@ -88,6 +137,12 @@
 					  "label": "Menu",
 					  "type": "link_list",
 					  "id": "menu"
+				  },
+          {
+            "label": "Include cart link",
+					  "type": "checkbox",
+            "default": false,
+            "id": "include_cart_link"
 				  }
         ]
       }

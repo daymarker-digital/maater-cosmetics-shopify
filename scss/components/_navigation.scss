@@ -1,6 +1,9 @@
 .navigation {
 
   display: inline-flex;
+  width: auto;
+  justify-content: flex-start;
+  align-items: center;
 
   svg {
     display: block;
@@ -9,8 +12,41 @@
     fill: currentColor;
   }
 
-  &__item {}
+  &__item,
+  &__link {
+    display: block;
+    line-height: 1;
+  }
 
-  &__link {}
+  &__item {
+    text-transform: none;
+  }
+
+  &__link {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 1;
+  }
+
+  &--primary {
+    .navigation {
+      &__item {
+        font-family: 'PP Neue Montreal Bold', sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        letter-spacing: -.02em;
+      }
+    }
+  }
+
+  &--secondary {
+    .navigation {
+      &__item {
+        font-family: "Akkurat Mono LL", serif;
+        font-size: 1.35rem;
+      }
+    }
+  }
 
 }
