@@ -7,13 +7,25 @@
 
 -%}
 
+{%- style -%}
 
-<div class="footer__main">
+  #shopify-section-{{ section.id }} {
+    background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
+    {% case section.settings.background %}
+      {% when 'orange' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% when 'white' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% else %}
+        color: rgba(var(--theme-colour-white), 1);
+    {% endcase %}
+  }
 
+{%- endstyle -%}
 
-
-  <div class="footer__content body-copy uppercase">
-    <a class="footer__link link" href="https://www.instagram.com/maatercosmetics" target="_blank" title="Follow us on Instagram">Follow The Light</a> • &copy; {{ "now" | date: "%Y" }} Very Polite Agency Inc.<br/>
+<div class="{{ section_name }}__main">
+  <div class="{{ section_name }}__content body-copy uppercase">
+    <a class="{{ section_name }}__link link" href="https://www.instagram.com/maatercosmetics" target="_blank" title="Follow us on Instagram">Follow The Light</a> • &copy; {{ "now" | date: "%Y" }} Very Polite Agency Inc.<br/>
     Made on Earth by Maater Cosmetics Vancouver, British Columbia, Canada, V6B 3H6<br/>
     [earth 17h 45m  40.0409s −29° 00± 28.118± 101101100101101001000010110001]
   </div>
@@ -30,12 +42,48 @@
     "name": "Menu Drawer",
     "tag": "section",
     "class": "menu-drawer",
-    "settings": [],
+    "settings": [
+      {
+			  "label": "Background",
+			  "type": "select",
+			  "options": [{
+					  "value": "black",
+					  "label": "Black"
+				  },
+				  {
+					  "value": "orange",
+					  "label": "Orange"
+				  },
+				  {
+					  "value": "white",
+					  "label": "White"
+				  }
+			  ],
+			  "default": "black",
+			  "id": "background"
+		  }
+    ],
 	  "blocks": [
       {
 			  "name": "Menu",
 			  "type": "menu",
 			  "settings": [
+          {
+			      "label": "Style",
+			      "type": "select",
+			      "options": [
+              {
+                "label": "Primary",
+					      "value": "primary"
+				      },
+				      {
+                "label": "Secondary",
+					      "value": "secondary"
+				      }
+			      ],
+			      "default": "primary",
+			      "id": "style"
+		      },
           {
 					  "label": "Menu",
 					  "type": "link_list",
