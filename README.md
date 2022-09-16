@@ -10,4 +10,8 @@ Production: 126465736843
 ## Todo
 ## Phase 1.0
 ### Templates
-- [ ] Homepage
+- [x] Homepage
+- [ ] Mobile Menu (About, Products, Cart)
+- [ ] Add the Ajax cart
+- [ ] Cart
+

@@ -121,21 +121,21 @@
                   endif
                 -%}
                 <li class="grid__item">
-                  {% render 'custom-product-card', product: product %}
+                  {% render 'custom-card-product', card_product: product %}
                   {% comment %}
-                  {% render 'product-card',
-                    card_product: product,
-                    media_size: section.settings.image_ratio,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_quick_buy: section.settings.show_quick_buy,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    enable_quick_view: section.settings.enable_quick_view,
-                    enable_color_swatches: section.settings.enable_color_swatches,
-                    enable_countdown: section.settings.enable_countdown,
-                    enable_image_fill: section.settings.enable_image_fill,
-                    lazy_load: lazy_load
-                  %}
+                    {% render 'product-card',
+                      card_product: product,
+                      media_size: section.settings.image_ratio,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_quick_buy: section.settings.show_quick_buy,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      enable_quick_view: section.settings.enable_quick_view,
+                      enable_color_swatches: section.settings.enable_color_swatches,
+                      enable_countdown: section.settings.enable_countdown,
+                      enable_image_fill: section.settings.enable_image_fill,
+                      lazy_load: lazy_load
+                    %}
                   {% endcomment %}
                 </li>
               {%- endfor -%}

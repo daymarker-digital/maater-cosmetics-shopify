@@ -638,28 +638,17 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/assets\/custom-collection.scss" : {
+    "\/assets\/custom-collection.css" : {
       "aP" : 1,
       "bl" : 0,
+      "ci" : 0,
       "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
+      "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 2,
       "oAP" : "\/assets\/custom-collection.css",
       "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/assets\/custom-collection.scss.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/custom-collection.scss.liquid",
-      "oF" : 0
+      "pg" : 0
     },
     "\/assets\/custom-featured-collection.css" : {
       "aP" : 1,
@@ -2026,6 +2015,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -2435,6 +2432,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/custom-card-collection.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-card-collection.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/custom-card-product.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -2460,6 +2472,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/custom-cart-items.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/custom-collection.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-collection.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -3616,6 +3643,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/custom-card-collection.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/custom-card-product.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/custom-card-product.liquid",
       "oF" : 0
     },
     "\/snippets\/custom-fonts.liquid" : {

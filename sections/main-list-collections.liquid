@@ -19,6 +19,9 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
+<link rel="stylesheet" href="{{ 'custom-card-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-card-collection.css' | asset_url | stylesheet_tag }}</noscript>
+
 <div class="page-width section-{{ section.id }}-padding">
   <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}">
     <h1 class="title heading heading--1 uppercase">{{ section.settings.heading | escape }}</h1>
@@ -37,7 +40,7 @@
     endif
   -%}
 
-  <ul class="collection-list grid grid--2-col{% if section.settings.columns_mobile == '1' %} grid--1-col-mobile{% endif %}{% if collections.size < 5 %} grid--{{ collections.size }}-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.apply_overlay %} collection-list--contrast{% endif %}" role="list">
+  <ul class="collection-list grid grid--2-col" role="list">
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item" data-index="{{ forloop.index }}">
         {% render 'custom-card-collection', card_collection: collection %}

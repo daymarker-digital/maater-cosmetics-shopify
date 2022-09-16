@@ -71,8 +71,8 @@
 
     {% case template.name %}
       {%  when 'collection' %}
-        <link rel="stylesheet" href="{{ 'custom-collection.scss.css' | asset_url }}" media="print" onload="this.media='all'">
-        <noscript>{{ 'custom-collection.scss.css' | asset_url | stylesheet_tag }}</noscript>
+        <link rel="stylesheet" href="{{ 'custom-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+        <noscript>{{ 'custom-collection.css' | asset_url | stylesheet_tag }}</noscript>
       {%  when 'list-collections' %}
         <link rel="stylesheet" href="{{ 'custom-list-collection.scss.css' | asset_url }}" media="print" onload="this.media='all'">
         <noscript>{{ 'custom-list-collection.scss.css' | asset_url | stylesheet_tag }}</noscript>
