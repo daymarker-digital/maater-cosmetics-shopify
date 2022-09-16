@@ -35,9 +35,12 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
+{{ 'custom-cart-items.css' | asset_url | stylesheet_tag }}
+
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %} section-{{ section.id }}-padding">
+
   <div class="title-wrapper">
-    <h1 class="title">{{ 'sections.cart.title' | t }}</h1>
+    <h1 class="heading heading--1 uppercase">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="link link--underline">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
