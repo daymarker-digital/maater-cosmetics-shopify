@@ -36,7 +36,7 @@
 <div class="page-width{% if cart == empty %} is-empty{% endif %} section-{{ section.id }}-padding" id="main-cart-footer" data-id="{{ section.id }}">
   <div class="cart__footer">
     <div>
-      {%- if gift_wrapping != nil -%}
+      {%- if false -%}
         <gift-wrapping class="gift-wrapping"
           data-gift-wrap-id="{{ gift_wrap_id }}"
           data-gift-wrapping="{{ cart.attributes.gift-wrapping | escape }}"
@@ -149,7 +149,7 @@
               {%- liquid
                 assign free_shipping_minimum_amounts = block.settings.minimum_amount | remove: ' ' | split: ','
                 assign show_free_shipping_message = false
-      
+
                 if free_shipping_minimum_amounts.size > 1
                   for minimum_amount in free_shipping_minimum_amounts
                     assign minimum_amount_parts = minimum_amount | split: ':'
@@ -168,7 +168,7 @@
 
               {%- if show_free_shipping_message -%}
                 {%- assign minimum_amount_in_cents = free_shipping_minimum_amount | times: 100 -%}
-      
+
                 <div class="free-shipping{% if forloop.last == true %} is-last{% endif %}">
                   {%- if cart.total_price >= minimum_amount_in_cents -%}
                     <span class="free-shipping__text free-shipping__text--success">{{ 'general.cart.free_shipping.congratulations_html' | t }}</span>

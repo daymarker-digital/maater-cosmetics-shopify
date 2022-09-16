@@ -1,5 +1,9 @@
 .header {
 
+  .header__mobile-menu-button {
+    background: transparent;
+  }
+
   .scroll-position--scrolled & {}
 
   .mobile-menu--active & {}
