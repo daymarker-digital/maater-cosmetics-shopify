@@ -55,7 +55,7 @@
         "full_width": true,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "mobile_image_ratio": "400px",
+        "mobile_image_ratio": "300px",
         "stack_images_on_mobile": true,
         "show_text_below": false,
         "colors_text": "#ffffff",
@@ -298,25 +298,25 @@
         "c1782c6e-f390-4656-891d-b63fb7edfb1c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MAATER--image-grid-01-100.jpg"
+            "image": "shopify:\/\/shop_images\/IGpanel__1.jpg"
           }
         },
         "3329d4af-bbfa-4d30-9845-fd3a321f2c13": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MAATER--image-grid-02-100.jpg"
+            "image": "shopify:\/\/shop_images\/IGpanel__2.jpg"
           }
         },
         "843054ba-5367-4aa2-9172-910e3745be69": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MAATER--image-grid-03-100.jpg"
+            "image": "shopify:\/\/shop_images\/IGpanel__3.jpg"
           }
         },
         "0c9a6aea-d9c0-486a-a156-ba5f16d0237d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/MAATER--image-grid-04-100.jpg"
+            "image": "shopify:\/\/shop_images\/IGpanel__4.jpg"
           }
         }
       },
