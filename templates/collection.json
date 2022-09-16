@@ -18,8 +18,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_row": 4,
-        "rows_per_page": 2,
+        "products_per_row": 2,
+        "rows_per_page": 5,
         "columns_mobile": "2",
         "enable_sticky_facet": false,
         "enable_filtering": false,
