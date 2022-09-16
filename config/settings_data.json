@@ -165,21 +165,24 @@
             "type": "menu",
             "settings": {
               "style": "primary",
-              "menu": "main-menu"
+              "menu": "main-menu",
+              "include_cart_link": true
             }
           },
           "f5870ca2-dccb-49b0-8676-3d8dedc1181b": {
             "type": "menu",
             "settings": {
               "style": "secondary",
-              "menu": "policies-menu"
+              "menu": "policies-menu",
+              "include_cart_link": false
             }
           },
           "8237a311-49e3-40d9-a16e-b1d6b5d47b45": {
             "type": "menu",
             "settings": {
               "style": "secondary",
-              "menu": "social-menu"
+              "menu": "social-menu",
+              "include_cart_link": false
             }
           }
         },
