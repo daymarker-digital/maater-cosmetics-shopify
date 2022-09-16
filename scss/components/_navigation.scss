@@ -1,3 +1,5 @@
+@use "../mixins/body-copy" as *;
+
 .navigation {
 
   display: inline-flex;
@@ -24,6 +26,7 @@
 
   &__link {
     font-family: inherit;
+    font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
     line-height: 1;
@@ -43,8 +46,7 @@
   &--secondary {
     .navigation {
       &__item {
-        font-family: "Akkurat Mono LL", serif;
-        font-size: 1.35rem;
+        @include body-copy(1);
       }
     }
   }
