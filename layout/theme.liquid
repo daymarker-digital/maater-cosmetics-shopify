@@ -34,6 +34,7 @@
 
     <script src="{{ 'vendor-v4.js' | asset_url | split: '?' | first }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-menu-drawer.js' | asset_url }}" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer="defer"></script>
 
     {{ content_for_header }}
@@ -112,6 +113,8 @@
     {% render 'transition-cover' %}
 
     <div class="transition-body">
+
+      {% section 'menu-drawer' %}
       {% section 'announcement-bar' %}
       {% section 'header' %}
 
@@ -122,6 +125,7 @@
 
         {% section 'footer' %}
       </div>
+
     </div>
 
     {% section 'popup' %}
@@ -226,8 +230,6 @@
     {%- endif -%}
 
     {% render 'custom-fonts' %}
-
-    <script src="{{ 'custom-add-to-cart.js' | asset_url }}" defer="defer"></script>
 
   </body>
 </html>

@@ -1,0 +1,1 @@
+"use strict";(document.querySelectorAll(".js-toggle-menu-drawer")||[]).forEach((function(e){e.addEventListener("click",(function(e){alert("clicked!")}))}));

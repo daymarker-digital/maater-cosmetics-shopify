@@ -780,6 +780,17 @@
       "oAP" : "\/assets\/custom-list-collection.scss.liquid",
       "oF" : 0
     },
+    "\/assets\/custom-menu-drawer.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-menu-drawer.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/assets\/custom-newsletter.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1001,14 +1012,25 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/assets\/global.js" : {
+    "\/assets\/global--legacy.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/assets\/global.js",
+      "oAP" : "\/assets\/global--legacy.js",
       "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/assets\/global.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/global.js",
+      "oF" : 1,
       "sC" : 3,
       "tS" : 1
     },
@@ -1041,6 +1063,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/media-gallery.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/assets\/menu-drawer.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/menu-drawer.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
@@ -1800,6 +1833,17 @@
       "oA" : 0,
       "oAP" : "\/assets\/custom-add-to-card.js",
       "oF" : 2,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/js\/custom-menu-drawer.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-menu-drawer.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 1
     },
@@ -3461,6 +3505,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/map.liquid",
+      "oF" : 0
+    },
+    "\/sections\/menu-drawer.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/menu-drawer.liquid",
       "oF" : 0
     },
     "\/sections\/mini-cart.liquid" : {
