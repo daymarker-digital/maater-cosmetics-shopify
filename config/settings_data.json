@@ -157,6 +157,22 @@
           "colors_background": "#ffffff",
           "colors_shadow": "#a8e8e2"
         }
+      },
+      "menu-drawer": {
+        "type": "menu-drawer",
+        "blocks": {
+          "16870115-7ee2-497f-88a5-01a60ae31877": {
+            "type": "menu",
+            "settings": {
+              "menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "16870115-7ee2-497f-88a5-01a60ae31877"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
