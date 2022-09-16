@@ -164,18 +164,21 @@
           "16870115-7ee2-497f-88a5-01a60ae31877": {
             "type": "menu",
             "settings": {
+              "style": "primary",
               "menu": "main-menu"
             }
           },
           "f5870ca2-dccb-49b0-8676-3d8dedc1181b": {
             "type": "menu",
             "settings": {
+              "style": "secondary",
               "menu": "policies-menu"
             }
           },
           "8237a311-49e3-40d9-a16e-b1d6b5d47b45": {
             "type": "menu",
             "settings": {
+              "style": "secondary",
               "menu": "social-menu"
             }
           }
@@ -186,6 +189,7 @@
           "8237a311-49e3-40d9-a16e-b1d6b5d47b45"
         ],
         "settings": {
+          "background": "orange"
         }
       }
     },
