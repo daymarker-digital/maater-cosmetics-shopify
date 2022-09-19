@@ -194,6 +194,12 @@
         "settings": {
           "background": "orange"
         }
+      },
+      "user-notification": {
+        "type": "user-notification",
+        "settings": {
+          "background": "orange"
+        }
       }
     },
     "content_for_index": [
