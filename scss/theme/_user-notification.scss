@@ -1,4 +1,5 @@
 @use "../mixins/general" as *;
+@use "../mixins/ui" as *;
 
 .user-notification {
   position: fixed;
@@ -10,4 +11,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    @include ui();
+    display: inline-block;
+    line-height: 0.95;
+    background: none;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    &:focus,
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
 }

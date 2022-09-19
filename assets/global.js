@@ -1565,12 +1565,14 @@ class ProductForm extends HTMLElement {
     console.log( 'notifyUser :: response ::', response );
     if ( element && elementContent ) {
       let height = element.offsetHeight || 100;
-      elementContent.innerHTML = `<strong class="heading--secondary">${response.product_title} Added to Cart!</strong>`;
+      elementContent.innerHTML = `
+        <strong class="heading--secondary">${response.product_title} Added to <a href="${window.routes.cart_url}" title="Cart" target="_self">Cart</a>!</strong>
+      `;
       anime({
         targets: element,
         translateY: [
           { value: -(height), duration: 850, delay: 0 },
-          { value: 0, duration: 650, delay: 3500 }
+          { value: 0, duration: 650, delay: 50000 }
         ],
         easing: 'easeOutElastic(1, .8)',
         loop: 1,

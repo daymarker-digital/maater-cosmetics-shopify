@@ -1,5 +1,7 @@
 @use "./mixins/general" as *;
+@use "./mixins/body-copy" as *;
 @use "./mixins/button" as *;
+@use "./mixins/link" as *;
 
 .product {
 
@@ -22,12 +24,40 @@
     }
   }
 
+  .pickup-availability {
+    &-button {
+      @include link(underlined);
+      margin-top: 15px;
+    }
+    &-info {
+      @include body-copy(1);
+      p {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+      }
+    }
+    &-button,
+    &-info {
+      font-size: 10px;
+    }
+  }
 
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {} // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
+
+    .pickup-availability {
+      &-button,
+      &-info {
+        font-size: 12px;
+      }
+    }
+
+  } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
