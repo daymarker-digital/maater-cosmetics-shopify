@@ -2,11 +2,11 @@
 
 .menu-drawer {
 
-  border: 1px solid pink;
+  transition: width 300ms, right 300ms;
   position: fixed;
   width: 100%;
   height: 100%;
-  right: 0;
+  right: -100%;
   top: 0;
   z-index: 100;
   display: flex;
@@ -45,10 +45,15 @@
   }
 
   &__main {
-    transition: width 300ms;
     width: 100%;
     height: 100%;
     overflow: auto;
+  }
+
+  .scroll-position--scrolled & {}
+
+  .mobile-menu--active & {
+    right: 0;
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -57,9 +62,8 @@
 
   @include breakpoint(lg) {
 
-    &__main {
-      width: 50%;
-    }
+    width: 50%;
+    right: -50%;
 
   } // min width lg
 

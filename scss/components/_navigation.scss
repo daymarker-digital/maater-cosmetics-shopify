@@ -25,11 +25,23 @@
   }
 
   &__link {
+    transition: opacity 300ms;
+    background: none;
     font-family: inherit;
     font-size: inherit;
     font-style: inherit;
     font-weight: inherit;
     line-height: 1;
+    opacity: 1;
+    &.active,
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+      background-position: unset;
+      background-size: unset;
+      text-decoration: none;
+      border: none;
+    }
   }
 
   &--primary {

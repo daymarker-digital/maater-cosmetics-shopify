@@ -46,6 +46,7 @@
 
               {%- liquid
 
+                  assign active = link.active
                   assign title = link.title
                   assign url = link.url
                   assign target = '_self'
@@ -57,7 +58,7 @@
                 -%}
 
               <div class="navigation__item">
-                <a class="navigation__link link" href="{{ url }}" target="{{ target }}" title="{{ title }}">
+                <a class="navigation__link link{% if active %} active{% endif %}" href="{{ url }}" target="{{ target }}" title="{{ title }}">
                   <span class="navigation__link-title link__title">{{ title }}</span>
                 </a>
               </div>
