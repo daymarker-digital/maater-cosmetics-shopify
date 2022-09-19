@@ -1,1 +1,1 @@
-.cart-items{background:red;font-family:"Akkurat Mono",monospace,serif}
+.cart-items{font-family:"Akkurat Mono",monospace,serif}.cart-items thead th{color:inherit;font-style:normal;font-family:"Akkurat Mono LL",serif;text-transform:none;font-size:1.35rem;line-height:1.3333;font-size:11px}@media(min-width: 990px){.cart-items thead th{font-size:1.6rem}}.cart-items__product-tile{color:red;font-weight:normal;font-style:normal}.cart-items__product-tile-link{color:inherit}@media(min-width: 750px){.cart-items thead th{font-size:12px}}

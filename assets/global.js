@@ -1565,7 +1565,7 @@ class ProductForm extends HTMLElement {
     console.log( 'notifyUser :: response ::', response );
     if ( element && elementContent ) {
       let height = element.offsetHeight || 100;
-      elementContent.innerHTML = `<strong class="uppercase heading--secondary">${response.product_title} Added to Cart!</strong>`;
+      elementContent.innerHTML = `<strong class="heading--secondary">${response.product_title} Added to Cart!</strong>`;
       anime({
         targets: element,
         translateY: [

@@ -1,4 +1,8 @@
 {%- liquid
+
+  assign section_name = 'cart-items'
+  assign section_id = section_name | append: '--' | append: section.id
+
   if linklists.gift-wrapping.links.size > 0 and linklists.gift-wrapping.links.first.type == 'product_link'
     assign gift_wrapping = linklists.gift-wrapping.links.first
 
@@ -12,6 +16,8 @@
     endfor
     assign items_in_cart = cart.item_count | minus: gift_wraps_in_cart
   endif
+
+
 -%}
 
 {%- style -%}
@@ -41,7 +47,7 @@
 
   <div class="title-wrapper">
     <h1 class="heading heading--1 uppercase">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="link link--underline">{{ 'general.continue_shopping' | t }}</a>
+    <a href="{{ routes.all_products_collection_url }}" class="button button--primary">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <div class="cart__warnings">
@@ -86,12 +92,15 @@
                   </td>
 
                   <td class="cart-item__details">
+
                     {%- if section.settings.show_vendor -%}
                       <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                     {%- endif -%}
 
                     <div>
-                      <a href="{{ item.product.url }}" class="cart-item__name link">{{ item.product.title | escape }}</a>
+                      <strong class="{{ section_name }}__product-title">
+                        <a href="{{ item.product.url }}" class="{{ section_name }}__product-title-link link">{{ item.product.title | escape }}</a>
+                      </strong>
                     </div>
 
                     {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
