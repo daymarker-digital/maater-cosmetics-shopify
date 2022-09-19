@@ -36,6 +36,8 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
+{{ 'custom-cart-footer.css' | asset_url | stylesheet_tag }}
+
 <div class="page-width{% if cart == empty %} is-empty{% endif %} section-{{ section.id }}-padding" id="main-cart-footer" data-id="{{ section.id }}">
   <div class="cart__footer">
 
@@ -94,7 +96,7 @@
       {%- endif -%}
     </div>
 
-    <div>
+    <div class="cart__footer-main">
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'subtotal' -%}
@@ -131,6 +133,7 @@
               </small>
             </div>
           {%- when 'buttons' -%}
+
             <div class="cart__ctas" {{ block.shopify_attributes }}>
 
               <button type="submit" class="cart__update-button button button--primary" form="cart">
@@ -148,6 +151,7 @@
                 {{ content_for_additional_checkout_buttons }}
               </div>
             {%- endif -%}
+
           {%- when 'free_shipping' -%}
             {%- if block.settings.minimum_amount != blank -%}
               {%- liquid
@@ -192,6 +196,7 @@
       {% endfor %}
 
       <div id="cart-errors" class="form__message errors"></div>
+
     </div>
 
   </div>

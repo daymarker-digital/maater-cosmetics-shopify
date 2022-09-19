@@ -1,0 +1,16 @@
+@use "./mixins/general" as *;
+
+.cart__footer {
+
+  .cart__ctas {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    .cart__update-button,
+    .cart__checkout-button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+}

@@ -2536,6 +2536,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/custom-cart-footer.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/custom-cart-footer.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/custom-cart-items.scss" : {
       "aP" : 1,
       "bl" : 0,
