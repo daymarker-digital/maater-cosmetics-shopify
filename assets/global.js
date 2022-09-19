@@ -1515,7 +1515,7 @@ class ProductForm extends HTMLElement {
         }
         // #VP
         this.updateCartTotal();
-        this.updateUser(response);
+        this.notifyUser(response);
         if (this.miniCart) {
           this.miniCart.renderContents(response);
         }
@@ -1558,10 +1558,23 @@ class ProductForm extends HTMLElement {
     });
   }
 
-  updateUser(response = {}) {
-    console.log( 'updateUser :: response ::', response );
-    if ( document.getElementById('abs').length ) {
-
+  // #VP
+  notifyUser(response = {}) {
+    let element = document.getElementById('shopify-section-user-notification') || false;
+    let elementContent = document.querySelector('#shopify-section-user-notification .user-notification__content') || false;
+    console.log( 'notifyUser :: response ::', response );
+    if ( element && elementContent ) {
+      let height = element.offsetHeight || 100;
+      elementContent.innerHTML = `<strong class="uppercase heading--secondary">${response.product_title} Added to Cart!</strong>`;
+      anime({
+        targets: element,
+        translateY: [
+          { value: -(height), duration: 850, delay: 0 },
+          { value: 0, duration: 650, delay: 3500 }
+        ],
+        easing: 'easeOutElastic(1, .8)',
+        loop: 1,
+      });
     }
   }
 
