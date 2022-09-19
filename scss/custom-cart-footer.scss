@@ -18,14 +18,18 @@
   .cart__ctas {
     display: flex;
     width: 100%;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin-top: 40px;
     .cart__update-button,
     .cart__checkout-button {
       width: 100%;
       max-width: none;
-      margin-left: 0;
-      margin-right: 0;
+    }
+    button {
+      margin: 0;
+      & + button {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -36,6 +40,22 @@
     flex-flow: row wrap;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .cart__dynamic-checkout-buttons {
+    ul {
+      display: flex !important;
+      flex-flow: row nowrap !important;
+      width: 100% !important;
+      margin-top: 20px !important;
+    }
+    li {
+      width: 100% !important;
+      margin: 0 !important;
+      & + li {
+        margin-left: 20px !important;
+      }
+    }
   }
 
   .js-contents {
@@ -54,11 +74,10 @@
 
     .cart__ctas {
       display: flex;
-      width: 40%;
-      flex-flow: row wrap;
+      align-items: flex-end;
       .cart__update-button,
       .cart__checkout-button {
-        width: 100%;
+        width: 40%;
         max-width: none;
       }
     }

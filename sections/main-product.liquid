@@ -538,12 +538,10 @@
               {{- product.selected_or_first_available_variant.sku -}}
             </p>
           {%- when 'title' -%}
-            <div class="product__title" {{ block.shopify_attributes }}>
-              <h1 class="{{ block.settings.title_size }}">
-                <strong>{{ product.title | escape }}</strong>
-                {% render 'custom-price', product: product %}
-              </h1>
-            </div>
+            <h1 class="product__title heading--2" {{ block.shopify_attributes }}>
+              <strong>{{ product.title | escape }}</strong>
+              {% render 'custom-price', product: product %}
+            </h1>
           {%- when 'description' -%}
             <div class="product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
           {%- when 'custom_liquid' -%}
