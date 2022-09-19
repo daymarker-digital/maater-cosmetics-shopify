@@ -33,14 +33,15 @@
   }
 
   &__mobile-menu-button {
+    transition: opacity 300ms;
     font-family: "PP Neue Montreal Bold", sans-serif;
-    color: rgba(255,255,255,1);
+    color: #fff !important;
     border: none !important;
     min-width: 0;
-    color: #fff;
     position: absolute;
     right: 24px;
     background: transparent;
+    opacity: 1;
     .button__title {
       font-size: 48px;
       font-weight: 100;
@@ -50,7 +51,7 @@
     }
     &:focus,
     &:hover {
-      color: rgba(255,255,255,0.5);
+      opacity: 0.5;
     }
   }
 
@@ -61,9 +62,5 @@
     }
 
   }
-
-  .scroll-position--scrolled & {}
-
-  .mobile-menu--active & {}
 
 }

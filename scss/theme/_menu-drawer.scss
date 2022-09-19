@@ -42,12 +42,45 @@
 
   &__content {
     padding: 7.5%;
+    padding-top: 0;
+  }
+
+  &__header {
+    height: var(--theme-header-total-height);
+    display: flex;
+    width: 100%;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   &__main {
     width: 100%;
     height: 100%;
     overflow: auto;
+  }
+
+  &__mobile-menu-button {
+    transition: opacity 300ms;
+    font-family: "PP Neue Montreal Bold", sans-serif;
+    color: inherit;
+    border: none !important;
+    min-width: 0;
+    position: absolute;
+    right: 24px;
+    background: transparent;
+    opacity: 1;
+    .button__title {
+      font-size: 48px;
+      font-weight: 100;
+    }
+    &:after {
+      display: none;
+    }
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   .scroll-position--scrolled & {}

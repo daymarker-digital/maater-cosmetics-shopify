@@ -3,6 +3,11 @@ const getArrayOfElementsByTag = ( $elements = [ 'body', 'footer', 'header', 'mai
   return filteredElements.map( tag => document.getElementsByTagName( tag )[0] ) || [];
 };
 
+const getElementHeightByTag = ( $tag = '' ) => {
+  let element = document.getElementsByTagName( $tag )[0] || false;
+  return element ? element.offsetHeight : 0;
+};
+
 const removeClass = ( $class = '', $elements = [] ) => {
   if ( $class && $elements.length ) {
     for( let i = 0; i < $elements.length; i++ ) {
@@ -11,6 +16,16 @@ const removeClass = ( $class = '', $elements = [] ) => {
       }
     }
   }
+};
+
+const setCSSVariable = ( $id = '', $value = '' ) => {
+  if ( $id && $value ) {
+    document.documentElement.style.setProperty( '--' + $id, $value );
+  }
+};
+
+const setHeaderHeightTotalCSSVariable = () => {
+  setCSSVariable( 'theme-header-total-height', getElementHeightByTag('header') + 'px' );
 };
 
 const toggleClass = ( $class = '', $elements = [] ) => {
@@ -22,6 +37,21 @@ const toggleClass = ( $class = '', $elements = [] ) => {
     }
   }
 };
+
+let throttled = false;
+
+setHeaderHeightTotalCSSVariable();
+
+// ---------------------------------------- On resize, execute functions
+window.addEventListener( 'resize', function(e) {
+  if ( !throttled ) {
+    window.requestAnimationFrame(function() {
+      setHeaderHeightTotalCSSVariable();
+      throttled = false;
+    });
+    throttled = true;
+  }
+});
 
 const DrawerMenu = (() => {
 
@@ -38,7 +68,7 @@ const DrawerMenu = (() => {
   const toggleMobileMenu = () => {
     trigger.forEach( el => {
       el.addEventListener('click',() => {
-        console.log( '.js-toggle-menu-drawer clicked!' );
+        setHeaderHeightTotalCSSVariable();
         toggleClass( 'mobile-menu--active', elements );
         el.classList.toggle( 'is-active' );
       });

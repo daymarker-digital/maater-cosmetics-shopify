@@ -9,7 +9,7 @@
 
 {%- style -%}
 
-  #shopify-section-{{ section.id }} .menu-drawer__main {
+  #shopify-section-{{ section.id }} {
     background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
     {% case section.settings.background %}
       {% when 'orange' %}
@@ -26,7 +26,9 @@
 <div class="{{ section_name }}__main">
 
   <div class="{{ section_name }}__header">
-
+    <button class="{{ section_name }}__mobile-menu-button button js-toggle-menu-drawer" type="button">
+      <span class="button__title">++</span>
+    </button>
   </div>
 
   <div class="{{ section_name }}__content">

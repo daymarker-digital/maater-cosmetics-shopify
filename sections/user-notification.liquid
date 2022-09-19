@@ -1,0 +1,64 @@
+{%- liquid
+
+  assign section_name = 'user-notification'
+  assign section_id = section_name | append: '--' | append: section.id
+
+-%}
+
+{%- style -%}
+
+  #shopify-section-{{ section.id }} {
+    background: rgba(var(--theme-colour-{{ section.settings.background }}), 1);
+    {% case section.settings.background %}
+      {% when 'orange' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% when 'white' %}
+        color: rgba(var(--theme-colour-black), 1);
+      {% else %}
+        color: rgba(var(--theme-colour-white), 1);
+    {% endcase %}
+  }
+
+{%- endstyle -%}
+
+<div class="{{ section_name }}__main">
+  <div class="{{ section_name }}__content">
+
+  </div>
+</div>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "User Notification",
+    "tag": "section",
+    "class": "section section--user-notification user-notification",
+    "settings": [
+      {
+			  "label": "Background",
+			  "type": "select",
+			  "options": [{
+					  "value": "black",
+					  "label": "Black"
+				  },
+				  {
+					  "value": "orange",
+					  "label": "Orange"
+				  },
+				  {
+					  "value": "white",
+					  "label": "White"
+				  }
+			  ],
+			  "default": "black",
+			  "id": "background"
+		  }
+    ],
+	  "blocks": []
+  }
+{% endschema %}

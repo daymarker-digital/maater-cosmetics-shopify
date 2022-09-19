@@ -3046,6 +3046,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/theme\/_user-notification.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_user-notification.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/sections\/announcement-bar.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3692,6 +3707,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/testimonials.liquid",
+      "oF" : 0
+    },
+    "\/sections\/user-notification.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/user-notification.liquid",
       "oF" : 0
     },
     "\/sections\/video-hero.liquid" : {

@@ -1513,10 +1513,10 @@ class ProductForm extends HTMLElement {
           this.handleErrorMessage(response.description);
           return;
         }
-
+        // #VP
+        this.updateCartTotal();
+        this.updateUser(response);
         if (this.miniCart) {
-          // #VP
-          this.updateCartTotal();
           this.miniCart.renderContents(response);
         }
       })
@@ -1556,6 +1556,10 @@ class ProductForm extends HTMLElement {
       console.log( 'updateCartTotal :: Cart ::', data );
       this.renderCartTotat(data.item_count);
     });
+  }
+
+  updateUser(response = {}) {
+    console.log( 'updateUser :: response ::', response );
   }
 
   // #VP
