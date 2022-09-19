@@ -1,5 +1,7 @@
 @use "./mixins/body-copy" as *;
 @use "./mixins/general" as *;
+@use "./mixins/heading" as *;
+@use "./mixins/link" as *;
 
 .cart-items {
 
@@ -12,13 +14,36 @@
     }
   }
 
-  &__product-tile {
-    color: red;
+  .cart-item {
+    &__prices {
+      .price {
+        @include body-copy(1);
+        font-size: 11px;
+        bdi {
+          font-family: inherit;
+          font-size: inherit;
+          font-style: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
+  }
+
+  &__product-title {
+    @include heading(2);
     font-weight: normal;
     font-style: normal;
+    font-size: 24px;
     &-link {
+      @include link();
       color: inherit;
+      font-size: inherit;
     }
+  }
+
+  &__remove-item-link {
+    @include link(underlined);
+    font-size: inherit;
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -31,11 +56,35 @@
       }
     }
 
+    .cart-item {
+      &__prices {
+        .price {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__product-title {
+      font-size: 22px;
+    }
+
   } // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
 
-  @include breakpoint(xl) {} // min width xl
+    &__product-title {
+      font-size: 24px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__product-title {
+      font-size: 26px;
+    }
+
+  } // min width xl
 
   @include breakpoint(xxl) {} // min width xxl
 

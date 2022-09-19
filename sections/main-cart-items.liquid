@@ -305,11 +305,10 @@
 
                     {%- if gift_wrap_id == nil or item.id != gift_wrap_id -%}
                       <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-                        <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                          {% render 'icon', icon: 'remove' %}
-                        </a>
+                        <a href="{{ item.url_to_remove }}" class="{{ section_name }}__remove-item-link link" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">remove</a>
                       </cart-remove-button>
                     {%- endif -%}
+
                   </td>
                 </tr>
               {%- endfor -%}
@@ -321,6 +320,8 @@
 
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+
+
   </form>
 </cart-items>
 

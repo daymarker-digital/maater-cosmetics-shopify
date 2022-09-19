@@ -1,4 +1,7 @@
 {%- liquid
+
+  assign section_name = 'cart-items'
+
   if linklists.gift-wrapping.links.size > 0 and linklists.gift-wrapping.links.first.type == 'product_link'
     assign gift_wrapping = linklists.gift-wrapping.links.first
 
@@ -35,6 +38,7 @@
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %} section-{{ section.id }}-padding" id="main-cart-footer" data-id="{{ section.id }}">
   <div class="cart__footer">
+
     <div>
       {%- if false -%}
         <gift-wrapping class="gift-wrapping"
@@ -128,15 +132,15 @@
             </div>
           {%- when 'buttons' -%}
             <div class="cart__ctas" {{ block.shopify_attributes }}>
-              <noscript>
-                <button type="submit" class="cart__update-button button button--secondary" form="cart">
-                  {{ 'sections.cart.update' | t }}
-                </button>
-              </noscript>
 
-              <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+              <button type="submit" class="cart__update-button button button--primary" form="cart">
+                {{ 'sections.cart.update' | t }}
+              </button>
+
+              <button type="submit" class="cart__checkout-button button button--secondary" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                 {{ 'sections.cart.checkout' | t }}
               </button>
+
             </div>
 
             {%- if additional_checkout_buttons -%}
@@ -189,6 +193,7 @@
 
       <div id="cart-errors" class="form__message errors"></div>
     </div>
+
   </div>
 </div>
 
