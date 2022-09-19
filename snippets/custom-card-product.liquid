@@ -60,7 +60,9 @@
     </div>
 
     <div class="{{ snippet_name }}__information">
-      <strong class="{{ snippet_name }}__card_product-title">{{ card_product.title | escape }}</strong>
+      <strong class="{{ snippet_name }}__product-title heading--2">
+        <a class="{{ snippet_name }}__product-title-link link" href="{{ url }}" target="_self" title="{{ card_product.title | escape }}">{{ card_product.title | escape }}</a>
+      </strong>
       {% render 'custom-price', classes: 'card-card_product__card_product-price', card_product: card_product %}
     </div>
 

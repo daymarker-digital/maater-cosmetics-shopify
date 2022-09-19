@@ -62,7 +62,7 @@
   {% if products %}
     <div class="{{ section_name }}__main" data-image-count="{{ products.size }}">
       {% for item in products %}
-				{% render 'custom-product-card', product: item.settings.product %}
+				{% render 'custom-card-product', card_product: item.settings.product %}
       {% endfor %}
     </div>
   {% endif %}

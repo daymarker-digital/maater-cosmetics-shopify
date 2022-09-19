@@ -1,4 +1,5 @@
 @use "./mixins/general" as *;
+@use "./mixins/ui" as *;
 
 .card-product {
 
@@ -66,6 +67,19 @@
   }
 
   &__product-title {
+    &-link {
+      @include ui();
+      font-size: inherit;
+      font-weight: inherit;
+      font-style: inherit;
+      font-size: inherit;
+      color: inherit;
+      background: none;
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
     & + .card-product__product-price {
       margin-left: 15px;
     }
