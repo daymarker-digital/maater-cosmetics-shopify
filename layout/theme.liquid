@@ -36,6 +36,7 @@
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom-menu-drawer.js' | asset_url }}" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer="defer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer="defer"></script>
 
     {{ content_for_header }}
 
@@ -130,6 +131,7 @@
 
     {% section 'popup' %}
     {% section 'cookie-banner' %}
+    {% section 'user-notification' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
