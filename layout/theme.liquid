@@ -120,7 +120,7 @@
       {% section 'header' %}
 
       <div class="transition-content">
-        <main id="MainContent" class="content-for-layout focus-none shopify-section" role="main" tabindex="-1">
+        <main id="MainContent" class="content-for-layout focus-none shopify-section shopify-{{ request.page_type }}" role="main" tabindex="-1">
           {{ content_for_layout }}
         </main>
 

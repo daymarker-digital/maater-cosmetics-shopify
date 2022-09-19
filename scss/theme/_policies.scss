@@ -1,0 +1,105 @@
+@use "../mixins/body-copy" as *;
+@use "../mixins/general" as *;
+@use "../mixins/heading" as *;
+
+.shopify-policy {
+
+  &__body {
+    .rte {
+      @include body-copy(1);
+    }
+    h1, h2, h3, h4, h5, h6, strong {
+      @include heading(2);
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+    ol, p, ul {
+      & + h1,
+      & + h2,
+      & + h3,
+      & + h4,
+      & + h5,
+      & + h6,
+      & + strong {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__container {
+    max-width: none;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  &__title {
+    @include heading(1);
+    text-transform: uppercase;
+    & > * {
+      font-family: inherit;
+      font-style: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+    }
+  }
+
+  @include breakpoint(sm) {
+
+    &__container {
+      max-width: var(--theme-container--sm);
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__container {
+      max-width: var(--theme-container--md);
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__body {
+      h1, h2, h3, h4, h5, h6, strong {
+        font-size: 30px;
+      }
+      ol, p, ul {
+        & + h1,
+        & + h2,
+        & + h3,
+        & + h4,
+        & + h5,
+        & + h6,
+        & + strong {
+          margin-top: 38px;
+        }
+      }
+    }
+
+    &__container {
+      max-width: var(--theme-container--lg);
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__container {
+      max-width: var(--theme-container--xl);
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__container {
+      max-width: var(--theme-container--xxl);
+    }
+
+  } // min width xxl
+
+}

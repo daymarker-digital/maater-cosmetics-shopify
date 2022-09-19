@@ -47,12 +47,12 @@
 
   <div class="title-wrapper">
     <h1 class="heading heading--1 uppercase">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="button button--primary">{{ 'general.continue_shopping' | t }}</a>
+    <a href="{{ routes.all_products_collection_url }}" class="button button--primary">Back to Shop</a>
   </div>
 
   <div class="cart__warnings">
     <h2 class="cart__empty-text heading heading--1 uppercase">{{ 'sections.cart.empty' | t }}</h2>
-    <a href="{{ routes.all_products_collection_url }}" class="button button--secondary">{{ 'general.continue_shopping' | t }}</a>
+    <a href="{{ routes.all_products_collection_url }}" class="button button--secondary">Back to Shop</a>
   </div>
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
@@ -280,6 +280,7 @@
                   </td>
 
                   <td class="cart-item__totals right">
+
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         {% render 'icon', icon: 'spinner' %}
@@ -329,7 +330,7 @@
 {
   "name": "t:sections.main-cart-items.name",
   "tag": "section",
-  "class": "section",
+  "class": "section cart-items",
   "settings": [
     {
       "type": "checkbox",

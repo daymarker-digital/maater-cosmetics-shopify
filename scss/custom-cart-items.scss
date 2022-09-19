@@ -15,17 +15,35 @@
   }
 
   .cart-item {
-    &__prices {
+    &__price-wrapper {
       .price {
         @include body-copy(1);
-        font-size: 11px;
+        font-size: 15px;
         bdi {
+          display: inline-flex;
+          align-items: baseline;
+          justify-content: flex-start;
           font-family: inherit;
           font-size: inherit;
           font-style: inherit;
           font-weight: inherit;
         }
+        .price__prefix,
+        .price__suffix {
+          font-size: unset;
+          margin-inline-start: unset;
+          margin-inline-end: unset;
+        }
       }
+    }
+  }
+
+  .title-wrapper {
+    justify-content: center;
+    flex-flow: row wrap;
+    h1 {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -57,10 +75,20 @@
     }
 
     .cart-item {
-      &__prices {
+      &__price-wrapper {
         .price {
-          font-size: 12px;
+          font-size: 14px;
         }
+      }
+    }
+
+    .title-wrapper {
+      justify-content: space-between;
+      align-items: baseline;
+      flex-flow: row nowrap;
+      h1 {
+        width: auto;
+        text-align: center;
       }
     }
 
@@ -72,6 +100,14 @@
 
   @include breakpoint(lg) {
 
+    .cart-item {
+      &__price-wrapper {
+        .price {
+          font-size: 15px;
+        }
+      }
+    }
+
     &__product-title {
       font-size: 24px;
     }
@@ -79,6 +115,14 @@
   } // min width lg
 
   @include breakpoint(xl) {
+
+    .cart-item {
+      &__price-wrapper {
+        .price {
+          font-size: 16px;
+        }
+      }
+    }
 
     &__product-title {
       font-size: 26px;

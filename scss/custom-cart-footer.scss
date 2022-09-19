@@ -1,16 +1,74 @@
+@use "./mixins/body-copy" as *;
 @use "./mixins/general" as *;
 
 .cart__footer {
+
+  .tax-note,
+  .totals {
+    @include body-copy(1);
+    margin: 0;
+    & > * {
+      font-size: inherit;
+      font-weight: inherit;
+      font-family: inherit;
+    }
+  }
+
 
   .cart__ctas {
     display: flex;
     width: 100%;
     flex-flow: row wrap;
+    margin-top: 40px;
     .cart__update-button,
     .cart__checkout-button {
       width: 100%;
       max-width: none;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
+
+  .cart__footer-main {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .js-contents {
+    width: 100%;
+  }
+
+  .totals {
+    & + .tax-note {
+      margin-top: 12px;
+    }
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {
+
+    .cart__ctas {
+      display: flex;
+      width: 40%;
+      flex-flow: row wrap;
+      .cart__update-button,
+      .cart__checkout-button {
+        width: 100%;
+        max-width: none;
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
 
 }

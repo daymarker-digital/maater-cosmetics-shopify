@@ -16,15 +16,15 @@
     font-weight: 400;
 
     @include breakpoint(md) {
-      font-size: 62px;
+      font-size: 58px;
     }
 
     @include breakpoint(lg) {
-      font-size: 82px;
+      font-size: 80px;
     }
 
     @include breakpoint(xl) {
-      font-size: 92px;
+      font-size: 90px;
     }
 
   }

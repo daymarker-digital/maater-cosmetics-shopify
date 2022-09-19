@@ -101,13 +101,14 @@
         {%- case block.type -%}
           {%- when 'subtotal' -%}
             <div class="js-contents" {{ block.shopify_attributes }}>
+
               <div class="totals">
                 <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
                 <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
               </div>
 
-              <div>
-                {%- if cart.cart_level_discount_applications.size > 0 -%}
+              {%- if cart.cart_level_discount_applications.size > 0 -%}
+                <div>
                   <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                     {%- for discount in cart.cart_level_discount_applications -%}
                       <li class="discounts__discount discounts__discount--end">
@@ -117,8 +118,8 @@
                       </li>
                     {%- endfor -%}
                   </ul>
-                {%- endif -%}
-              </div>
+                </div>
+              {%- endif -%}
 
               <small class="tax-note caption-large rte">
                 {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
@@ -131,6 +132,7 @@
                   {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                 {%- endif -%}
               </small>
+
             </div>
           {%- when 'buttons' -%}
 
