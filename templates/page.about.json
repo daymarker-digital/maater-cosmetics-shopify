@@ -57,24 +57,15 @@
         "166369192640c2e44f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Maater Cosmetics products are formulated and packaged by human hands in Vancouver, Canada, Earth. Our founders and formulators have long been skincare archivists — they have collected products looking for the right ingredients to balance each of their skin concerns from healthy aging to dullness. Alongside their investigation into nourishing ingredients for the coveted glassy skin, they also wanted escapist cosmetics that could deliver an effortlessly alien look.<\/p><p>As they searched for skincare that bridged the realms of cosmetics and function, the study of essential oils and bio-active ingredients began. After crafting recipes for the face and body that improved skin texture and delivered nourished skin that looks radiant, hydrated and sculpted, they added toxic-free mica to two of their formulas for cosmic illumination. So was the genesis of Maater Cosmetics.<\/p>",
             "text_size": "typeset2",
             "secondary_color": false
-          }
-        },
-        "166369192640c2e44f-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "166369192640c2e44f-0",
-        "166369192640c2e44f-1",
-        "166369192640c2e44f-2"
+        "166369192640c2e44f-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/MAATER_about2_d04a0fda-28d9-42bd-8504-89657211635d.jpg",
