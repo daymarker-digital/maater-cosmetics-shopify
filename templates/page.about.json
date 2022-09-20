@@ -71,7 +71,7 @@
         "image": "shopify:\/\/shop_images\/MAATER_about2_d04a0fda-28d9-42bd-8504-89657211635d.jpg",
         "image_position": "center center",
         "layout": "image_first",
-        "text_box_position": "middle",
+        "text_box_position": "bottom",
         "text_alignment": "left",
         "image_ratio": "650px",
         "full_width": false,
