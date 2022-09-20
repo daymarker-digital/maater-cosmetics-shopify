@@ -270,11 +270,13 @@
         "3a45f3c6-9fc9-4af0-b494-692a6b99de81": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__1.jpg"
           }
         },
         "c23cc38d-df4a-47d8-b167-3305efe8dd25": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__2.jpg"
           }
         },
         "4e53c285-ecee-480f-9714-c9c80c83878f": {
