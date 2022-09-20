@@ -21,7 +21,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "h2"
+            "title_size": "h1"
           }
         },
         "rating": {
