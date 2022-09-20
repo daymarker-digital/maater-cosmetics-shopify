@@ -37,7 +37,7 @@
         "mobile_image_ratio": "auto",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "colors_text": "#FFFFFF",
+        "colors_text": "#ffffff",
         "colors_overlay": "#000000",
         "colors_overlay_opacity": 0,
         "padding_top": 0,
@@ -97,7 +97,7 @@
         "mobile_image_ratio": "auto",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "colors_text": "#FFFFFF",
+        "colors_text": "#ffffff",
         "colors_overlay": "#000000",
         "colors_overlay_opacity": 0,
         "padding_top": 0,
@@ -187,7 +187,7 @@
         "mobile_image_ratio": "auto",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "colors_text": "#FFFFFF",
+        "colors_text": "#ffffff",
         "colors_overlay": "#000000",
         "colors_overlay_opacity": 0,
         "padding_top": 24,
@@ -250,7 +250,7 @@
         "mobile_text_alignment": "center",
         "mobile_image_ratio": "auto",
         "show_text_below": true,
-        "colors_text": "#FFFFFF",
+        "colors_text": "#ffffff",
         "colors_overlay": "#000000",
         "colors_overlay_opacity": 0,
         "padding_top": 0,
@@ -270,21 +270,25 @@
         "3a45f3c6-9fc9-4af0-b494-692a6b99de81": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__1.jpg"
           }
         },
         "c23cc38d-df4a-47d8-b167-3305efe8dd25": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__2.jpg"
           }
         },
         "4e53c285-ecee-480f-9714-c9c80c83878f": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__4.jpg"
           }
         },
         "8820cf1d-78ac-4b4c-81fd-39a9765c5b33": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__3.jpg"
           }
         }
       },
@@ -297,8 +301,9 @@
       ],
       "settings": {
         "background": "black",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "link": "https:\/\/www.instagram.com\/maatercosmetics\/",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
