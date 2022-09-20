@@ -791,6 +791,18 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/assets\/custom-multicolumn.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-multicolumn.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-newsletter.css" : {
       "aP" : 1,
       "bl" : 0,
