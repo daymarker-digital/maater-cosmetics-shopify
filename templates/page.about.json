@@ -73,7 +73,7 @@
         "layout": "image_first",
         "text_box_position": "bottom",
         "text_alignment": "left",
-        "image_ratio": "650px",
+        "image_ratio": "adapt",
         "full_width": false,
         "show_divider": false,
         "mobile_text_alignment": "left",
