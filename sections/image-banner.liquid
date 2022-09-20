@@ -1,17 +1,13 @@
-{%- liquid
-
-  assign section_name = 'image-banner'
-  assign section_id = section_name | append: '--' | append: section.id
-
--%}
-
 {%- style -%}
+
   #shopify-section-{{ section.id }} {
+
     {%- if section.settings.image != blank or section.settings.image_2 != blank -%}
       {%- assign banner_image = section.settings.image | default: section.settings.image_2 -%}
       --image-ratio-percent: {{ 1 | divided_by: banner_image.aspect_ratio | times: 100 }}%;
       --image-position: {{ section.settings.image_position }};
     {%- endif -%}
+
     --color-overlay-opacity: {{ section.settings.colors_overlay_opacity | divided_by: 100.0 }};
     --color-overlay: {{ section.settings.colors_overlay.red }}, {{ section.settings.colors_overlay.green }}, {{ section.settings.colors_overlay.blue }};
     --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
@@ -22,6 +18,7 @@
     --color-button-background: var(--color-foreground);
     --color-shadow: var(--color-foreground);
     --shadow-opacity: 0.3;
+
   }
 
   .section-{{ section.id }}-padding {
@@ -35,6 +32,7 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
 {%- endstyle -%}
 
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
