@@ -4194,10 +4194,10 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/templates\/product.set-essential.json" : {
+    "\/templates\/product.set-essentials.json" : {
       "ft" : 524288,
       "oA" : 0,
-      "oAP" : "\/templates\/product.set-essential.json",
+      "oAP" : "\/templates\/product.set-essentials.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
