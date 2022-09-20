@@ -183,10 +183,24 @@
             "heading": "You May Also Like",
             "style": "primary"
           }
+        },
+        "e5630909-9374-4737-a12c-1e54699a79f1": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-beta"
+          }
+        },
+        "91cfd039-4a1a-4dce-beec-edebd0f181a4": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-kappa-test"
+          }
         }
       },
       "block_order": [
-        "1663702782c66f4e3f-0"
+        "1663702782c66f4e3f-0",
+        "e5630909-9374-4737-a12c-1e54699a79f1",
+        "91cfd039-4a1a-4dce-beec-edebd0f181a4"
       ],
       "settings": {
         "background": "black",
