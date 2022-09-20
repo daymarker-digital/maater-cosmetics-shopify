@@ -24,23 +24,6 @@
             "title_size": "h1"
           }
         },
-        "rating": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "heading": "Hurry up ! Sale end in:",
-            "number_size": "compact",
-            "colors_heading": "#da3f3f",
-            "colors_text": "#da3f3f",
-            "colors_background": "#ffeeee"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -129,8 +112,6 @@
       "block_order": [
         "subtitle",
         "title",
-        "rating",
-        "countdown",
         "price",
         "variant_picker",
         "inventory_status",

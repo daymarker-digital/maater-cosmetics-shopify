@@ -24,24 +24,9 @@
             "title_size": "h1"
           }
         },
-        "rating": {
-          "type": "rating",
-          "settings": {
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up ! Sale end in:",
-            "number_size": "compact",
-            "colors_heading": "#da3f3f",
-            "colors_text": "#da3f3f",
-            "colors_background": "#ffeeee"
           }
         },
         "variant_picker": {
@@ -131,9 +116,7 @@
       "block_order": [
         "vendor",
         "title",
-        "rating",
         "price",
-        "countdown",
         "variant_picker",
         "description",
         "collapsible_tab-0",
