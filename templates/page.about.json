@@ -236,6 +236,69 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16636931036410cd7f": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h2",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16636931133b4a21e2": {
+      "type": "video-hero",
+      "blocks": {
+        "16636931137130ce28-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video hero",
+            "heading_size": "h1"
+          }
+        },
+        "16636931137130ce28-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "16636931137130ce28-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16636931137130ce28-0",
+        "16636931137130ce28-1",
+        "16636931137130ce28-2"
+      ],
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -247,6 +310,8 @@
     "16636927904a081d4e",
     "1663692897f32b3383",
     "main",
-    "1663693070a6b300a3"
+    "1663693070a6b300a3",
+    "16636931036410cd7f",
+    "16636931133b4a21e2"
   ]
 }
