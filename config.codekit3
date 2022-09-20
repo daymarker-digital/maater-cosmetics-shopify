@@ -4098,14 +4098,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/templates\/page.qwre.json" : {
-      "ft" : 524288,
-      "oA" : 0,
-      "oAP" : "\/templates\/page.qwre.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/templates\/page.sidebar.json" : {
       "ft" : 524288,
       "oA" : 0,
@@ -4134,14 +4126,6 @@
       "ft" : 524288,
       "oA" : 0,
       "oAP" : "\/templates\/product.alpha.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/templates\/product.asdfsaf.json" : {
-      "ft" : 524288,
-      "oA" : 0,
-      "oAP" : "\/templates\/product.asdfsaf.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
@@ -4214,6 +4198,14 @@
       "ft" : 524288,
       "oA" : 0,
       "oAP" : "\/templates\/product.set-essential.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/templates\/product.set-star.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/product.set-star.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
