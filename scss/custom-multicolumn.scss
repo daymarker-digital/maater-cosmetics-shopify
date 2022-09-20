@@ -1,0 +1,10 @@
+@use "./mixins/body-copy" as *;
+@use "./mixins/general" as *;
+
+.multicolumn {
+
+  &-card__info {
+    @include body-copy(1);
+  }
+
+}

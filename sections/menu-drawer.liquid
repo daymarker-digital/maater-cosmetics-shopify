@@ -81,7 +81,10 @@
       {% endfor %}
     {% endif %}
 
-    <p>&copy; {{ shop.name }} {{ "now" | date: "%Y" }}<br/>All Rights Reserved.</p>
+
+    <div class="{{ section_name }}__copyright">
+      <p>&copy; {{ shop.name }} {{ "now" | date: "%Y" }}<br/>All Rights Reserved.</p>
+    </div>
 
   </div>
 </div>

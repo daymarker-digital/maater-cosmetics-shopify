@@ -1,3 +1,4 @@
+@use "../mixins/body-copy" as *;
 @use "../mixins/general" as *;
 
 .menu-drawer {
@@ -18,24 +19,27 @@
     flex-flow: row wrap;
     &__item {
       width: 100%;
-      & + .navigation__item {
-        margin-top: 12px;
-      }
     }
     &--primary {
       .navigation__item {
         font-size: 45px;
+        & + .navigation__item {
+          margin-top: 12px;
+        }
       }
       & + .navigation--secondary {
-        margin-top: 40px;
+        margin-top: 44px;
       }
     }
     &--secondary {
       .navigation__item {
         font-size: 14px;
+        & + .navigation__item {
+          margin-top: 8px;
+        }
       }
       & + .navigation--secondary {
-        margin-top: 25px;
+        margin-top: 30px;
       }
     }
   }
@@ -43,6 +47,15 @@
   &__content {
     padding: 7.5%;
     padding-top: 0;
+  }
+
+  &__copyright {
+    @include body-copy(1);
+    font-size: 14px;
+    margin-top: 25px;
+    p {
+      margin: 0;
+    }
   }
 
   &__header {
@@ -98,10 +111,19 @@
     width: 50%;
     right: -50%;
 
+    &__copyright {
+      font-size: 14px;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(xxl) {
+
+    width: 33.3333%;
+    right: -33.3333%;
+
+  } // min width xxl
 
 }

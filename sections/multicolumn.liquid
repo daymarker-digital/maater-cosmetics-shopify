@@ -21,11 +21,14 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+<link rel="stylesheet" href="{{ 'custom-multicolumn.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-multicolumn.css' | asset_url | stylesheet_tag }}</noscript>
+
 <div class="multicolumn page-width section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
     <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
   </div>
-  
+
   <slider-component class="slider-mobile-gutter {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
     <ul id="Slider-{{ section.id }}"
       class="multicolumn-list grid grid--2-col{% if section.settings.columns_mobile == '1' %} grid--1-col-mobile{% endif %}{% if section.blocks.size > 3 %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile{% endif %}"
