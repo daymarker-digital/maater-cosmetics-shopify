@@ -3,7 +3,7 @@
     "1661881401445420bc": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Fpanel.jpg",
+        "image": "shopify:\/\/shop_images\/MAATER_feature_ca7f6593-cc06-41a8-8ed1-ff9a18d3b762.jpg",
         "image_position": "center center",
         "text_box_position": "middle-center",
         "text_alignment": "center",
@@ -125,7 +125,7 @@
       ],
       "settings": {
         "figure": "shopify:\/\/shop_images\/MAATER--figure-bodies_3x_6880c5ad-d3ae-419e-b48c-e94a771ca3cd.png",
-        "image": "shopify:\/\/shop_images\/halfpanel.jpg",
+        "image": "shopify:\/\/shop_images\/MAATER_body_d4eea235-2482-4947-a380-6f70f375189b.jpg",
         "image_position": "80% 100%",
         "layout": "image_first",
         "text_box_position": "bottom",
@@ -245,7 +245,7 @@
       ],
       "settings": {
         "figure": "shopify:\/\/shop_images\/MAATER--figure-face_3x_753edc05-3e85-486e-8a06-d8c4ef93d615.png",
-        "image": "shopify:\/\/shop_images\/MAATER--Artboard_11-100.jpg",
+        "image": "shopify:\/\/shop_images\/MAATER_face_ea908aa0-fd80-44d1-ac89-9966f74bbe6a.jpg",
         "image_position": "center center",
         "layout": "text_first",
         "text_box_position": "bottom",
