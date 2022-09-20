@@ -1,1 +1,359 @@
-{"order":["empty-space","main","product-details","product-recommendations","1663024951bced082e","166302495912b8dbfd","16630250488d084a02"],"sections":{"1663024951bced082e":{"disabled":true,"settings":{"columns_mobile":"2","enable_color_swatches":true,"enable_countdown":true,"enable_image_fill":true,"enable_quick_view":true,"heading":"You may also like","heading_size":"h2","image_position":"center center","image_ratio":"adapt","padding_bottom":36,"padding_top":36,"show_divider":false,"show_quick_buy":true,"show_rating":false,"show_secondary_image":false,"show_vendor":false,"swipe_on_mobile":false},"type":"cart-recommendations"},"16630250488d084a02":{"block_order":["1663025048c6e922f0-0","e6de269e-73ec-4dd5-817d-51d74db714c7","7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20"],"blocks":{"7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20":{"settings":{"product":"space-face-oil-kappa-test"},"type":"product"},"1663025048c6e922f0-0":{"settings":{"heading":"You may also like","style":"primary"},"type":"heading"},"e6de269e-73ec-4dd5-817d-51d74db714c7":{"settings":{"product":"celestial-bodies-oil-beta"},"type":"product"}},"settings":{"background":"black","padding_bottom":36,"padding_top":36},"type":"product-grid"},"166302495912b8dbfd":{"block_order":["166302495920264f07-0","166302495920264f07-1","166302495920264f07-2"],"blocks":{"166302495920264f07-0":{"settings":{"color":"#000000","enable_quick_view":true,"horizontal":30,"image_ratio":"adapt","product":"","show_vendor":false,"vertical":40},"type":"product"},"166302495920264f07-1":{"settings":{"color":"#000000","enable_quick_view":true,"horizontal":70,"image_ratio":"adapt","product":"","show_vendor":false,"vertical":45},"type":"product"},"166302495920264f07-2":{"settings":{"color":"#000000","enable_quick_view":true,"horizontal":45,"image_ratio":"adapt","product":"","show_vendor":false,"vertical":65},"type":"product"}},"disabled":true,"settings":{"full_width":false,"heading":"Build Your Own Basket","heading_size":"h1","layout":"image_first","mobile_text_alignment":"left","padding_bottom":36,"padding_top":36,"show_divider":false,"subheading":"Bundle & Save","text_alignment":"left","text_box_position":"top"},"type":"bundle-products"},"empty-space":{"settings":{"desktop_height":36,"mobile_height":0},"type":"empty-space"},"main":{"block_order":["subtitle","title","rating","countdown","price","variant_picker","inventory_status","description","26b613b3-bf27-4330-a0ea-5f3ff3b93ac4","db9495af-6e57-4928-a03b-1c3cd74968b3","c9f3b211-9485-4bf9-9d19-9bf5ae628bae","787219c3-ee1e-4ebf-b05f-2649f155774a","buy_buttons","share","sticky_cart"],"blocks":{"26b613b3-bf27-4330-a0ea-5f3ff3b93ac4":{"settings":{"content":"<p>Prunus Amygdalus Dulcis (sweet almond) oil, Organic Rosa Moschata (rosehip seed) oil, Prunus Armeniaca (apricot nectar) oil, Vitis Vinifera (grapeseed) oil, Citrus Aurantium var. amara (neroli) essential oil, Pelargonium roseum (rose geranium) essential oil, Rosa damascena (rose absolute) essential oil, +\/- Mica (natural, vegan, and non-toxic)<\/p>","heading":"Ingredients","icon":"none","page":""},"type":"collapsible_tab"},"787219c3-ee1e-4ebf-b05f-2649f155774a":{"settings":{"desktop_height":72,"mobile_height":24},"type":"spacing"},"buy_buttons":{"settings":{"show_dynamic_checkout":true,"show_quantity_selector":false},"type":"buy_buttons"},"c9f3b211-9485-4bf9-9d19-9bf5ae628bae":{"settings":{"content":"<p>Apply 3-4 drops to clean skin morning and night. Use it alone or under your favorite moisturizer. Shake well before use.<\/p>","heading":"Application","icon":"none","page":""},"type":"collapsible_tab"},"countdown":{"disabled":true,"settings":{"colors_background":"#ffeeee","colors_heading":"#da3f3f","colors_text":"#da3f3f","heading":"Hurry up ! Sale end in:","number_size":"compact"},"type":"countdown"},"db9495af-6e57-4928-a03b-1c3cd74968b3":{"settings":{"content":"<p>This product is suitable for all skin types, but especially for those with sensitive, mature or dehydrated skin.<\/p>","heading":"Skin Type","icon":"none","page":""},"type":"collapsible_tab"},"description":{"settings":{},"type":"description"},"inventory_status":{"disabled":true,"settings":{"color_scheme":"accent-3","inventory_threshold":20,"show_inventory_transfer":true},"type":"inventory_status"},"price":{"settings":{},"type":"price"},"rating":{"disabled":true,"settings":{},"type":"rating"},"share":{"disabled":true,"settings":{},"type":"share"},"sticky_cart":{"disabled":true,"settings":{"show_quantity_selector":false},"type":"sticky_cart"},"subtitle":{"settings":{"icon":"none","text":"{{ product.metafields.descriptors.subtitle.value }}","text_style":"subtitle"},"type":"text"},"title":{"settings":{"title_size":"h1"},"type":"title"},"variant_picker":{"disabled":true,"settings":{"enable_color_swatches":true,"picker_type":"button","show_variant_labels":true,"size_chart":"","swatch_type":"round"},"type":"variant_picker"}},"settings":{"enable_image_zoom":true,"enable_sticky_info":true,"enable_video_looping":false,"gallery_layout":"thumbnail_slider","hide_variants":true,"image_ratio":"adapt","media_size":"medium","mobile_image_ratio":"adapt_first","padding_bottom":72,"padding_top":0,"show_mobile_thumbnails":false,"show_thumbnails":true},"type":"main-product"},"product-details":{"block_order":["product-details-0","product-details-1","product-details-2","product-details-3"],"blocks":{"product-details-0":{"settings":{"heading":""},"type":"description"},"product-details-1":{"settings":{"content":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>","heading":"1. Collapsible tab","page":""},"type":"collapsible_tab"},"product-details-2":{"settings":{"content":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>","heading":"2. Collapsible tab","page":""},"type":"collapsible_tab"},"product-details-3":{"settings":{"content":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>","heading":"3. Collapsible tab","page":""},"type":"collapsible_tab"}},"disabled":true,"settings":{"heading":"Product Details","heading_size":"h2","padding_bottom":36,"padding_top":36},"type":"product-details"},"product-recommendations":{"disabled":true,"settings":{"columns_mobile":"2","enable_color_swatches":true,"enable_countdown":true,"enable_image_fill":true,"enable_quick_view":true,"heading":"You May Also Like","heading_size":"h2","image_position":"center center","image_ratio":"portrait","padding_bottom":36,"padding_top":36,"show_divider":false,"show_quick_buy":true,"show_rating":true,"show_secondary_image":false,"show_vendor":false,"swipe_on_mobile":true},"type":"product-recommendations"}}}
+{
+  "order": [
+    "empty-space",
+    "main",
+    "product-details",
+    "product-recommendations",
+    "1663024951bced082e",
+    "166302495912b8dbfd",
+    "16630250488d084a02"
+  ],
+  "sections": {
+    "1663024951bced082e": {
+      "type": "cart-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16630250488d084a02": {
+      "type": "product-grid",
+      "blocks": {
+        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-kappa-test"
+          }
+        },
+        "1663025048c6e922f0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "You may also like",
+            "style": "primary"
+          }
+        },
+        "e6de269e-73ec-4dd5-817d-51d74db714c7": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-beta"
+          }
+        }
+      },
+      "block_order": [
+        "1663025048c6e922f0-0",
+        "e6de269e-73ec-4dd5-817d-51d74db714c7",
+        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20"
+      ],
+      "settings": {
+        "background": "black",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "166302495912b8dbfd": {
+      "type": "bundle-products",
+      "disabled": true,
+      "blocks": {
+        "166302495920264f07-0": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_vendor": false,
+            "enable_quick_view": true,
+            "image_ratio": "adapt",
+            "color": "#000000",
+            "horizontal": 30,
+            "vertical": 40
+          }
+        },
+        "166302495920264f07-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_vendor": false,
+            "enable_quick_view": true,
+            "image_ratio": "adapt",
+            "color": "#000000",
+            "horizontal": 70,
+            "vertical": 45
+          }
+        },
+        "166302495920264f07-2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_vendor": false,
+            "enable_quick_view": true,
+            "image_ratio": "adapt",
+            "color": "#000000",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        }
+      },
+      "block_order": [
+        "166302495920264f07-0",
+        "166302495920264f07-1",
+        "166302495920264f07-2"
+      ],
+      "settings": {
+        "subheading": "Bundle & Save",
+        "heading": "Build Your Own Basket",
+        "heading_size": "h1",
+        "layout": "image_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "26b613b3-bf27-4330-a0ea-5f3ff3b93ac4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Ingredients",
+            "content": "<p>Prunus Amygdalus Dulcis (sweet almond) oil, Organic Rosa Moschata (rosehip seed) oil, Prunus Armeniaca (apricot nectar) oil, Vitis Vinifera (grapeseed) oil, Citrus Aurantium var. amara (neroli) essential oil, Pelargonium roseum (rose geranium) essential oil, Rosa damascena (rose absolute) essential oil, +\/- Mica (natural, vegan, and non-toxic)<\/p>",
+            "page": ""
+          }
+        },
+        "787219c3-ee1e-4ebf-b05f-2649f155774a": {
+          "type": "spacing",
+          "settings": {
+            "desktop_height": 72,
+            "mobile_height": 24
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": true
+          }
+        },
+        "c9f3b211-9485-4bf9-9d19-9bf5ae628bae": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Application",
+            "content": "<p>Apply 3-4 drops to clean skin morning and night. Use it alone or under your favorite moisturizer. Shake well before use.<\/p>",
+            "page": ""
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#ffeeee"
+          }
+        },
+        "db9495af-6e57-4928-a03b-1c3cd74968b3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Skin Type",
+            "content": "<p>This product is suitable for all skin types, but especially for those with sensitive, mature or dehydrated skin.<\/p>",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "disabled": true,
+          "settings": {
+            "show_quantity_selector": false
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatch_type": "round",
+            "size_chart": ""
+          }
+        }
+      },
+      "block_order": [
+        "subtitle",
+        "title",
+        "rating",
+        "countdown",
+        "price",
+        "variant_picker",
+        "inventory_status",
+        "description",
+        "26b613b3-bf27-4330-a0ea-5f3ff3b93ac4",
+        "db9495af-6e57-4928-a03b-1c3cd74968b3",
+        "c9f3b211-9485-4bf9-9d19-9bf5ae628bae",
+        "787219c3-ee1e-4ebf-b05f-2649f155774a",
+        "buy_buttons",
+        "share",
+        "sticky_cart"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt_first",
+        "show_mobile_thumbnails": false,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "disabled": true,
+      "blocks": {
+        "product-details-0": {
+          "type": "description",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "product-details-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "1. Collapsible tab",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "product-details-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "2. Collapsible tab",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "product-details-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "3. Collapsible tab",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "product-details-0",
+        "product-details-1",
+        "product-details-2",
+        "product-details-3"
+      ],
+      "settings": {
+        "heading": "Product Details",
+        "heading_size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  }
+}
