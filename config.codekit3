@@ -4194,6 +4194,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/product.set-star.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/product.set-star.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/search.json" : {
       "ft" : 524288,
       "oA" : 0,
