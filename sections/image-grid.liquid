@@ -5,7 +5,13 @@
 
     assign heading = section.blocks | where: "type", "heading" | default: ''
     assign images = section.blocks | where: "type", "image" | default: false
+		assign link = section.settings.link | default: ''
+		assign link_target = '_self'
 		assign section_background = section.settings.background | default: 'not-set'
+
+		if link contains 'http'
+			assign link_target = '_blank'
+		endif
 
 -%}
 
@@ -60,32 +66,34 @@
   {% endfor %}
 
   {% if images %}
-    <div class="{{ section_name }}__main" data-image-count="{{ images.size }}">
-      {% for item in images %}
+		{% if link != blank %}<a href="{{ link }}" target="{{ link_target }}">{% endif %}
+    	<div class="{{ section_name }}__main" data-image-count="{{ images.size }}">
+      	{% for item in images %}
 
-        {%- assign image = item.settings.image | default: false -%}
+        	{%- assign image = item.settings.image | default: false -%}
 
-        {% if image %}
-          <div class="{{ section_name }}__item" data-image-index="{{ forloop.index }}">
-            <img
-              srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
-                {%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
-                {%- if image.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
-                {%- if image.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
-                {%- if image.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%},
-                {{ image | image_url }} {{ image.width }}w"
-              src="{{ image | image_url: width: 550 }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-              alt="{{ image.alt | escape | split: '#' | first }}"
-              loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
-              width="{{ image.width }}"
-              height="{{ image.height }}"
-            />
-          </div>
-        {% endif %}
+        	{% if image %}
+          	<div class="{{ section_name }}__item" data-image-index="{{ forloop.index }}">
+            	<img
+              	srcset="{%- if image.width >= 165 -%}{{ image | image_url: width: 165 }} 165w{%- endif -%}
+                	{%- if image.width >= 375 -%},{{ image | image_url: width: 375 }} 375w{%- endif -%}
+                	{%- if image.width >= 550 -%},{{ image | image_url: width: 550 }} 550w{%- endif -%}
+                	{%- if image.width >= 750 -%},{{ image | image_url: width: 750 }} 750w{%- endif -%}
+                	{%- if image.width >= 1100 -%},{{ image | image_url: width: 1100 }} 1100w{%- endif -%},
+                	{{ image | image_url }} {{ image.width }}w"
+              	src="{{ image | image_url: width: 550 }}"
+              	sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+              	alt="{{ image.alt | escape | split: '#' | first }}"
+              	loading="{% if lazy_load == false %}auto{% else %}lazy{% endif %}"
+              	width="{{ image.width }}"
+              	height="{{ image.height }}"
+            	/>
+          	</div>
+        	{% endif %}
 
-      {% endfor %}
-    </div>
+      	{% endfor %}
+    	</div>
+		{% if link != blank %}</a>{% endif %}
   {% endif %}
 
 </div>
