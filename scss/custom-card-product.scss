@@ -96,7 +96,7 @@
   @include breakpoint(lg) {
 
     &__information {
-      font-size: 30px;
+      font-size: 32px;
     }
 
   } // min width lg
@@ -104,7 +104,15 @@
   @include breakpoint(xl) {
 
     &__information {
-      font-size: 32px;
+      font-size: 36px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__information {
+      font-size: 40px;
     }
 
   } // min width xl

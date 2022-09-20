@@ -3866,14 +3866,6 @@
       "oAP" : "\/snippets\/custom-price.liquid",
       "oF" : 0
     },
-    "\/snippets\/custom-product-card.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/custom-product-card.liquid",
-      "oF" : 0
-    },
     "\/snippets\/desktop-menu.liquid" : {
       "cB" : 0,
       "ft" : 8192,
