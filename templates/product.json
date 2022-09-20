@@ -164,9 +164,9 @@
         "enable_image_zoom": true,
         "enable_video_looping": false,
         "mobile_image_ratio": "adapt_first",
-        "show_mobile_thumbnails": true,
+        "show_mobile_thumbnails": false,
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 72
       }
     },
     "product-details": {
