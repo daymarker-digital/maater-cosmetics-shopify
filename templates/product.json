@@ -10,19 +10,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "breadcrumb": {
-          "type": "breadcrumb",
-          "settings": {
-            "text_style": "uppercase",
-            "show_divider": true
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "",
+            "text_style": "subtitle"
           }
         },
         "title": {
@@ -136,7 +129,6 @@
         }
       },
       "block_order": [
-        "breadcrumb",
         "vendor",
         "title",
         "rating",
