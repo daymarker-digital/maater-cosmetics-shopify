@@ -3346,14 +3346,6 @@
       "oAP" : "\/sections\/image-grid.liquid",
       "oF" : 0
     },
-    "\/sections\/image-with-text-overlay--legacy.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/image-with-text-overlay--legacy.liquid",
-      "oF" : 0
-    },
     "\/sections\/image-with-text-overlay.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3474,14 +3466,6 @@
       "oAP" : "\/sections\/main-collection-product-grid.liquid",
       "oF" : 0
     },
-    "\/sections\/main-list-collections--legacy.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-list-collections--legacy.liquid",
-      "oF" : 0
-    },
     "\/sections\/main-list-collections.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3536,14 +3520,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/main-password-header.liquid",
-      "oF" : 0
-    },
-    "\/sections\/main-product--legacy.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-product--legacy.liquid",
       "oF" : 0
     },
     "\/sections\/main-product-modal.liquid" : {
