@@ -1572,7 +1572,7 @@ class ProductForm extends HTMLElement {
         targets: element,
         translateY: [
           { value: -(height), duration: 850, delay: 0 },
-          { value: 0, duration: 650, delay: 50000 }
+          { value: 0, duration: 650, delay: 3000 }
         ],
         easing: 'easeOutElastic(1, .8)',
         loop: 1,
