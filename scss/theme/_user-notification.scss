@@ -63,4 +63,12 @@
 
   }
 
+  @include breakpoint(xxl) {
+
+    &__content {
+      font-size: 46px;
+    }
+
+  }
+
 }
