@@ -50,14 +50,14 @@
         "166369192640c2e44f-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Newest Cosmetics Brand in the Universe",
+            "heading": "Cosmic Aesthetics",
             "heading_size": "h2"
           }
         },
         "166369192640c2e44f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Maater Cosmetics products are formulated and packaged by human hands in Vancouver, Canada, Earth. Our founders and formulators have long been skincare archivists — they have collected products looking for the right ingredients to balance each of their skin concerns from healthy aging to dullness. Alongside their investigation into nourishing ingredients for the coveted glassy skin, they also wanted escapist cosmetics that could deliver an effortlessly alien look.<\/p><p>As they searched for skincare that bridged the realms of cosmetics and function, the study of essential oils and bio-active ingredients began. After crafting recipes for the face and body that improved skin texture and delivered nourished skin that looks radiant, hydrated and sculpted, they added toxic-free mica to two of their formulas for cosmic illumination.<\/p>",
+            "text": "<p>Maater Cosmetics products are formulated and packaged by human hands in Vancouver, Canada, Earth. Our founders and formulators have long been skincare archivists — they have collected products looking for the right ingredients to balance each of their skin concerns from healthy aging to dullness. Alongside their investigation into nourishing ingredients for the coveted glassy skin, they also wanted escapist cosmetics that could deliver an effortlessly alien look.<\/p>",
             "text_size": "typeset2",
             "secondary_color": false
           }
@@ -71,82 +71,127 @@
         "image": "shopify:\/\/shop_images\/MAATER_about2_d04a0fda-28d9-42bd-8504-89657211635d.jpg",
         "image_position": "center center",
         "layout": "image_first",
-        "text_box_position": "middle",
+        "text_box_position": "bottom",
         "text_alignment": "left",
-        "image_ratio": "650px",
+        "image_ratio": "adapt",
         "full_width": false,
         "show_divider": false,
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
-        "padding_top": 36,
+        "padding_top": 24,
+        "padding_bottom": 60
+      }
+    },
+    "16636923894b62cf4f": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MAATERArtboard_9.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
-    "rich-text-0": {
-      "type": "rich-text",
-      "disabled": true,
+    "1663692549c4f9476b": {
+      "type": "multicolumn",
       "blocks": {
-        "aa1d2f55-dda1-45db-9b1e-9d97ed1ec763": {
-          "type": "heading",
+        "1663692549d23e5a4a-0": {
+          "type": "column",
           "settings": {
-            "heading": "Maater Cosmetics is a cosmic aesthetics brand.",
-            "style": "primary"
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>As they searched for skincare that bridged the realms of cosmetics and function, the study of essential oils and bio-active ingredients began. After crafting recipes for the face and body that improved skin texture and delivered nourished skin that looks radiant, hydrated and sculpted, they added toxic-free mica to two of their formulas for cosmic illumination. So was the genesis of Maater Cosmetics.<\/p><p><\/p><p>Each product is designed as a functional cosmetic, the bio-active ingredients nourish the skin while the reflective mica particles react with the light to define the sculptural features of the human face and body.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         },
-        "text": {
-          "type": "text",
+        "1663692549d23e5a4a-1": {
+          "type": "column",
           "settings": {
-            "text": "<p>Maater Cosmetics is a cosmic aesthetics brand.<\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>When stars are named, the identification includes the constellation the star is located in along with the brightness. The brighter the star, the closer to the beginning of the Greek alphabet the name would be — the brightest being Alpha. <\/p><p>Maater Cosmetics uses the same naming convention to communicate a formula’s mica content and resulting luminosity level, ranging from Alpha to Kappa.Maater Cosmetics compounds are made with active plant-based ingredients and organic pure essential oils and are vegan and cruelty-free. Never formulated with toxins, fillers, synthetics, artificial colours or fragrances.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "aa1d2f55-dda1-45db-9b1e-9d97ed1ec763",
-        "text"
+        "1663692549d23e5a4a-0",
+        "1663692549d23e5a4a-1"
       ],
       "settings": {
-        "background": "black",
-        "text_alignment": "center",
-        "narrow": true,
+        "heading": "",
+        "heading_size": "h1",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
         "show_divider": false,
-        "mobile_text_alignment": "center",
-        "padding_top": 100,
-        "padding_bottom": 0
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
       }
     },
-    "rich-text-1": {
+    "16636927904a081d4e": {
       "type": "rich-text",
       "blocks": {
-        "54b7e357-4d63-4a63-be02-662158a3e68e": {
+        "1663692789ad9550ea-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Newest Cosmetic Brand in the Universe",
-            "style": "primary"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each product is designed as a functional cosmetic, the bio-active ingredients nourish the skin while reflective mica particles react with the light to define the sculptural features of the human face and body. <\/p><p>Maater Cosmetics compounds are made with active plant-based ingredients and organic pure essential oils and are vegan and cruelty-free. Never formulated with toxins, fillers, synthetics, artificial colours or fragrances. <\/p><p><\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "heading": "For Use on Earth And Beyond",
+            "style": "secondary"
           }
         }
       },
       "block_order": [
-        "54b7e357-4d63-4a63-be02-662158a3e68e",
-        "text"
+        "1663692789ad9550ea-0"
       ],
       "settings": {
-        "background": "black",
+        "background": "orange",
         "text_alignment": "center",
         "narrow": true,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "padding_top": 52,
-        "padding_bottom": 100
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "1663692897f32b3383": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MAATER--full-width-image_2x_f2d2d543-297d-47f8-ab00-5877433e1ab9.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "adapt",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "main": {
@@ -158,54 +203,145 @@
         "padding_bottom": 72
       }
     },
-    "empty-space": {
-      "type": "empty-space",
-      "disabled": true,
-      "settings": {
-        "desktop_height": 60,
-        "mobile_height": 48
-      }
-    },
-    "1660342419ca2e5f75": {
-      "type": "image-with-text-overlay",
+    "1663693070a6b300a3": {
+      "type": "product-grid",
       "blocks": {
-        "20136d21-3a76-452c-90d4-289f04643200": {
+        "1663693070df0a5fef-0": {
           "type": "heading",
           "settings": {
-            "heading": "The products are formulated and packaged by human hands in Vancouver, Canada, Earth",
-            "heading_size": "h2"
+            "heading": "Shop Sets",
+            "style": "primary"
+          }
+        },
+        "a3a48db7-6100-4c07-b6f2-26b2512187fc": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-alpha"
+          }
+        },
+        "3f24b6c0-fe8c-48ae-9460-898f450f9f58": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-beta"
           }
         }
       },
       "block_order": [
-        "20136d21-3a76-452c-90d4-289f04643200"
+        "1663693070df0a5fef-0",
+        "a3a48db7-6100-4c07-b6f2-26b2512187fc",
+        "3f24b6c0-fe8c-48ae-9460-898f450f9f58"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/maater-aboutpage.jpg",
-        "image_position": "center center",
-        "text_box_position": "center",
-        "text_alignment": "center",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_box_position": "text_overlay",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "auto",
-        "colors_text": "#ffffff",
-        "colors_overlay": "#f3f3f3",
-        "colors_overlay_opacity": 0,
-        "padding_top": 56,
+        "background": "black",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "1660338930bbaede34": {
-      "type": "custom-liquid",
+    "16636931036410cd7f": {
+      "type": "video",
       "settings": {
-        "custom_liquid": "",
+        "heading": "Video",
+        "heading_size": "h2",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
         "full_width": false,
         "show_divider": false,
-        "padding_top": 28,
-        "padding_bottom": 100
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16636931133b4a21e2": {
+      "type": "video-hero",
+      "blocks": {
+        "16636931137130ce28-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video hero",
+            "heading_size": "h1"
+          }
+        },
+        "16636931137130ce28-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "16636931137130ce28-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16636931137130ce28-0",
+        "16636931137130ce28-1",
+        "16636931137130ce28-2"
+      ],
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16636931295b7b1cb8": {
+      "type": "image-grid",
+      "blocks": {
+        "166369312951f4dcd2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Follow the light",
+            "style": "primary"
+          }
+        },
+        "3a45f3c6-9fc9-4af0-b494-692a6b99de81": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "c23cc38d-df4a-47d8-b167-3305efe8dd25": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "4e53c285-ecee-480f-9714-c9c80c83878f": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "8820cf1d-78ac-4b4c-81fd-39a9765c5b33": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "166369312951f4dcd2-0",
+        "3a45f3c6-9fc9-4af0-b494-692a6b99de81",
+        "c23cc38d-df4a-47d8-b167-3305efe8dd25",
+        "4e53c285-ecee-480f-9714-c9c80c83878f",
+        "8820cf1d-78ac-4b4c-81fd-39a9765c5b33"
+      ],
+      "settings": {
+        "background": "black",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -213,11 +349,14 @@
     "image-banner",
     "1663691823b73642dc",
     "1663691926164ebefa",
-    "rich-text-0",
-    "rich-text-1",
+    "16636923894b62cf4f",
+    "1663692549c4f9476b",
+    "16636927904a081d4e",
+    "1663692897f32b3383",
     "main",
-    "empty-space",
-    "1660342419ca2e5f75",
-    "1660338930bbaede34"
+    "1663693070a6b300a3",
+    "16636931036410cd7f",
+    "16636931133b4a21e2",
+    "16636931295b7b1cb8"
   ]
 }
