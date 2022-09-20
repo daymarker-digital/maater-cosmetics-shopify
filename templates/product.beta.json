@@ -147,7 +147,7 @@
         "enable_sticky_info": true,
         "media_size": "medium",
         "gallery_layout": "thumbnail_slider",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "show_thumbnails": true,
         "hide_variants": true,
         "enable_image_zoom": true,

@@ -181,7 +181,7 @@
         "text_alignment": "center",
         "image_ratio": "adapt",
         "show_text_box": false,
-        "full_width": true,
+        "full_width": false,
         "show_divider": false,
         "mobile_text_alignment": "center",
         "mobile_image_ratio": "auto",
