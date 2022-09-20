@@ -29,16 +29,6 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "swatch_type": "round",
-            "size_chart": ""
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -84,50 +74,18 @@
             "show_quantity_selector": false,
             "show_dynamic_checkout": true
           }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "settings": {
-            "inventory_threshold": 20,
-            "show_inventory_transfer": true,
-            "color_scheme": "accent-3"
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "related_buttons": {
-          "type": "related_buttons",
-          "disabled": true,
-          "settings": {
-            "show_icons": false
-          }
-        },
-        "sticky_cart": {
-          "type": "sticky_cart",
-          "settings": {
-            "show_quantity_selector": false
-          }
         }
       },
       "block_order": [
         "vendor",
         "title",
         "price",
-        "variant_picker",
         "description",
         "collapsible_tab-0",
         "collapsible_tab-1",
         "d99bd1e6-1352-4d0b-a323-bb2a920a14d8",
         "029c06c0-d5fd-4540-8e20-0139fbbad1e3",
-        "buy_buttons",
-        "inventory_status",
-        "share",
-        "related_buttons",
-        "sticky_cart"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
