@@ -63,7 +63,7 @@
       <strong class="{{ snippet_name }}__product-title">
         <a class="{{ snippet_name }}__product-title-link link" href="{{ url }}" target="_self" title="{{ card_product.title | escape }}">{{ card_product.title | escape }}</a>
       </strong>
-      {% render 'custom-price', classes: 'card-card_product__card_product-price', card_product: card_product %}
+      {% render 'custom-price', classes: 'card-product__product-price', product: card_product %}
     </div>
 
   </div>

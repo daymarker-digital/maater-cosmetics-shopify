@@ -49,18 +49,20 @@
               {%- liquid
 
                   assign active = link.active
+                  assign external = false
+                  assign target = '_self'
                   assign title = link.title
                   assign url = link.url
-                  assign target = '_self'
 
                   if url contains 'http'
+                    assign external = true
                     assign target = '_blank'
                   endif
 
                 -%}
 
               <div class="navigation__item">
-                <a class="navigation__link link{% if active %} active{% endif %}" href="{{ url }}" target="{{ target }}" title="{{ title }}">
+                <a class="navigation__link link{% if active %} active{% endif %}{% if external %} external{% endif %}" href="{{ url }}" target="{{ target }}" title="{{ title }}">
                   <span class="navigation__link-title link__title">{{ title }}</span>
                 </a>
               </div>

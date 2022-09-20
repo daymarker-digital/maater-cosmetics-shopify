@@ -20,6 +20,10 @@
     &__item {
       width: 100%;
     }
+    &__link {
+      width: auto;
+      display: inline-block;
+    }
     &--primary {
       .navigation__item {
         font-size: 45px;
@@ -36,6 +40,17 @@
         font-size: 14px;
         & + .navigation__item {
           margin-top: 8px;
+        }
+      }
+      .navigation__link {
+        &.external {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          border-bottom-color: inherit;
+          &:focus,
+          &:hover {
+            border-bottom-color: transparent;
+          }
         }
       }
       & + .navigation--secondary {
