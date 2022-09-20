@@ -36,7 +36,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop All",
-            "button_link": "shopify:\/\/collections\/everything",
+            "button_link": "shopify:\/\/collections\/all",
             "button_style_secondary": false
           }
         }
