@@ -104,6 +104,106 @@
         "padding_bottom": 36
       }
     },
+    "1663692549c4f9476b": {
+      "type": "multicolumn",
+      "blocks": {
+        "1663692549d23e5a4a-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>As they searched for skincare that bridged the realms of cosmetics and function, the study of essential oils and bio-active ingredients began. After crafting recipes for the face and body that improved skin texture and delivered nourished skin that looks radiant, hydrated and sculpted, they added toxic-free mica to two of their formulas for cosmic illumination. So was the genesis of Maater Cosmetics.<\/p><p><\/p><p>Each product is designed as a functional cosmetic, the bio-active ingredients nourish the skin while the reflective mica particles react with the light to define the sculptural features of the human face and body.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "1663692549d23e5a4a-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>When stars are named, the identification includes the constellation the star is located in along with the brightness. The brighter the star, the closer to the beginning of the Greek alphabet the name would be — the brightest being Alpha. <\/p><p>Maater Cosmetics uses the same naming convention to communicate a formula’s mica content and resulting luminosity level, ranging from Alpha to Kappa.Maater Cosmetics compounds are made with active plant-based ingredients and organic pure essential oils and are vegan and cruelty-free. Never formulated with toxins, fillers, synthetics, artificial colours or fragrances.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1663692549d23e5a4a-0",
+        "1663692549d23e5a4a-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "16636927904a081d4e": {
+      "type": "rich-text",
+      "blocks": {
+        "1663692789ad9550ea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "For Use on Earth And Beyond",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "1663692789ad9550ea-0"
+      ],
+      "settings": {
+        "background": "orange",
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1660342419ca2e5f75": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "20136d21-3a76-452c-90d4-289f04643200": {
+          "type": "heading",
+          "settings": {
+            "heading": "The products are formulated and packaged by human hands in Vancouver, Canada, Earth",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "20136d21-3a76-452c-90d4-289f04643200"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/maater-aboutpage.jpg",
+        "image_position": "center center",
+        "text_box_position": "center",
+        "text_alignment": "center",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "text_overlay",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#f3f3f3",
+        "colors_overlay_opacity": 0,
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
+    },
     "rich-text-1": {
       "type": "rich-text",
       "blocks": {
@@ -152,38 +252,6 @@
       "settings": {
         "desktop_height": 60,
         "mobile_height": 48
-      }
-    },
-    "1660342419ca2e5f75": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "20136d21-3a76-452c-90d4-289f04643200": {
-          "type": "heading",
-          "settings": {
-            "heading": "The products are formulated and packaged by human hands in Vancouver, Canada, Earth",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "20136d21-3a76-452c-90d4-289f04643200"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/maater-aboutpage.jpg",
-        "image_position": "center center",
-        "text_box_position": "center",
-        "text_alignment": "center",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_box_position": "text_overlay",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "auto",
-        "colors_text": "#ffffff",
-        "colors_overlay": "#f3f3f3",
-        "colors_overlay_opacity": 0,
-        "padding_top": 56,
-        "padding_bottom": 36
       }
     },
     "1660338930bbaede34": {
@@ -242,47 +310,44 @@
         "padding_bottom": 36
       }
     },
-    "1663692549c4f9476b": {
-      "type": "multicolumn",
+    "1663692768ccb9682c": {
+      "type": "rich-text--legacy",
       "blocks": {
-        "1663692549d23e5a4a-0": {
-          "type": "column",
+        "166369276801dc28c6-0": {
+          "type": "heading",
           "settings": {
-            "title": "",
-            "title_size": "h3",
-            "text": "<p>As they searched for skincare that bridged the realms of cosmetics and function, the study of essential oils and bio-active ingredients began. After crafting recipes for the face and body that improved skin texture and delivered nourished skin that looks radiant, hydrated and sculpted, they added toxic-free mica to two of their formulas for cosmic illumination. So was the genesis of Maater Cosmetics.<\/p><p><\/p><p>Each product is designed as a functional cosmetic, the bio-active ingredients nourish the skin while the reflective mica particles react with the light to define the sculptural features of the human face and body.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
           }
         },
-        "1663692549d23e5a4a-1": {
-          "type": "column",
+        "166369276801dc28c6-1": {
+          "type": "text",
           "settings": {
-            "title": "",
-            "title_size": "h3",
-            "text": "<p>When stars are named, the identification includes the constellation the star is located in along with the brightness. The brighter the star, the closer to the beginning of the Greek alphabet the name would be — the brightest being Alpha. <\/p><p>Maater Cosmetics uses the same naming convention to communicate a formula’s mica content and resulting luminosity level, ranging from Alpha to Kappa.Maater Cosmetics compounds are made with active plant-based ingredients and organic pure essential oils and are vegan and cruelty-free. Never formulated with toxins, fillers, synthetics, artificial colours or fragrances.<\/p>",
-            "button_label": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "166369276801dc28c6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "1663692549d23e5a4a-0",
-        "1663692549d23e5a4a-1"
+        "166369276801dc28c6-0",
+        "166369276801dc28c6-1",
+        "166369276801dc28c6-2"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "image_ratio": "landscape",
-        "image_position": "center center",
         "text_alignment": "left",
+        "narrow": true,
         "show_divider": false,
         "mobile_text_alignment": "left",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
@@ -292,12 +357,14 @@
     "1663691823b73642dc",
     "1663691926164ebefa",
     "16636923894b62cf4f",
+    "1663692549c4f9476b",
+    "16636927904a081d4e",
+    "1660342419ca2e5f75",
     "rich-text-1",
     "main",
     "empty-space",
-    "1660342419ca2e5f75",
     "1660338930bbaede34",
     "1663692379fc16454d",
-    "1663692549c4f9476b"
+    "1663692768ccb9682c"
   ]
 }
