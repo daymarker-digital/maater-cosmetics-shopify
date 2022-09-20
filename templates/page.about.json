@@ -82,38 +82,26 @@
         "padding_bottom": 36
       }
     },
-    "rich-text-0": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "aa1d2f55-dda1-45db-9b1e-9d97ed1ec763": {
-          "type": "heading",
-          "settings": {
-            "heading": "Maater Cosmetics is a cosmic aesthetics brand.",
-            "style": "primary"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Maater Cosmetics is a cosmic aesthetics brand.<\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "aa1d2f55-dda1-45db-9b1e-9d97ed1ec763",
-        "text"
-      ],
+    "16636923894b62cf4f": {
+      "type": "image-banner",
       "settings": {
-        "background": "black",
+        "image": "shopify:\/\/shop_images\/MAATERArtboard_9.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
         "text_alignment": "center",
-        "narrow": true,
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "padding_top": 100,
-        "padding_bottom": 0
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_text": "#FFFFFF",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich-text-1": {
@@ -207,17 +195,64 @@
         "padding_top": 28,
         "padding_bottom": 100
       }
+    },
+    "1663692379fc16454d": {
+      "type": "image-with-text",
+      "blocks": {
+        "166369237955dbc4c3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "166369237955dbc4c3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "166369237955dbc4c3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "166369237955dbc4c3-0",
+        "166369237955dbc4c3-1",
+        "166369237955dbc4c3-2"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "full_width": false,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image-banner",
     "1663691823b73642dc",
     "1663691926164ebefa",
-    "rich-text-0",
+    "16636923894b62cf4f",
     "rich-text-1",
     "main",
     "empty-space",
     "1660342419ca2e5f75",
-    "1660338930bbaede34"
+    "1660338930bbaede34",
+    "1663692379fc16454d"
   ]
 }
