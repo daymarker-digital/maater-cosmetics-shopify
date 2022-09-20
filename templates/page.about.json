@@ -212,10 +212,24 @@
             "heading": "Shop Sets",
             "style": "primary"
           }
+        },
+        "a3a48db7-6100-4c07-b6f2-26b2512187fc": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-alpha"
+          }
+        },
+        "3f24b6c0-fe8c-48ae-9460-898f450f9f58": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-beta"
+          }
         }
       },
       "block_order": [
-        "1663693070df0a5fef-0"
+        "1663693070df0a5fef-0",
+        "a3a48db7-6100-4c07-b6f2-26b2512187fc",
+        "3f24b6c0-fe8c-48ae-9460-898f450f9f58"
       ],
       "settings": {
         "background": "black",
