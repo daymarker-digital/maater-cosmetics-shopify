@@ -282,11 +282,13 @@
         "4e53c285-ecee-480f-9714-c9c80c83878f": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__4.jpg"
           }
         },
         "8820cf1d-78ac-4b4c-81fd-39a9765c5b33": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IGpanel__3.jpg"
           }
         }
       },
