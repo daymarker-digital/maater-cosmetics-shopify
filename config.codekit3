@@ -3978,6 +3978,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/article.qwer.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/article.qwer.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/blog.json" : {
       "ft" : 524288,
       "oA" : 0,
@@ -4090,6 +4098,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.qwre.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.qwre.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.sidebar.json" : {
       "ft" : 524288,
       "oA" : 0,
@@ -4194,10 +4210,10 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/templates\/product.set-star.json" : {
+    "\/templates\/product.set-essential.json" : {
       "ft" : 524288,
       "oA" : 0,
-      "oAP" : "\/templates\/product.set-star.json",
+      "oAP" : "\/templates\/product.set-essential.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
