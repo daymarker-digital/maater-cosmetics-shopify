@@ -194,71 +194,6 @@
         "padding_bottom": 24
       }
     },
-    "1660342419ca2e5f75": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "20136d21-3a76-452c-90d4-289f04643200": {
-          "type": "heading",
-          "settings": {
-            "heading": "The products are formulated and packaged by human hands in Vancouver, Canada, Earth",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "20136d21-3a76-452c-90d4-289f04643200"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/maater-aboutpage.jpg",
-        "image_position": "center center",
-        "text_box_position": "center",
-        "text_alignment": "center",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_box_position": "text_overlay",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "auto",
-        "colors_text": "#ffffff",
-        "colors_overlay": "#f3f3f3",
-        "colors_overlay_opacity": 0,
-        "padding_top": 56,
-        "padding_bottom": 36
-      }
-    },
-    "rich-text-1": {
-      "type": "rich-text",
-      "blocks": {
-        "54b7e357-4d63-4a63-be02-662158a3e68e": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Newest Cosmetic Brand in the Universe",
-            "style": "primary"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each product is designed as a functional cosmetic, the bio-active ingredients nourish the skin while reflective mica particles react with the light to define the sculptural features of the human face and body. <\/p><p>Maater Cosmetics compounds are made with active plant-based ingredients and organic pure essential oils and are vegan and cruelty-free. Never formulated with toxins, fillers, synthetics, artificial colours or fragrances. <\/p><p><\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "54b7e357-4d63-4a63-be02-662158a3e68e",
-        "text"
-      ],
-      "settings": {
-        "background": "black",
-        "text_alignment": "center",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "center",
-        "padding_top": 52,
-        "padding_bottom": 100
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -266,111 +201,6 @@
         "narrow": true,
         "padding_top": 60,
         "padding_bottom": 72
-      }
-    },
-    "empty-space": {
-      "type": "empty-space",
-      "disabled": true,
-      "settings": {
-        "desktop_height": 60,
-        "mobile_height": 48
-      }
-    },
-    "1660338930bbaede34": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "full_width": false,
-        "show_divider": false,
-        "padding_top": 28,
-        "padding_bottom": 100
-      }
-    },
-    "1663692379fc16454d": {
-      "type": "image-with-text",
-      "blocks": {
-        "166369237955dbc4c3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "166369237955dbc4c3-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "166369237955dbc4c3-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "166369237955dbc4c3-0",
-        "166369237955dbc4c3-1",
-        "166369237955dbc4c3-2"
-      ],
-      "settings": {
-        "image_position": "center center",
-        "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "650px",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1663692768ccb9682c": {
-      "type": "rich-text--legacy",
-      "blocks": {
-        "166369276801dc28c6-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "166369276801dc28c6-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "166369276801dc28c6-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "166369276801dc28c6-0",
-        "166369276801dc28c6-1",
-        "166369276801dc28c6-2"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
@@ -382,12 +212,6 @@
     "1663692549c4f9476b",
     "16636927904a081d4e",
     "1663692897f32b3383",
-    "1660342419ca2e5f75",
-    "rich-text-1",
-    "main",
-    "empty-space",
-    "1660338930bbaede34",
-    "1663692379fc16454d",
-    "1663692768ccb9682c"
+    "main"
   ]
 }
