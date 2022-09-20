@@ -1566,7 +1566,7 @@ class ProductForm extends HTMLElement {
     if ( element && elementContent ) {
       let height = element.offsetHeight || 100;
       elementContent.innerHTML = `
-        <strong class="heading--secondary">${response.product_title} Added to <a href="${window.routes.cart_url}" title="Cart" target="_self">Cart</a>!</strong>
+        <strong>${response.product_title} Added to <a href="${window.routes.cart_url}" title="Cart" target="_self">Cart</a>!</strong>
       `;
       anime({
         targets: element,
