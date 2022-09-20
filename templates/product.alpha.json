@@ -24,46 +24,9 @@
             "title_size": "h1"
           }
         },
-        "rating": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "heading": "Hurry up ! Sale end in:",
-            "number_size": "compact",
-            "colors_heading": "#da3f3f",
-            "colors_text": "#da3f3f",
-            "colors_background": "#ffeeee"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "swatch_type": "round",
-            "size_chart": ""
-          }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "disabled": true,
-          "settings": {
-            "inventory_threshold": 20,
-            "show_inventory_transfer": true,
-            "color_scheme": "accent-3"
           }
         },
         "description": {
@@ -111,37 +74,18 @@
             "show_quantity_selector": false,
             "show_dynamic_checkout": true
           }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "sticky_cart": {
-          "type": "sticky_cart",
-          "disabled": true,
-          "settings": {
-            "show_quantity_selector": false
-          }
         }
       },
       "block_order": [
         "subtitle",
         "title",
-        "rating",
-        "countdown",
         "price",
-        "variant_picker",
-        "inventory_status",
         "description",
         "26b613b3-bf27-4330-a0ea-5f3ff3b93ac4",
         "db9495af-6e57-4928-a03b-1c3cd74968b3",
         "c9f3b211-9485-4bf9-9d19-9bf5ae628bae",
         "787219c3-ee1e-4ebf-b05f-2649f155774a",
-        "buy_buttons",
-        "share",
-        "sticky_cart"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -156,6 +100,40 @@
         "show_mobile_thumbnails": false,
         "padding_top": 0,
         "padding_bottom": 72
+      }
+    },
+    "16630250488d084a02": {
+      "type": "product-grid",
+      "blocks": {
+        "1663025048c6e922f0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "You may also like",
+            "style": "primary"
+          }
+        },
+        "e6de269e-73ec-4dd5-817d-51d74db714c7": {
+          "type": "product",
+          "settings": {
+            "product": "celestial-bodies-oil-beta"
+          }
+        },
+        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20": {
+          "type": "product",
+          "settings": {
+            "product": "space-face-oil-kappa-test"
+          }
+        }
+      },
+      "block_order": [
+        "1663025048c6e922f0-0",
+        "e6de269e-73ec-4dd5-817d-51d74db714c7",
+        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20"
+      ],
+      "settings": {
+        "background": "black",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-details": {
@@ -228,132 +206,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1663024951bced082e": {
-      "type": "cart-recommendations",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "show_divider": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_position": "center center",
-        "enable_image_fill": true,
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_quick_buy": true,
-        "enable_quick_view": true,
-        "enable_color_swatches": true,
-        "enable_countdown": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "166302495912b8dbfd": {
-      "type": "bundle-products",
-      "disabled": true,
-      "blocks": {
-        "166302495920264f07-0": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "show_vendor": false,
-            "enable_quick_view": true,
-            "image_ratio": "adapt",
-            "color": "#000000",
-            "horizontal": 30,
-            "vertical": 40
-          }
-        },
-        "166302495920264f07-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "show_vendor": false,
-            "enable_quick_view": true,
-            "image_ratio": "adapt",
-            "color": "#000000",
-            "horizontal": 70,
-            "vertical": 45
-          }
-        },
-        "166302495920264f07-2": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "show_vendor": false,
-            "enable_quick_view": true,
-            "image_ratio": "adapt",
-            "color": "#000000",
-            "horizontal": 45,
-            "vertical": 65
-          }
-        }
-      },
-      "block_order": [
-        "166302495920264f07-0",
-        "166302495920264f07-1",
-        "166302495920264f07-2"
-      ],
-      "settings": {
-        "subheading": "Bundle & Save",
-        "heading": "Build Your Own Basket",
-        "heading_size": "h1",
-        "layout": "image_first",
-        "text_box_position": "top",
-        "text_alignment": "left",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "16630250488d084a02": {
-      "type": "product-grid",
-      "blocks": {
-        "1663025048c6e922f0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "You may also like",
-            "style": "primary"
-          }
-        },
-        "e6de269e-73ec-4dd5-817d-51d74db714c7": {
-          "type": "product",
-          "settings": {
-            "product": "celestial-bodies-oil-beta"
-          }
-        },
-        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20": {
-          "type": "product",
-          "settings": {
-            "product": "space-face-oil-kappa-test"
-          }
-        }
-      },
-      "block_order": [
-        "1663025048c6e922f0-0",
-        "e6de269e-73ec-4dd5-817d-51d74db714c7",
-        "7b9b0d88-401e-4a4c-a37b-f92fb9ae3c20"
-      ],
-      "settings": {
-        "background": "black",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "empty-space",
     "main",
+    "16630250488d084a02",
     "product-details",
-    "product-recommendations",
-    "1663024951bced082e",
-    "166302495912b8dbfd",
-    "16630250488d084a02"
+    "product-recommendations"
   ]
 }
