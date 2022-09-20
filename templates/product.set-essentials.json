@@ -173,12 +173,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1663702851ea313e55": {
+      "type": "product-grid",
+      "blocks": {
+        "1663702851f162996d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "You May Also Like",
+            "style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1663702851f162996d-0"
+      ],
+      "settings": {
+        "background": "black",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "empty-space",
     "main",
     "product-details",
-    "product-recommendations"
+    "product-recommendations",
+    "1663702851ea313e55"
   ]
 }
