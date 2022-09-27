@@ -220,8 +220,8 @@
         "16643031453d569554-6": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false
           }
         },
         "081b77e6-0110-4951-8db5-11dbe60a9a7a": {
