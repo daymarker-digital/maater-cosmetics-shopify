@@ -36,11 +36,10 @@
         },
         "70816082-83d4-453a-aa21-af406333fb82": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "heading": "Benefits",
-            "content": "",
+            "content": "<p>+ Powerful antioxidant stimulating cell and tissue regeneration<br\/>+ Contains pearl mica dust for heightened luminosity and contouring<br\/>+ Contains Omega 3, 6, and 9 fatty acids, trans-retinoic acid, as well as Vitamin E and K<\/p>",
             "page": ""
           }
         },
