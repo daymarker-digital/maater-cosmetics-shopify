@@ -2,7 +2,7 @@
 
 @mixin heading($style:1) {
 
-  display: block;
+  display: inline-flex;
   font-style: normal;
   color: inherit;
   margin: 0;
@@ -47,6 +47,32 @@
 
     @include breakpoint(xl) {
       font-size: 50px;
+    }
+
+  }
+
+  @if $style == product-title {
+
+    font-family: "PP Neue Montreal Bold",sans-serif;
+    letter-spacing: 0;
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 400;
+
+    @include breakpoint(md) {
+      font-size: 30px;
+    }
+
+    @include breakpoint(lg) {
+      font-size: 32px;
+    }
+
+    @include breakpoint(xl) {
+      font-size: 36px;
+    }
+
+    @include breakpoint(xxl) {
+      font-size: 40px;
     }
 
   }

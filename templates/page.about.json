@@ -203,77 +203,13 @@
         "padding_bottom": 72
       }
     },
-    "1663693070a6b300a3": {
-      "type": "product-grid",
-      "blocks": {
-        "1663693070df0a5fef-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shop Sets",
-            "style": "primary"
-          }
-        },
-        "a3a48db7-6100-4c07-b6f2-26b2512187fc": {
-          "type": "product",
-          "settings": {
-            "product": "essential-set"
-          }
-        },
-        "3f24b6c0-fe8c-48ae-9460-898f450f9f58": {
-          "type": "product",
-          "settings": {
-            "product": "star-set"
-          }
-        }
-      },
-      "block_order": [
-        "1663693070df0a5fef-0",
-        "a3a48db7-6100-4c07-b6f2-26b2512187fc",
-        "3f24b6c0-fe8c-48ae-9460-898f450f9f58"
-      ],
-      "settings": {
-        "background": "black",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "16643031457c474f2e": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
-        "16643031453d569554-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "16643031453d569554-1": {
           "type": "title",
           "settings": {
             "title_size": "h1"
-          }
-        },
-        "16643031453d569554-2": {
-          "type": "rating",
-          "settings": {
-          }
-        },
-        "16643031453d569554-3": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up ! Sale end in:",
-            "number_size": "compact",
-            "colors_heading": "#da3f3f",
-            "colors_text": "#da3f3f",
-            "colors_background": "#feeeee"
-          }
-        },
-        "16643031453d569554-4": {
-          "type": "price",
-          "settings": {
           }
         },
         "957ef757-c499-414f-a115-5d4df7d002fb": {
@@ -281,47 +217,26 @@
           "settings": {
           }
         },
-        "16643031453d569554-5": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "swatch_type": "round",
-            "size_chart": ""
-          }
-        },
         "16643031453d569554-6": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false
           }
         },
-        "16643031453d569554-7": {
-          "type": "share",
-          "disabled": true,
+        "081b77e6-0110-4951-8db5-11dbe60a9a7a": {
+          "type": "cta",
           "settings": {
-          }
-        },
-        "16643031453d569554-8": {
-          "type": "read_more",
-          "settings": {
-            "show_icon": false
+            "title": "Shop Sets",
+            "link": "shopify:\/\/collections\/sets"
           }
         }
       },
       "block_order": [
-        "16643031453d569554-0",
         "16643031453d569554-1",
-        "16643031453d569554-2",
-        "16643031453d569554-3",
-        "16643031453d569554-4",
         "957ef757-c499-414f-a115-5d4df7d002fb",
-        "16643031453d569554-5",
         "16643031453d569554-6",
-        "16643031453d569554-7",
-        "16643031453d569554-8"
+        "081b77e6-0110-4951-8db5-11dbe60a9a7a"
       ],
       "settings": {
         "product": "essential-set",
@@ -417,7 +332,6 @@
     "16636927904a081d4e",
     "1663692897f32b3383",
     "main",
-    "1663693070a6b300a3",
     "16643031457c474f2e",
     "16636931133b4a21e2",
     "16636931295b7b1cb8"

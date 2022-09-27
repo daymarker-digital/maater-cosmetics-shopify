@@ -1509,16 +1509,21 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, config)
       .then((response) => response.json())
       .then((response) => {
+
         if (response.status) {
           this.handleErrorMessage(response.description);
           return;
         }
+
         // #VP
         this.updateCartTotal();
         this.notifyUser(response);
+        // end of #VP
+
         if (this.miniCart) {
           this.miniCart.renderContents(response);
         }
+
       })
       .catch((e) => {
         console.error(e);

@@ -1,0 +1,71 @@
+@use "./mixins/general" as *;
+
+.featured-product {
+
+  .product__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    & > * {
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+    }
+  }
+
+  &.grid--2-col-tablet {
+    .grid__item {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(sm) {
+
+    .product__info-container {
+      padding-inline-start: 5rem;
+      padding-top: 2.5rem;
+      padding-inline-end: 5rem;
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    .product__info-container {
+      padding-inline-start: 8rem;
+      padding-top: 4.5rem;
+      padding-inline-end: 8rem;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    .product__info-container {
+      padding-inline-end: 0;
+    }
+
+    .product__info-wrapper {
+      display: inline-flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+
+    &.grid--2-col-tablet {
+      .grid__item {
+        width: 50%;
+      }
+      product-gallery {
+        .grid__item {
+          width: 100%;
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
