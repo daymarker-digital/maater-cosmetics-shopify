@@ -697,6 +697,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/custom-featured-product.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom-featured-product.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/custom-footer.css" : {
       "aP" : 1,
       "bl" : 0,

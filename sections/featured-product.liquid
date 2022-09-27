@@ -611,7 +611,7 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button{% if block.settings.show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
+                      class="product-form__submit button button--secondary"
                       {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                       {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                     >
@@ -647,8 +647,29 @@
                 </div>
               </div>
             {%- endif -%}
+          {%- when 'cta' -%}
+
+            {%- liquid
+
+                assign title = block.settings.title | default: ''
+                assign link = block.settings.link | default: ''
+                assign target = '_self'
+
+                if link contains 'http'
+                  assign target = '_target'
+                endif
+
+            -%}
+
+            {% if title != blank and link != blank %}
+              <div class="featured-product__cta">
+                <a class="featured-product__cta-link button button--primary" href="{{ link }}" title="{{ title }}" target="{{ target }}">{{ title }}</a>
+              </div>
+            {% endif %}
+
+
           {%- when 'description' -%}
-            <div class="product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
+            <div class="product__description body-copy--1 rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'rating' -%}
