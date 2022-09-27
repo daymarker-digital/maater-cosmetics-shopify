@@ -71,6 +71,15 @@
           "settings": {
           }
         },
+        "ba6c98df-2afa-4af2-b321-0126744ce813": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Benefits",
+            "content": "<p>+ Made with precious botanical oils that help improve stress-related conditions<br\/>+ Contains silver mica dust which helps highlight and illuminate<br\/>+ Helps improve skin conditioning and rebalancing<\/p>",
+            "page": ""
+          }
+        },
         "75c2c62e-f951-4660-a91c-fce22a0b9b80": {
           "type": "collapsible_tab",
           "settings": {
@@ -135,6 +144,7 @@
         "variant_picker",
         "inventory_status",
         "description",
+        "ba6c98df-2afa-4af2-b321-0126744ce813",
         "75c2c62e-f951-4660-a91c-fce22a0b9b80",
         "b932fa78-1b10-4124-bdc4-684c82b5d482",
         "b32f4f1a-646f-402a-9653-a12aa7623469",
