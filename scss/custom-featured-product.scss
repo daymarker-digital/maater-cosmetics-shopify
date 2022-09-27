@@ -19,11 +19,31 @@
     }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
 
-  @include breakpoint(md) {} // min width md
+    .product__info-container {
+      padding-inline-start: 5rem;
+      padding-top: 2.5rem;
+      padding-inline-end: 5rem;
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    .product__info-container {
+      padding-inline-start: 8rem;
+      padding-top: 4.5rem;
+      padding-inline-end: 8rem;
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
+
+    .product__info-container {
+      padding-inline-end: 0;
+    }
 
     .product__info-wrapper {
       display: inline-flex;
