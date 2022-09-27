@@ -13,4 +13,8 @@
     @include heading(2);
   }
 
+  &--product-title {
+    @include heading(product-title);
+  }
+
 }

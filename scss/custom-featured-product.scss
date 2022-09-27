@@ -3,15 +3,9 @@
 .featured-product {
 
   .product__title {
-    font-family: "PP Neue Montreal Bold",sans-serif;
-    width: 100%;
-    letter-spacing: 0;
-    font-size: 24px;
-    & > * {
-      font-family: inherit;
-      letter-spacing: inherit;
-      font-size: inherit;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   &.grid--2-col-tablet {
@@ -22,13 +16,7 @@
 
   @include breakpoint(sm) {} // min width sm
 
-  @include breakpoint(md) {
-
-    .product__title {
-      font-size: 30px;
-    }
-
-  } // min width md
+  @include breakpoint(md) {} // min width md
 
   @include breakpoint(lg) {
 
@@ -36,10 +24,6 @@
       display: inline-flex;
       align-items: flex-end;
       justify-content: flex-start;
-    }
-
-    .product__title {
-      font-size: 32px;
     }
 
     &.grid--2-col-tablet {
@@ -55,20 +39,8 @@
 
   } // min width lg
 
-  @include breakpoint(xl) {
+  @include breakpoint(xl) {} // min width xl
 
-    .product__title {
-      font-size: 36px;
-    }
-
-  } // min width xl
-
-  @include breakpoint(xxl) {
-
-    .product__title {
-      font-size: 40px;
-    }
-
-  } // min width xxl
+  @include breakpoint(xxl) {} // min width xxl
 
 }
