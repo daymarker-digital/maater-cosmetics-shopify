@@ -203,41 +203,6 @@
         "padding_bottom": 72
       }
     },
-    "1663693070a6b300a3": {
-      "type": "product-grid",
-      "disabled": true,
-      "blocks": {
-        "1663693070df0a5fef-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shop Sets",
-            "style": "primary"
-          }
-        },
-        "a3a48db7-6100-4c07-b6f2-26b2512187fc": {
-          "type": "product",
-          "settings": {
-            "product": "essential-set"
-          }
-        },
-        "3f24b6c0-fe8c-48ae-9460-898f450f9f58": {
-          "type": "product",
-          "settings": {
-            "product": "star-set"
-          }
-        }
-      },
-      "block_order": [
-        "1663693070df0a5fef-0",
-        "a3a48db7-6100-4c07-b6f2-26b2512187fc",
-        "3f24b6c0-fe8c-48ae-9460-898f450f9f58"
-      ],
-      "settings": {
-        "background": "black",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "16643031457c474f2e": {
       "type": "featured-product",
       "blocks": {
@@ -245,11 +210,6 @@
           "type": "title",
           "settings": {
             "title_size": "h1"
-          }
-        },
-        "16643031453d569554-4": {
-          "type": "price",
-          "settings": {
           }
         },
         "957ef757-c499-414f-a115-5d4df7d002fb": {
@@ -260,8 +220,8 @@
         "16643031453d569554-6": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false
           }
         },
         "081b77e6-0110-4951-8db5-11dbe60a9a7a": {
@@ -274,7 +234,6 @@
       },
       "block_order": [
         "16643031453d569554-1",
-        "16643031453d569554-4",
         "957ef757-c499-414f-a115-5d4df7d002fb",
         "16643031453d569554-6",
         "081b77e6-0110-4951-8db5-11dbe60a9a7a"
@@ -373,7 +332,6 @@
     "16636927904a081d4e",
     "1663692897f32b3383",
     "main",
-    "1663693070a6b300a3",
     "16643031457c474f2e",
     "16636931133b4a21e2",
     "16636931295b7b1cb8"
