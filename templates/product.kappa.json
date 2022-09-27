@@ -71,6 +71,15 @@
             "color_scheme": "accent-3"
           }
         },
+        "a1bf0a64-f504-4b6d-be43-0a02a925920c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Benefits",
+            "content": "<p>+ Smooths skin visibly<br\/>+ Seals in moisture and strengthens skin’s own barrier function, helping to prevent water loss<br\/>+ Enhances the appearance of firmness<br\/>+ Reduces inflammation<br\/>+ Restorative<br\/>+ Calmative<\/p>",
+            "page": ""
+          }
+        },
         "e3f1a356-d91f-4622-a341-dcf1e066aa6e": {
           "type": "collapsible_tab",
           "settings": {
@@ -135,6 +144,7 @@
         "countdown",
         "variant_picker",
         "inventory_status",
+        "a1bf0a64-f504-4b6d-be43-0a02a925920c",
         "e3f1a356-d91f-4622-a341-dcf1e066aa6e",
         "1dd3377e-624a-45b7-9b7c-df34a730036c",
         "b97078e9-6e01-4b13-9f32-d45e3ee638e6",
