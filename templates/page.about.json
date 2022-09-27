@@ -239,7 +239,6 @@
     },
     "16643031457c474f2e": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "16643031453d569554-0": {
           "type": "text",
@@ -309,6 +308,13 @@
           "settings": {
             "show_icon": false
           }
+        },
+        "081b77e6-0110-4951-8db5-11dbe60a9a7a": {
+          "type": "cta",
+          "settings": {
+            "title": "Shop Sets",
+            "link": "shopify:\/\/collections\/sets"
+          }
         }
       },
       "block_order": [
@@ -321,7 +327,8 @@
         "16643031453d569554-5",
         "16643031453d569554-6",
         "16643031453d569554-7",
-        "16643031453d569554-8"
+        "16643031453d569554-8",
+        "081b77e6-0110-4951-8db5-11dbe60a9a7a"
       ],
       "settings": {
         "product": "essential-set",
