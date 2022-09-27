@@ -11,7 +11,6 @@ Production: 126465736843
 ## Phase 1.0
 ### Templates
 - [x] Homepage
-- [ ] Mobile Menu (About, Products, Cart)
-- [ ] Add the Ajax cart
-- [ ] Cart
-
+- [x] Mobile Menu (About, Products, Cart)
+- [x] Add the Ajax cart
+- [x] Cart
