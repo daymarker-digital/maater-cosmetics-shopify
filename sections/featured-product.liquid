@@ -667,7 +667,6 @@
               </div>
             {% endif %}
 
-
           {%- when 'description' -%}
             <div class="product__description body-copy--1 rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
           {%- when 'custom_liquid' -%}
@@ -1981,7 +1980,8 @@
 		{
 			"type": "cta",
 			"name": "Call to Action",
-			"settings": [{
+			"settings": [
+				{
 					"type": "text",
 					"id": "title",
 					"label": "Title"
@@ -1993,7 +1993,6 @@
 				}
 			]
 		}
-
 	],
 	"settings": [{
 			"type": "product",
