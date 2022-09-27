@@ -71,6 +71,15 @@
           "settings": {
           }
         },
+        "98764670-c8d5-431c-82a6-34bdf354109f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Benefits",
+            "content": "<p>+ Used to help advance skin elasticity.<br\/>+ Helps improve tissue damage and pigmentation issues caused by sun exposure.<br\/>+ Contains vitamin A, C, E, and K and carotenoids<br\/>+ Contains gold mica dust to provide a bronze glow<\/p>",
+            "page": ""
+          }
+        },
         "c842d4b6-4c37-4d56-84c1-cfb421262bc0": {
           "type": "collapsible_tab",
           "settings": {
@@ -135,6 +144,7 @@
         "variant_picker",
         "inventory_status",
         "description",
+        "98764670-c8d5-431c-82a6-34bdf354109f",
         "c842d4b6-4c37-4d56-84c1-cfb421262bc0",
         "984b650d-cec7-4a9b-b590-efcd77500285",
         "e06b4afe-ceef-49a2-b560-42685c83932d",
