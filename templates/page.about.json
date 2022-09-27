@@ -205,6 +205,7 @@
     },
     "1663693070a6b300a3": {
       "type": "product-grid",
+      "disabled": true,
       "blocks": {
         "1663693070df0a5fef-0": {
           "type": "heading",
