@@ -34,6 +34,16 @@
           "settings": {
           }
         },
+        "70816082-83d4-453a-aa21-af406333fb82": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "Benefits",
+            "content": "",
+            "page": ""
+          }
+        },
         "26b613b3-bf27-4330-a0ea-5f3ff3b93ac4": {
           "type": "collapsible_tab",
           "settings": {
@@ -81,6 +91,7 @@
         "title",
         "price",
         "description",
+        "70816082-83d4-453a-aa21-af406333fb82",
         "26b613b3-bf27-4330-a0ea-5f3ff3b93ac4",
         "db9495af-6e57-4928-a03b-1c3cd74968b3",
         "c9f3b211-9485-4bf9-9d19-9bf5ae628bae",
