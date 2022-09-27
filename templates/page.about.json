@@ -240,34 +240,10 @@
     "16643031457c474f2e": {
       "type": "featured-product",
       "blocks": {
-        "16643031453d569554-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "16643031453d569554-1": {
           "type": "title",
           "settings": {
             "title_size": "h1"
-          }
-        },
-        "16643031453d569554-2": {
-          "type": "rating",
-          "settings": {
-          }
-        },
-        "16643031453d569554-3": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up ! Sale end in:",
-            "number_size": "compact",
-            "colors_heading": "#da3f3f",
-            "colors_text": "#da3f3f",
-            "colors_background": "#feeeee"
           }
         },
         "16643031453d569554-4": {
@@ -280,33 +256,11 @@
           "settings": {
           }
         },
-        "16643031453d569554-5": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "swatch_type": "round",
-            "size_chart": ""
-          }
-        },
         "16643031453d569554-6": {
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
             "show_dynamic_checkout": true
-          }
-        },
-        "16643031453d569554-7": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "16643031453d569554-8": {
-          "type": "read_more",
-          "settings": {
-            "show_icon": false
           }
         },
         "081b77e6-0110-4951-8db5-11dbe60a9a7a": {
@@ -318,16 +272,10 @@
         }
       },
       "block_order": [
-        "16643031453d569554-0",
         "16643031453d569554-1",
-        "16643031453d569554-2",
-        "16643031453d569554-3",
         "16643031453d569554-4",
         "957ef757-c499-414f-a115-5d4df7d002fb",
-        "16643031453d569554-5",
         "16643031453d569554-6",
-        "16643031453d569554-7",
-        "16643031453d569554-8",
         "081b77e6-0110-4951-8db5-11dbe60a9a7a"
       ],
       "settings": {
