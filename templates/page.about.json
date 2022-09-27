@@ -223,12 +223,20 @@
             "show_quantity_selector": false,
             "show_dynamic_checkout": false
           }
+        },
+        "efa78473-6793-42a9-8779-6a01ae25a023": {
+          "type": "cta",
+          "settings": {
+            "title": "Shop Sets",
+            "link": "shopify:\/\/collections\/sets"
+          }
         }
       },
       "block_order": [
         "16643031453d569554-1",
         "957ef757-c499-414f-a115-5d4df7d002fb",
-        "16643031453d569554-6"
+        "16643031453d569554-6",
+        "efa78473-6793-42a9-8779-6a01ae25a023"
       ],
       "settings": {
         "product": "essential-set",
