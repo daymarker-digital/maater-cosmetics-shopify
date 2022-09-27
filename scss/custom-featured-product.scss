@@ -6,6 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    & > * {
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+    }
   }
 
   &.grid--2-col-tablet {
