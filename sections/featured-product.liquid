@@ -41,6 +41,9 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-review.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<link rel="stylesheet" href="{{ 'custom-featured-product.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom-featured-product.css' | asset_url | stylesheet_tag }}</noscript>
+
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model and section.settings.enable_layered_images == false -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
