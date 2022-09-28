@@ -2,12 +2,36 @@
 
 .header {
 
-  padding: 35px 24px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: transparent;
-  position: relative;
+  display: block;
+  grid-template-areas: unset;
+  grid-template-columns: unset;
+  align-items: unset;
+  padding: 0;
+
+  .navigation {
+    font-family: "PP Neue Montreal Bold", sans-serif;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    font-size: 48px;
+    font-weight: 100;
+    .cart {
+      display: none;
+    }
+    .link {
+      color: inherit;
+    }
+    .menu-drawer-toggle {
+      cursor: pointer;
+      transition: opacity 300ms;
+      opacity: 1;
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
 
   &__brand {
     width: 100%;
@@ -32,28 +56,12 @@
     }
   }
 
-  &__mobile-menu-button {
-    transition: opacity 300ms;
-    font-family: "PP Neue Montreal Bold", sans-serif;
-    color: #fff !important;
-    border: none !important;
-    min-width: 0;
-    position: absolute;
-    right: 30px;
-    background: transparent;
-    opacity: 1;
-    padding: 0;
-    .button__title {
-      font-size: 48px;
-      font-weight: 100;
-    }
-    &:after {
-      display: none;
-    }
-    &:focus,
-    &:hover {
-      opacity: 0.5;
-    }
+  &__main {
+    padding: 35px 24px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   @include breakpoint(md) {
@@ -63,5 +71,24 @@
     }
 
   }
+
+  @include breakpoint(lg) {
+
+    .navigation {
+      .cart {
+        display: block;
+      }
+      &__item {
+        & + .navigation__item {
+          margin-left: 20px;
+        }
+      }
+    }
+
+  }
+
+  @include breakpoint(xl) {}
+
+  @include breakpoint(xxl) {}
 
 }

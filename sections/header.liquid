@@ -1,17 +1,36 @@
-<header class="header">
-  <div class="header__brand">
-    <a class="header__link link" href="/">
+{%- liquid
+
+  assign section_name = 'header'
+  assign section_id = section_name | append: '--' | append: section.id
+
+-%}
+
+<div class="{{ section_name }}__main">
+
+  <div class="{{ section_name }}__brand">
+    <a class="{{ section_name }}__link link" href="/">
       <img src="{{ 'MAATER--branding.logo.svg' | asset_url }}" alt="{{ shop.name }} Logo" width="374" height="226" />
     </a>
   </div>
-  <button class="header__mobile-menu-button button js-toggle-menu-drawer" type="button">
-    <span class="button__title">++</span>
-  </button>
-</header>
+
+  <nav class="{{ section_name }}__navigation navigation" role="menu">
+    <div class="navigation__item cart">
+      <a class="navigation__link link" href="/cart" target="_self" title="Cart">
+        <span class="navigation__item-title">Cart (<span class="js-cart-items-total">{{ cart.item_count }}</span>)</span>
+      </a>
+    </div>
+    <div class="navigation__item menu-drawer-toggle js-toggle-menu-drawer">
+      <span class="navigation__item-title">++</span>
+    </div>
+  </nav>
+
+</div>
 
 {% schema %}
 {
   "name": "t:sections.header.name",
+  "tag": "header",
+  "class": "header",
   "settings": [
     {
       "type": "image_picker",
