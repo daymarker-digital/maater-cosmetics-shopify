@@ -22,6 +22,30 @@
         "padding_bottom": 0
       }
     },
+    "78ef0814-cdb0-4071-9170-a21718cf2798": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15278443266187__78ef0814-cdb0-4071-9170-a21718cf2798-166915084082fd9406-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Use code SHINE20 for 20% off at checkout",
+            "style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15278443266187__78ef0814-cdb0-4071-9170-a21718cf2798-166915084082fd9406-0"
+      ],
+      "settings": {
+        "background": "orange",
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "1662047424162adeb7": {
       "type": "image-banner",
       "blocks": {
@@ -311,6 +335,7 @@
   },
   "order": [
     "1661881401445420bc",
+    "78ef0814-cdb0-4071-9170-a21718cf2798",
     "1662047424162adeb7",
     "166188580238f56d5d",
     "1662661549f438ee1d",
