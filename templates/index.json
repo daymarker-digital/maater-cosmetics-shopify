@@ -332,6 +332,78 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "efcff3a2-8f29-436f-a00d-e05ea8d20356": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "0b158677-110a-4cd4-8fb8-6e4ec444c05f": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "aec0b660-3660-444a-96e7-097859ab01c0": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3",
+        "0b158677-110a-4cd4-8fb8-6e4ec444c05f",
+        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9",
+        "aec0b660-3660-444a-96e7-097859ab01c0",
+        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc"
+      ],
+      "settings": {
+        "heading": "As Seen On",
+        "heading_size": "h1",
+        "opacity": 72,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -344,6 +416,7 @@
     "166266466499d67181",
     "1662069008751553a2",
     "166266160293c0ea34",
-    "1662072675f3922bcf"
+    "1662072675f3922bcf",
+    "efcff3a2-8f29-436f-a00d-e05ea8d20356"
   ]
 }
