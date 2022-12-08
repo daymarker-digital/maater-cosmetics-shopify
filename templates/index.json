@@ -335,6 +335,7 @@
     },
     "efcff3a2-8f29-436f-a00d-e05ea8d20356": {
       "type": "logo-list",
+      "disabled": true,
       "blocks": {
         "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1": {
           "type": "logo",
