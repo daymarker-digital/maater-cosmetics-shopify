@@ -90,6 +90,101 @@
         "padding_bottom": 0
       }
     },
+    "efcff3a2-8f29-436f-a00d-e05ea8d20356": {
+      "type": "logo-list",
+      "blocks": {
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-01.png",
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-02.png",
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-03.png",
+            "link": ""
+          }
+        },
+        "0b158677-110a-4cd4-8fb8-6e4ec444c05f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-04.png",
+            "link": ""
+          }
+        },
+        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-05.png",
+            "link": ""
+          }
+        },
+        "aec0b660-3660-444a-96e7-097859ab01c0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-06.png",
+            "link": ""
+          }
+        },
+        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-07.png",
+            "link": ""
+          }
+        },
+        "10f09b1d-75f5-48c6-a2d5-9e45343ca706": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-08.png",
+            "link": ""
+          }
+        },
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-09.png",
+            "link": ""
+          }
+        },
+        "fff85fbc-673e-439c-8225-b0434cebb937": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Maater_press-10.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3",
+        "0b158677-110a-4cd4-8fb8-6e4ec444c05f",
+        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9",
+        "aec0b660-3660-444a-96e7-097859ab01c0",
+        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc",
+        "10f09b1d-75f5-48c6-a2d5-9e45343ca706",
+        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0",
+        "fff85fbc-673e-439c-8225-b0434cebb937"
+      ],
+      "settings": {
+        "heading": "Featured In",
+        "heading_size": "h1",
+        "opacity": 100,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "166188580238f56d5d": {
       "type": "image-with-text",
       "blocks": {
@@ -332,115 +427,19 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "efcff3a2-8f29-436f-a00d-e05ea8d20356": {
-      "type": "logo-list",
-      "disabled": true,
-      "blocks": {
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-01.png",
-            "link": ""
-          }
-        },
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-02.png",
-            "link": ""
-          }
-        },
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-03.png",
-            "link": ""
-          }
-        },
-        "0b158677-110a-4cd4-8fb8-6e4ec444c05f": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-04.png",
-            "link": ""
-          }
-        },
-        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-05.png",
-            "link": ""
-          }
-        },
-        "aec0b660-3660-444a-96e7-097859ab01c0": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-06.png",
-            "link": ""
-          }
-        },
-        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-07.png",
-            "link": ""
-          }
-        },
-        "10f09b1d-75f5-48c6-a2d5-9e45343ca706": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-08.png",
-            "link": ""
-          }
-        },
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-09.png",
-            "link": ""
-          }
-        },
-        "fff85fbc-673e-439c-8225-b0434cebb937": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Maater_press-10.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-1",
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-2",
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-3",
-        "0b158677-110a-4cd4-8fb8-6e4ec444c05f",
-        "6ed1bf9e-933e-4cb6-bbb7-29a2433837c9",
-        "aec0b660-3660-444a-96e7-097859ab01c0",
-        "104f17e9-68b3-4dd0-b4c1-0c47ee9ab0cc",
-        "10f09b1d-75f5-48c6-a2d5-9e45343ca706",
-        "template--15278443266187__efcff3a2-8f29-436f-a00d-e05ea8d20356-167045725719a0f3d3-0",
-        "fff85fbc-673e-439c-8225-b0434cebb937"
-      ],
-      "settings": {
-        "heading": "As Seen On",
-        "heading_size": "h1",
-        "opacity": 100,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "1661881401445420bc",
     "78ef0814-cdb0-4071-9170-a21718cf2798",
     "1662047424162adeb7",
+    "efcff3a2-8f29-436f-a00d-e05ea8d20356",
     "166188580238f56d5d",
     "1662661549f438ee1d",
     "1660333092e53eabfe",
     "166266466499d67181",
     "1662069008751553a2",
     "166266160293c0ea34",
-    "1662072675f3922bcf",
-    "efcff3a2-8f29-436f-a00d-e05ea8d20356"
+    "1662072675f3922bcf"
   ]
 }
