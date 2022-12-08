@@ -20,7 +20,7 @@
 
 <div class="logo-list page-width section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
   <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %} center">
-    <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+    <h2 class="title uppercase heading--secondary">{{ section.settings.heading | escape }}</h2>
   </div>
 
   {%- if section.blocks.size > 0 -%}
